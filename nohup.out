@@ -1,0 +1,22 @@
+Configuration file: /Users/zhanruizhi/Documents/ruizhizhan.github.io/_config.yml
+            Source: /Users/zhanruizhi/Documents/ruizhizhan.github.io
+       Destination: /Users/zhanruizhi/Documents/ruizhizhan.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+                    done in 6.14 seconds.
+ Auto-regeneration: enabled for '/Users/zhanruizhi/Documents/ruizhizhan.github.io'
+LiveReload address: http://localhost:35729
+    Server address: http://localhost:4000/
+  Server running... press ctrl-c to stop.
+        LiveReload: Browser connected
+      Regenerating: 1 file(s) changed at 2024-04-23 10:19:45
+                    nohup.out
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.808047 seconds.
+                    
+      Regenerating: 1 file(s) changed at 2024-04-23 10:20:51
+                    nohup.out
+       Jekyll Feed: Generating feed for posts
+                    ...done in 4.683389 seconds.
+                    
