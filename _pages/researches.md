@@ -23,20 +23,26 @@ Each new list item starts with <li>.
     <div align="center">
     <img src="https://ruizhizhan.github.io/images/4rotatorTS.png" width="80%"><br>
     </div>
-    <font color=grey size=2.5em>Surface temperature and zonal mean zonal wind as a function of rotation period. From left to right: bat rotator (P = 0.5 days; this work), compared to a rapid rotator (P = 2 days), Rhines rotator (P = 10 days), and slow rotator (P = 20 days).</font><br><br><br>
+    <font color=grey size=2em>Surface temperature and zonal mean zonal wind as a function of rotation period. From left to right: bat rotator (P = 0.5 days; this work), compared to a rapid rotator (P = 2 days), Rhines rotator (P = 10 days), and slow rotator (P = 20 days).</font><br><br><br>
     <div align="center">
     <img src="https://ruizhizhan.github.io/images/RGHL.png" width="50%"><br>
     </div>
-    <font color=grey size=2.5em> The Runaway Greenhouse Limit (RGHL) around white dwarfs, and comparison to previous studies. </font><br><br><br>
+    <font color=grey size=2em> The Runaway Greenhouse Limit (RGHL) around white dwarfs, and comparison to previous studies. </font><br>
     <div align="center">
     <img src="https://ruizhizhan.github.io/images/regimes.png" width="50%"><br>
     </div>
-    <font color=grey size=2.5em>Estimated rotation regimes inside the habitable zone of white dwarfs with different stellar temperatures, as a function of relative stellar flux.</font><br>
+    <font color=grey size=2em>Estimated rotation regimes inside the habitable zone of white dwarfs with different stellar temperatures, as a function of relative stellar flux.</font><br>
 	</li>
 <!-- .... -->
 </ul>
 </div>
 
-- *Different atmospheres on hot rocky planets?* We use non-grey Global Climate Model, [Isca](https://execlim.github.io/Isca/) and [Socrates]( https://code.metoffice.gov.uk/trac/socrates) to model the atmospheres on hot rocky planets like TRAPPIST-1b, LHS3844b and 55 Cnc e.
-
-<font color=grey>Last update: 24th August 2024</font>
+<div style="height:350px;overflow:auto;">
+<b>  </b>
+<ul>
+	<li>
+	<em><b>Atmospheres on Hot Rocky Planets?</b></em><br>
+<!-- .... -->
+    We developed custom correlated-k coefficients and validate them against line-by-line radiative transfer simulations. We then perform GCM simulations with non-grey radiative transfer, <a href="https://execlim.github.io/Isca/">Isca</a> coupled with <a href="https://code.metoffice.gov.uk/trac/socrates">Socrates</a>, to model the atmospheres on hot rocky planets like TRAPPIST-1b, LHS3844b and 55 Cnc e.<br><br><br>
+<!-- .... -->
+<font color=grey size=3em>Last update: 24th August 2024</font>
