@@ -45,4 +45,4 @@ Each new list item starts with <li>.
 <!-- .... -->
     We developed custom correlated-k coefficients and validate them against line-by-line radiative transfer simulations. We then perform GCM simulations with non-grey radiative transfer, <a href="https://execlim.github.io/Isca/">Isca</a> coupled with <a href="https://code.metoffice.gov.uk/trac/socrates">Socrates</a>, to model the atmospheres on hot rocky planets like TRAPPIST-1b, LHS3844b and 55 Cnc e.<br><br><br>
 <!-- .... -->
-<font color=grey size=3em>Last update: 24th August 2024</font>
+<font color=grey size=3em>Last update: August 2024</font>
