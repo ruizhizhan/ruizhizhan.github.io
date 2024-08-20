@@ -19,7 +19,7 @@ Each new list item starts with <li>.
 	<li>
 	<em><b>Habitable Zone Around "Dead Stars"?</b></em><br>
 <!-- .... -->
-    We use the <a href="https://github.com/storyofthewolf/ExoCAM">ExoCAM</a> Global Climate Model to investigate the inner edge of the <a href="https://science.nasa.gov/resource/what-is-the-habitable-zone/">habitable zone (HZ)</a> around <a href="https://en.wikipedia.org/wiki/White_dwarf">white dwarfs</a>. Since white dwarf stars are compact and small, planets orbiting them are assumed tidally locked with <b>ultra short orbital period</b> (2.5hr<P<4days). Our results suggest <b>novel atmospheric dynamics expand the inner edge of the habitable zone around white dwarfs</b> and can be distinguished by <a href="https://www.jwst.nasa.gov/">JWST</a> via <a href="https://en.wikipedia.org/wiki/Phase_curve_(astronomy)">thermal phase curve</a>. Read more on the <a href="https://arxiv.org/abs/2406.03189">[arxiv]</a><a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad54c1"> [journal]</a>.<br><br>
+    White dwarfs offer a unique opportunity to search nearby stellar systems for signs of life, but the habitable zone around these stars is still poorly understood. We use the <a href="https://github.com/storyofthewolf/ExoCAM">ExoCAM</a> Global Climate Model to investigate the inner edge of the <a href="https://science.nasa.gov/resource/what-is-the-habitable-zone/">habitable zone (HZ)</a> around <a href="https://en.wikipedia.org/wiki/White_dwarf">white dwarfs</a>. Since white dwarf stars are compact and small, planets orbiting them are assumed tidally locked with <b>ultra short orbital period</b> (2.5hr<P<4days). Our results suggest <b>novel atmospheric dynamics expand the inner edge of the habitable zone around white dwarfs</b> and can be distinguished by <a href="https://www.jwst.nasa.gov/">JWST</a> via <a href="https://en.wikipedia.org/wiki/Phase_curve_(astronomy)">thermal phase curve</a>. Read more on <a href="https://arxiv.org/abs/2406.03189">[arxiv]</a><a href="https://iopscience.iop.org/article/10.3847/1538-4357/ad54c1">/ [journal]</a>.<br><br>
     <div align="center">
     <img src="https://ruizhizhan.github.io/images/4rotatorTS.png" width="80%"><br>
     </div>
@@ -41,8 +41,9 @@ Each new list item starts with <li>.
 <b>  </b>
 <ul>
 	<li>
-	<em><b>Atmospheres on Hot Rocky Planets?</b></em><br>
+	<em><b>Atmospheres on Hot Tidally Locked Rocky Planets?</b></em><br>
 <!-- .... -->
-    We developed custom correlated-k coefficients and validate them against line-by-line radiative transfer simulations. We then perform GCM simulations with non-grey radiative transfer, <a href="https://execlim.github.io/Isca/">Isca</a> coupled with <a href="https://code.metoffice.gov.uk/trac/socrates">Socrates</a>, to model the atmospheres on hot rocky planets like TRAPPIST-1b, LHS3844b and 55 Cnc e.<br><br><br>
+    Hot rocky exoplanets are ideal targets for modern telescopes due to their short orbital periods and signicant thermal emissions. The atmospheric dynamics of these planets, however, are still poorly understood. Few model with realistic radiative transfer has been employed for hot (non-habitable) rocky exoplanets, mainly due to the incompatibility of standard GCM radiative transfer codes with currently observed hot exoplanets.
+    Here we developed custom correlated-k coefficients and validate them against line-by-line radiative transfer simulations. We then perform GCM simulations with non-grey radiative transfer, <a href="https://execlim.github.io/Isca/">Isca</a> coupled with <a href="https://code.metoffice.gov.uk/trac/socrates">Socrates</a>, to model the atmospheres on hot rocky planets like TRAPPIST-1b, LHS3844b and 55 Cnc e.<br><br><br>
 <!-- .... -->
 <font color=grey size=3em>Last update: August 2024</font>
