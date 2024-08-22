@@ -43,7 +43,7 @@ Each new list item starts with <li>.
 	<li>
 	<em><b>Atmospheres on Hot Tidally Locked Rocky Planets?</b></em><br>
 <!-- .... -->
-    Hot rocky exoplanets are ideal targets for modern telescopes due to their short orbital periods and signicant thermal emissions. The atmospheric dynamics of these planets, however, are still poorly understood. Few model with realistic radiative transfer has been employed for hot (non-habitable) rocky exoplanets, mainly due to the incompatibility of standard GCM radiative transfer codes with currently observed hot exoplanets.
+    Hot rocky exoplanets are ideal targets for modern telescopes due to their short orbital periods and significant thermal emissions. The atmospheric dynamics of these planets, however, are still poorly understood. Few model with realistic radiative transfer has been employed for hot (non-habitable) rocky exoplanets, mainly due to the incompatibility of standard GCM radiative transfer codes with currently observed hot exoplanets.
     Here we developed custom correlated-k coefficients and validate them against line-by-line radiative transfer simulations. We then perform GCM simulations with non-grey radiative transfer, <a href="https://execlim.github.io/Isca/">Isca</a> coupled with <a href="https://code.metoffice.gov.uk/trac/socrates">Socrates</a>, to model the atmospheres on hot rocky planets like TRAPPIST-1b, LHS3844b and 55 Cnc e.<br><br><br>
 <!-- .... -->
 <font color=grey size=3em>Last update: August 2024</font>
