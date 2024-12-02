@@ -25,6 +25,8 @@ Each new list item starts with <li>.
     <br><br><br>
     </li>
 <!-- .... -->
+</ul>
+</div>
 
 <div style="height:350px;overflow:auto;">
 <b>  </b>
