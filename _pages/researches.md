@@ -5,13 +5,25 @@ permalink: /researches/
 author_profile: true
 ---
 
-My work focuses on the atmospheres on rocky planets (or terrestrial planets), especially the tidally locked ones.
+My Ph.D project focuses on the atmospheres of tidally-locked rocky planets with short orbital periods. 
 
 <!--
 ** Add a scroll box**
 <ul> is unordered list.
 Each new list item starts with <li>.
 -->
+
+<div style="height:350px;overflow:auto;">
+<b>  </b>
+<ul>
+	<li>
+	<em><b>Atmosphere on the Close-in Rocky Planet 55 Cancri e?</b></em><br>
+<!-- .... -->
+    The ultra-short period super Earth 55 Cancri e offers a unique opportunity to study planets in extreme environment. Despite extensive observation, the nature of 55 Cancri e, however, is still poorly understood. Few model with realistic radiative transfer has been employed for hot (non-habitable) rocky exoplanets, mainly due to the incompatibility of standard GCM radiative transfer codes with currently observed hot exoplanets. Here we developed custom correlated-k coefficients and validate them against line-by-line radiative transfer simulations. We then perform GCM simulations with non-grey radiative transfer, <a href="https://execlim.github.io/Isca/">Isca</a> coupled with <a href="https://code.metoffice.gov.uk/trac/socrates">SOCRATES</a>, to model the atmospheres on 55 Cancri e.<br>
+    Comparing our result and recent JWST observation on the secondary eclipse<a href="https://www.nature.com/articles/s41586-024-07432-x">Hu et al. 2024</a>, we suggest the secondary atmosphere on 55 Cancri e should be <em>thick and carbon dioxide rich</em>.<br>
+    Observations from Spitzer, CHEOPS, and JWST reported significant time variability in the secondary eclipse depth of 55 Cancri e. However, our result suggests that clearsky atmosphere variability is much weaker than observed.
+    <br><br><br>
+<!-- .... -->
 
 <div style="height:350px;overflow:auto;">
 <b>  </b>
@@ -37,13 +49,4 @@ Each new list item starts with <li>.
 </ul>
 </div>
 
-<div style="height:350px;overflow:auto;">
-<b>  </b>
-<ul>
-	<li>
-	<em><b>Atmospheres on Hot Tidally Locked Rocky Planets?</b></em><br>
-<!-- .... -->
-    Hot rocky exoplanets are ideal targets for modern telescopes due to their short orbital periods and significant thermal emissions. The atmospheric dynamics of these planets, however, are still poorly understood. Few model with realistic radiative transfer has been employed for hot (non-habitable) rocky exoplanets, mainly due to the incompatibility of standard GCM radiative transfer codes with currently observed hot exoplanets.
-    Here we developed custom correlated-k coefficients and validate them against line-by-line radiative transfer simulations. We then perform GCM simulations with non-grey radiative transfer, <a href="https://execlim.github.io/Isca/">Isca</a> coupled with <a href="https://code.metoffice.gov.uk/trac/socrates">Socrates</a>, to model the atmospheres on hot rocky planets like TRAPPIST-1b, LHS3844b and 55 Cnc e.<br><br><br>
-<!-- .... -->
-<font color=grey size=3em>Last update: August 2024</font>
+<font color=grey size=3em>Last update: November 2024</font>
