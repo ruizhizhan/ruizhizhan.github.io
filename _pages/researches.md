@@ -13,7 +13,7 @@ My Ph.D project focuses on the atmospheres of tidally-locked rocky planets with 
 Each new list item starts with <li>.
 -->
 
-<div style="height:450px;overflow:auto;">
+<div style="height:400px;overflow:auto;">
 <b>  </b>
 <ul>
 	<li>
