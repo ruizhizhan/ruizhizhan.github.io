@@ -53,4 +53,5 @@ Each new list item starts with <li>.
 </ul>
 </div>
 
+ <br><br><br>
 <font color=grey size=3em>Last update: November 2024</font>
