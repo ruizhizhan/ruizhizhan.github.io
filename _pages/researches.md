@@ -26,7 +26,7 @@ Each new list item starts with <li>.
     <font color=grey size=2em>Absorption cross section of CO<sub>2</sub> at Earth Temperature (300 K) and typical temperature on substellar point of 55 Cnc e (3500K) assuming 1 bar pressure. The two lines are clearly distinguished. So the standard GCM radiative transfer for Earth cannot be applied to 55 cnc e. </font><br><br><br>
     We then perform GCM simulations with non-grey radiative transfer, <a href="execlim.github.io/Isca/">Isca</a> coupled with <a href="code.metoffice.gov.uk/trac/socrates">SOCRATES</a>, to model the atmospheres on 55 Cancri e.<br>
     <div align="center">
-    <img src="https://ruizhizhan.github.io/images/pipeline.png" width="75%"><br>
+    <img src="https://ruizhizhan.github.io/images/pipeline.png" width="95%"><br>
     </div>
     <font color=grey size=2em>The gas absorption in our model includes molecular spectrum (including UV absorption) and collision induced absorption (CIA). </font><br><br><br>
     Our simulations suggest the secondary atmosphere on 55 Cancri e should be <b>thick and carbon dioxide rich</b>.<br>
@@ -63,4 +63,4 @@ Each new list item starts with <li>.
 </div>
 
  <br><br>
-<font color=grey size=3em>Last update: November 2024</font>
+<font color=grey size=3em>Last update: April 2025</font>
