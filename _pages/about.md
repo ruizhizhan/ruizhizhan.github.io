@@ -13,7 +13,7 @@ I am interested in the atmospheres on [exoplanets](https://en.wikipedia.org/wiki
 
 My Ph.D project focuses on hot rocky exoplanets with ultra-short periods, as delineated in the red-boxed region of the figure below. Such planets are ideal targets for observations and provide critical benchmarks for the evolution of the planet systems.
 <div align="center">
-  <img src="https://ruizhizhan.github.io/images/planet_radius_vs_equilibrium_temperature.jpg" width="55%"><br>
+  <img src="https://ruizhizhan.github.io/images/planet_radius_vs_equilibrium_temperature.png" width="55%"><br>
 </div>
 <font color=grey size=2em>Data: NASA Exoplanet Archive</font><br><br><br>
 
