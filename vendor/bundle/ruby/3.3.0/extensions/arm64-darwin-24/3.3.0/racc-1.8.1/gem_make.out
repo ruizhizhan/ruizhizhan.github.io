@@ -1,0 +1,18 @@
+current directory: /Users/zhanruizhi/Documents/ruizhizhan.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/zhanruizhi/.rbenv/versions/3.3.0/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/zhanruizhi/Documents/ruizhizhan.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250913-53091-dzs1bh sitelibdir\=./.gem.20250913-53091-dzs1bh clean
+
+current directory: /Users/zhanruizhi/Documents/ruizhizhan.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250913-53091-dzs1bh sitelibdir\=./.gem.20250913-53091-dzs1bh
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/zhanruizhi/Documents/ruizhizhan.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250913-53091-dzs1bh sitelibdir\=./.gem.20250913-53091-dzs1bh install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20250913-53091-dzs1bh/racc
+
+current directory: /Users/zhanruizhi/Documents/ruizhizhan.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20250913-53091-dzs1bh sitelibdir\=./.gem.20250913-53091-dzs1bh clean
