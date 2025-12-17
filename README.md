@@ -1,41 +1,151 @@
+# [The Academic CV That Gets You Hired](https://github.com/HugoBlox/theme-academic-cv)
 
-# Academic Pages
+[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/academic-cv/start/?utm_source=github&utm_medium=readme)
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+<h1 align="center">The Portfolio That Works While You Sleep</h1>
 
-Academic Pages is a Github Pages template for academic websites.
+<p align="center">
+  <strong>Your unfair advantage in academia.</strong><br/>
+  Stop sending PDFs into the void. Build a living portfolio that boosts citations and lands offers.<br/>
+  Trusted by 250,000+ researchers at <strong>MIT, Stanford, and Google</strong>.
+</p>
 
+<p align="center">
+  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme"><b>🚀 Launch Free (60s)</b></a>
+  &nbsp;•&nbsp;
+  <a href="https://hugoblox.com/templates/?open=academic-cv&loading=true&utm_source=github&utm_medium=readme">Live Demo</a>
+  &nbsp;•&nbsp;
+  <a href="https://marketplace.visualstudio.com/items?itemName=hugoblox.hugoblox-studio"><b>Visual Editor</b></a>
+</p>
 
-# Getting Started
+<p align="center">
+  <a href="https://discord.gg/z8wNYzb"><img src="https://img.shields.io/discord/722225264733716590?label=Join%20Discord&style=social" alt="Discord"></a>
+  <a href="https://github.com/HugoBlox/theme-academic-cv"><img src="https://img.shields.io/github/stars/HugoBlox/theme-academic-cv?label=Star%20Academic%20CV&style=social" alt="GitHub Stars"></a>
+</p>
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+---
 
-See more info at https://academicpages.github.io/
+## Why This Template?
 
-## Running Locally
+Most CVs are static PDFs that get lost in the pile. This is an **intelligent portfolio** that works 24/7 to advance your career.
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+- **🔮 Future-Proof:** Your content lives in simple **Markdown**. No database to break, no lock-in.
+- **🤖 AI-Ready:** Optimized for search engines and LLMs, so your work is found and cited.
+- **⚡ Zero Maintenance:** Auto-import citations from BibTeX and focus on research.
+- **✍️ Edit Visually:** Use **HugoBlox Studio** in VS Code — no coding needed. Full capabilities in Pro.
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+<p align="center">
+  <a href="https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme">
+    <img src="https://img.shields.io/badge/⚡️%20Get%20Your%20CV%20in%2060s-ff4655?style=for-the-badge" 
+    alt="Deploy this template" width="400">
+  </a>
+</p>
 
+![HugoBlox Studio in Action](https://raw.githubusercontent.com/HugoBlox/hugo-blox-builder/main/.github/media/studio/slide-1.webp)
+*HugoBlox Studio: Drag-and-drop page builder inside VS Code.*
 
-# Maintenance 
+> "My citations went up 3x after switching to this template. The citation auto-sync feature is a lifesaver."
+> — **Dr. Zhang**, AI Research Scientist, Meta
 
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+---
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+## Who This Is For
 
-## Bugfixes and enhancements
+- Students and grads applying to top labs and industry roles
+- Researchers who want a living, citable portfolio
+- Faculty/PIs showcasing publications, talks, and group news
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+---
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+## Features
+
+| Feature | Benefit |
+| :--- | :--- |
+| **Markdown, Jupyter, RStudio** | Write in the tools you already use. |
+| **Auto-Update Citations** | Drop in a BibTeX file; formatted lists generated automatically. |
+| **Visual Editor** | Drag-and-drop blocks to build pages in minutes. |
+| **Global CDN** | Blazing fast load times (100/100 Lighthouse scores). |
+| **Privacy First** | You own your data. Host for free on GitHub Pages. |
+
+---
+
+## Notebook → Posts and Slides
+
+- Publish your actual `.ipynb` as beautiful long-form posts — code, outputs, and narrative kept intact.
+- Slides in Markdown with Reveal.js: math, syntax highlight, diagrams, speaker notes.
+- Coming soon: **Notebook → Slides (beta)**. Request early access in Discord.
+
+Learn more: docs on [Notebooks](https://docs.hugoblox.com/reference/markdown/#-notebooks) and [Slides](https://docs.hugoblox.com/guides/slides/).
+
+---
+
+## Why Go Pro (from $8/m)
+
+- Enhanced HugoBlox Studio visual editor — save 10–20 hours setting up and polishing
+- Premium CV & Resumé designs — make an unforgettable first impression
+- Pro blocks, remove attribution, and priority support
+
+---
+
+## Free vs Pro
+
+| Feature | Academic CV (Free) | Academic CV Pro & Resumé Pro |
+| --- | --- | --- |
+| Design | Professional & clean | Premium designs |
+| Layouts | Standard sections | Advanced timelines & layouts |
+| Courses/Lectures | Basic | Fully-Featured |
+| First Impression | Strong | Unforgettable |
+| Discord Support | Community | Priority |
+
+<p align="center">
+  <a href="https://hugoblox.com/pro?utm_source=github&utm_medium=readme"><b>💎 Upgrade to Pro</b></a><br/>
+  <a href="https://hugoblox.com/templates/academic-cv-pro/start?utm_source=github&utm_medium=readme">✨ Deploy Academic CV Pro</a>
+  &nbsp;•&nbsp;
+  <a href="https://hugoblox.com/templates/resume-pro/start?utm_source=github&utm_medium=readme">📄 Deploy Resumé Pro</a>
+</p>
+
+---
+
+## Get Started
+
+### Option 1: No-Code (Fastest)
+Launch a fully hosted site in your browser. No software to install.
+
+👉 [**Launch in Browser (Free)**](https://hugoblox.com/templates/academic-cv/start?utm_source=github&utm_medium=readme)
+
+### Option 2: Studio (Visual Editor)
+1) Install [HugoBlox Studio](https://marketplace.visualstudio.com/items?itemName=hugoblox.hugoblox-studio) for VS Code  
+2) Open this project and edit visually
+
+### Option 3: CLI (Developers)
+1) Install [Hugo](https://docs.hugoblox.com/start/cli/)
+2) Create your site with the CLI:
+
+```bash
+npx hugoblox create site --template academic-cv
+```
+
+---
+
+## FAQ
+
+- Do I need to know Hugo? No — you can edit visually or write Markdown.
+- Can I host for free? Yes — GitHub Pages/Netlify are supported.
+- Can I export/migrate later? Yes — your site is just files.
+- Can I cancel Pro anytime? Yes.
+
+---
+
+## Community & Support
+
+- 💬 [**Discord Community**](https://discord.gg/z8wNYzb)
+- 📚 [**Documentation**](https://docs.hugoblox.com/?utm_source=github&utm_medium=readme)
+- 🐦 [**Follow on X**](https://x.com/BuildLore)
+- ⭐ [**Star on GitHub**](https://github.com/HugoBlox/hugo-blox-builder)
+
+---
+
+MIT © 2016-Present [George Cushen](https://georgecushen.com)
+
+<!--START_SECTION:news-->
+<!--END_SECTION:news-->
