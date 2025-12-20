@@ -3,7 +3,7 @@ name: Deploy Hugo Blox to Pages
 on:
   push:
     branches:
-      - main  # 再次确认你的主分支是 main 还是 master
+      - master  # 再次确认你的主分支是 main 还是 master
   workflow_dispatch:
 
 permissions:
