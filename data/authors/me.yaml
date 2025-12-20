@@ -5,119 +5,90 @@ name:
   display: Ruizhi Zhan
   given: Ruizhi
   family: Zhan
-  alternate: '詹睿知'  # Example: 王伟
-  pronunciation: ''  # Example: Wáng Wěi
+  alternate: '詹睿知'
   pronouns: she/her
 postnominals:
   - 
 status:
-  icon: "☕️"
-role: 
+  icon: "🔭"
+
+role: Ph.D. Student
+
 bio: |
   Hi there! I am a 4th year Ph.D student at [Peking University](https://www.pku.edu.cn/) under the supervision of [Prof. Daniel Koll](https://danielkoll.github.io/). I was an undergraduate student of physics and astronomy at [Wuhan University](https://www.whu.edu.cn/) (BSc 2022). 
 
-  I have been longing for the universe and space since I was a child. This passion led me to choose physics as my major in college, where I was fortunate to join the Qibin Astronomy Program. Under the guidance of Prof. Zonghong Zhu (WHU) and Prof. Ran Li (NAOC, now BNU), I gained some hands-on experience in modeling strong gravitational lensing during my undergrad. Later by chance, I got to know and fell in love with the field of [exoplanets](https://en.wikipedia.org/wiki/Exoplanet), the worlds beyond the Solar System. 
+  I have been longing for the universe and space since I was a child. This passion led me to choose physics as my major in college, where I was fortunate to join the Qibin Astronomy Program. Later by chance, I got to know and fell in love with the field of [exoplanets](https://en.wikipedia.org/wiki/Exoplanet), the worlds beyond the Solar System. 
 
-  Now I work on the atmospheres of exoplanets, mainly the small terrestrial ones. As of September 2025, more than 6,000 exoplanets had been confirmed, yet characterizing their atmospheres remains a challenge in modern astronomy. Nevertheless, atmospheric studies, including the chemistry and dynamics, are of central importance. Atmospheres provide crucial insights into how exoplanets form and evolve over time, which in turn help better understand Solar System planets. Atmospheres of exoplanets are diverse and make some of them potentially habitable for life.
+  Now I work on the atmospheres of exoplanets, mainly the small terrestrial ones. As of September 2025, more than 6,000 exoplanets had been confirmed, yet characterizing their atmospheres remains a challenge. My Ph.D work focuses on modeling the atmospheres of rocky exoplanets utilizing 3D GCMs (Global Climate Model).
 
-  My Ph.D work focuses on modeling the atmospheres of rocky exoplanets utilizing 3D GCMs (Global Climate Model / General Circulation Model). Read more on my [research](https://ruizhizhan.github.io/research/).
-
-  You can find my [CV](https://ruizhizhan.github.io/files/cv_05_2025.pdf) here.
-
-  Besides doing research, I love classical music (Chopin is my favorite!) and I play Erhu (a traditional Chinese string instrument) in PKU Chinese Orchestra. 
-
+  Besides doing research, I love classical music (Chopin is my favorite!) and I play Erhu (a traditional Chinese string instrument) in PKU Chinese Orchestra.
 
 affiliations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: Peking University
+    url: https://www.pku.edu.cn/
 
 links:
   - icon: at-symbol
-    url: mailto:alex.johnson@example.com
+    url: mailto:ruizhizhan@pku.edu.cn
     label: E-mail Me
-  - icon: brands/x
-    url: https://x.com/example
+  - icon: academicons/cv
+    url: https://ruizhizhan.github.io/static/uploads/cv_05_2025.pdf
+    label: CV
   - icon: brands/github
-    url: https://github.com/example
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/example/
+    url: https://github.com/ruizhizhan
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=example
+    url: https://scholar.google.com/citations?user=qaMKt4MAAAAJ&hl=zh-CN
   - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://orcid.org/0009-0005-4936-7289
 
-interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
+# interests:
+#  - Exoplanet Atmospheres
+#  - Rocky Planets & Habitability
+#  - 3D GCMs (Global Climate Model)
+#  - Strong Gravitational Lensing (Previous Work)
 
 education:
-  - degree: test
-    institution: Stanford University
-    start: 2015-09-01
-    end: 2019-06-30
+  - degree: PhD in Atmospheric Sciences
+    institution: Peking University
+    start: 2022-09-01
+    end: 2027-6-30 (expected)
     summary: |
-      Thesis on scaling laws for neural language models. Published 5 papers in NeurIPS and ICML.
-    button:
-      text: Download dissertation
-      url: /resume.pdf
-      icon: hero/arrow-down-tray
-  - degree: MS Computer Science
-    institution: Carnegie Mellon University
-    start: 2013-09-01
-    end: 2015-05-31
-  - degree: BS Computer Science
-    institution: MIT
-    start: 2009-09-01
-    end: 2013-05-31
+      Supervised by Prof. Daniel Koll. Focusing on modeling the atmospheres of rocky exoplanets utilizing 3D GCMs.
+  - degree: BSc in Physics
+    institution: Wuhan University
+    start: 2018-09-01
+    end: 2022-06-30
+    summary: |
+      
 
-experience:
-  - role: Senior AI Research Scientist
-    org: Meta AI
-    start: 2020-01-01
-    summary: |
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models.
-    button:
-      text: View portfolio
-      url: /
-      icon: hero/arrow-down-tray
-  - role: AI Research Intern
-    org: OpenAI
-    start: 2019-06-01
-    end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+# experience:
+#  - role: Undergraduate Researcher
+#    org: Wuhan University & NAOC
+#    start: 2020-09-01
+#    end: 2022-06-30
+#    summary: |
+#      Under the guidance of Prof. Zonghong Zhu (WHU) and Prof. Ran Li (NAOC).
+#      Gained hands-on experience in modeling **strong gravitational lensing**.
 
 skills:
   - name: Technical Skills
     items:
       - label: Python
         level: 5
-      - label: Machine Learning
-        level: 5
-      - label: Cloud Computing
-        level: 4
-  - name: Research & Communication
-    items:
-      - label: Academic Writing
-        level: 5
-      - label: Conference Presentations
-        level: 4
-      - label: Grant Proposals
-        level: 4
+#      - label: 3D GCMs
+#        level: 4
+#      - label: Astrophysics
+#        level: 4
 
 languages:
-  - name: English
+  - name: Chinese
     level: 5
     label: Native
-  - name: Spanish
+  - name: English
     level: 4
-    label: Fluent
+    label: Proficient
 
 awards:
-  - title: Best Paper Award
-    awarder: NeurIPS
-    date: "2022-12-01"
-    summary: Awarded for groundbreaking work on efficient training of large models.
-    icon: hero/trophy
+  # 
+  # - title: Example Award
+  #   date: "2022-01-01"
