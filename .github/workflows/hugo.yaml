@@ -3,7 +3,7 @@ name: Deploy Hugo Blox to Pages
 on:
   push:
     branches:
-      - master  # 再次确认你的主分支是 main 还是 master
+      - master
   workflow_dispatch:
 
 permissions:
@@ -23,7 +23,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.148.2
+      HUGO_VERSION: 'latest'
       HUGO_ENV: production
       HUGO_ENABLEGITINFO: "true"
     steps:
@@ -33,16 +33,22 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Setup Go
-        uses: actions/setup-go@v5
+      # 👇 新增：显式安装 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          go-version: '1.20' # Hugo Blox 需要 Go 环境支持模块
+          node-version: '20'
+          cache: 'npm'
+
+      # 👇 修改：强制安装依赖（去掉了之前的判断条件）
+      - name: Install dependencies
+        run: npm install
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: ${{ env.HUGO_VERSION }}
-          extended: true # 必须开启 Extended 版本，否则 CSS 无法生成
+          extended: true
 
       - name: Build with Hugo
         run: |
