@@ -14,14 +14,10 @@ status:
 
 role: Ph.D. Student
 
-bio: >
-  Hi there! I am a 4th year Ph.D student at [Peking University](https://www.pku.edu.cn/) under the supervision of [Prof. Daniel Koll](https://danielkoll.github.io/). I was an undergraduate student of physics and astronomy at [Wuhan University](https://www.whu.edu.cn/) (BSc 2022). 
+bio: |
+  Hi there! I am a 4th year Ph.D student at <a href="https://www.pku.edu.cn/" target="_blank">Peking University</a> under the supervision of <a href="https://danielkoll.github.io/" target="_blank">Prof. Daniel Koll</a>. I was an undergraduate student of physics and astronomy at <a href="https://www.whu.edu.cn/" target="_blank">Wuhan University</a> (BSc 2022). 
 
-  I have been longing for the universe and space since I was a child. This passion led me to choose physics as my major in college, where I was fortunate to join the Qibin Astronomy Program. Later by chance, I got to know and fell in love with the field of [exoplanets](https://en.wikipedia.org/wiki/Exoplanet), the worlds beyond the Solar System. 
-
-  Now I work on the atmospheres of exoplanets, mainly the small terrestrial ones. As of September 2025, more than 6,000 exoplanets had been confirmed, yet characterizing their atmospheres remains a challenge. My Ph.D work focuses on modeling the atmospheres of rocky exoplanets utilizing 3D GCMs (Global Climate Model).
-
-  Besides doing research, I love classical music (Chopin is my favorite!) and I play Erhu (a traditional Chinese string instrument) in PKU Chinese Orchestra.
+  I have been longing for the universe and space since I was a child. This passion led me to choose physics as my major in college, where I was fortunate to join the Qibin Astronomy Program. Later by chance, I got to know and fell in love with the field of <a href="https://en.wikipedia.org/wiki/Exoplanet" target="_blank">exoplanets</a>, the worlds beyond the Solar System. 
 
 affiliations:
   - name: Peking University
