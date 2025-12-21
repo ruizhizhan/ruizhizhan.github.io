@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/resume.pdf
+        url: static/uploads/cv_05_2025.pdf
       headings:
         about: ''
         education: ''
