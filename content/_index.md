@@ -14,7 +14,17 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: |
-        test link [test](baidu.com)
+        Hi there! I am a 4th year Ph.D student at [Peking University](https://www.pku.edu.cn/) under the supervision of [Prof. Daniel Koll](https://danielkoll.github.io/). I was an undergraduate student of physics and astronomy at [Wuhan University](https://www.whu.edu.cn/) (BSc 2022). 
+
+        I have been longing for the universe and space since I was a child. This passion led me to choose physics as my major in college, where I was fortunate to join the Qibin (启斌) Astronomy Program and gained some hands-on experience in modeling strong gravitational lensing. Later by chance, I got to know and fell in love with the field of [exoplanets](https://en.wikipedia.org/wiki/Exoplanet), the worlds beyond the Solar System. 
+
+        Now I work on the atmospheres of exoplanets, mainly the small terrestrial ones. As of September 2025, more than 6,000 exoplanets had been confirmed, yet characterizing their atmospheres remains a challenge in modern astronomy. Nevertheless, atmospheric studies, including the chemistry and dynamics, are of central importance. Atmospheres provide crucial insights into how exoplanets form and evolve over time, which in turn help better understand Solar System planets. Atmospheres of exoplanets are diverse and make some of them potentially habitable for life.
+
+      # My Ph.D project focuses on modeling the atmospheres of rocky exoplanets utilizing 3D GCMs (Global Climate Model / General Circulation Model). Read more on my [research](https://ruizhizhan.github.io/research/).
+
+      #  You can find my [CV](https://ruizhizhan.github.io/files/cv_05_2025.pdf) here.
+
+      #  Besides doing research, I love classical music (Chopin is my favorite!) and I play Erhu (a traditional Chinese string instrument) in PKU Chinese Orchestra.
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
