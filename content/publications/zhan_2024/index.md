@@ -39,10 +39,11 @@ url_source: ""
 url_video: ""
 
 # 特色图片设置 (用于 article-grid 视图展示)
-# image:
-#  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
-#  focal_point: ""
-#  preview_only: false
+# caption # Image credit: [**Unsplash**](https://unsplash.com)
+image:
+  caption: '' 
+  focal_point: ""
+  preview_only: false
 
 # 关联项目 (可选，对应 content/project/ 下的文件名)
 # projects: []
