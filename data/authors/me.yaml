@@ -43,7 +43,7 @@ education:
     institution: Peking University
     start: "Sep 2022"
     end: "Jun 2027 (expected)" 
-    icon: cloud-sun 
+    # icon: cloud-sun 
 
   - degree: BSc in Physics
     institution: Wuhan University
