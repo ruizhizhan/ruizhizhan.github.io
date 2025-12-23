@@ -41,9 +41,9 @@ links:
 education:
   - degree: PhD in Atmospheric Sciences
     institution: Peking University
-    start: "Sep 2022"
-    end: "Jun 2027 (expected)" 
-    # icon: cloud-sun 
+    #start: "Sep 2022"
+    #end: "Jun 2027 (expected)" 
+    icon: cloud-sun 
 
   - degree: BSc in Physics
     institution: Wuhan University
