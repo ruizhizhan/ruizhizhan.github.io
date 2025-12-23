@@ -13,13 +13,14 @@ sections:
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
-      text: test content text
+      text: |
+        test link [test](baidu.com)
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
         url: uploads/cv_05_2025.pdf
       headings:
-        about: Test headings about
+        about: About Me
         education: ''
         interests: ''
     design:
