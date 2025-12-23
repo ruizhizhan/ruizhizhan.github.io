@@ -41,15 +41,14 @@ links:
 education:
   - degree: PhD in Atmospheric Sciences
     institution: Peking University
-    start: 2022-09-01
-    summary: |
-      Supervised by Prof. Daniel Koll. Focusing on modeling the atmospheres of rocky exoplanets utilizing 3D GCMs.
+    start: "Sep 2022"
+    end: "Jun 2027 (expected)" 
+    icon: cloud-sun 
+
   - degree: BSc in Physics
     institution: Wuhan University
-    start: 2018-09-01
-    end: 2022-06-30
-    summary: |
-      add later
+    # Option B: Simple Year Only
+    year: 2022
 
 # experience:
 #  - role: Undergraduate Researcher
