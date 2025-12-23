@@ -41,13 +41,12 @@ links:
 education:
   - degree: PhD in Atmospheric Sciences
     institution: Peking University
-    start: "present"
-    #end: "Jun 2027 (expected)" 
+    start: "2022-09-01"
 
   - degree: BSc in Physics
     institution: Wuhan University
-    # Option B: Simple Year Only
-    year: 2022
+    start: '2018-09-01'
+    end: '2022-06-30'
 
 # experience:
 #  - role: Undergraduate Researcher
