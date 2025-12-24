@@ -43,30 +43,40 @@ sections:
       #banner:
       #  filename: "background.jpg"
 
-  - block: markdown
+  - block: collection
+    id: projects
     content:
       title: '🪐 My Research'
-      subtitle: ''
       text: |-
-        My Ph.D project focuses on atmosphere modeling of rocky exoplanets with ultra-short orbital periods, utilizing 3D GCMs (Global Climate Model / General Circulation Model). 
+        My Ph.D project focuses on atmosphere modeling of rocky exoplanets with ultra-short orbital periods, utilizing 3D GCMs (Global Climate Model / General Circulation Model).
+      filters:
+        folders:
+          - research
+        featured_only: true
+      
+    design:
+      columns: '2'
+      view: card
+    
+       
 
-        Please reach out to collaborate 😃
+        
 #I simulate the extreme environments of these worlds to investigate their atmospheric dynamics. My work primarily aims to interpret these simulations in the context of real-world data, comparing theoretical models with both existing datasets and future observations to better understand planetary diversity."
 
     design:
       columns: '1'
 
-  - block: collection
-    id: papers
-    content:
-      title: Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
+#  - block: collection
+#    id: papers
+#    content:
+#      title: Publications
+#      filters:
+#        folders:
+#          - publications
+#        featured_only: true
+#    design:
+#      view: article-grid
+#      columns: 2
 
 #  - block: collection
 #    content:

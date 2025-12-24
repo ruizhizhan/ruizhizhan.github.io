@@ -32,11 +32,11 @@ links:
   - icon: academicons/orcid
     url: https://orcid.org/0009-0005-4936-7289
 
-# interests:
-#  - Exoplanet Atmospheres
-#  - Rocky Planets & Habitability
-#  - 3D GCMs (Global Climate Model)
-#  - Strong Gravitational Lensing (Previous Work)
+interests:
+ - Exoplanets
+ - 3D General Circulation Models
+ - Habitability
+ - Atmospheric dynamics
 
 education:
   - degree: PhD in Atmospheric Sciences
