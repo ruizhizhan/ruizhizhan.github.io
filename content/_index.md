@@ -63,9 +63,6 @@ sections:
         
 #I simulate the extreme environments of these worlds to investigate their atmospheric dynamics. My work primarily aims to interpret these simulations in the context of real-world data, comparing theoretical models with both existing datasets and future observations to better understand planetary diversity."
 
-    design:
-      columns: '1'
-
 #  - block: collection
 #    id: papers
 #    content:
