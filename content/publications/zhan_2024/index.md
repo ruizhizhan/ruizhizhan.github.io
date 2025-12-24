@@ -3,7 +3,7 @@ title: "Novel Atmospheric Dynamics Shape the Inner Edge of the Habitable Zone ar
 
 # Authors
 authors:
-  - admin
+  - me
   - "Daniel D. B. Koll"
   - "Feng Ding"
 
