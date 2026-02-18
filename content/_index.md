@@ -18,7 +18,7 @@ sections:
 
         I have been longing for the universe and space since I was a child. This passion led me to choose physics as my major in college, where I was fortunate to join the Qibin (启斌) Astronomy Program and gained some hands-on experience in modeling strong gravitational lensing. Later by chance, I got to know and fell in love with the field of [exoplanets](https://en.wikipedia.org/wiki/Exoplanet), the worlds beyond the Solar System. 
 
-        Now I work on the **atmospheres of exoplanets**, mainly the small terrestrial ones. As of 5 February 2026, there are 6,100 confirmed exoplanets, yet characterizing their atmospheres remains a challenge in modern astronomy. Nevertheless, atmospheric studies, including the chemistry and dynamics, are of central importance. Atmospheres provide crucial insights into how exoplanets form and evolve over time, which in turn help better understand Solar System planets. Atmospheres of exoplanets are diverse and make some of them potentially habitable for life.
+        Now I work on the **atmospheres of exoplanets**, mainly the small terrestrial ones. As of February 2026, there are 6,100 confirmed exoplanets, yet characterizing their atmospheres remains a challenge in modern astronomy. Nevertheless, atmospheric studies, including the chemistry and dynamics, are of central importance. Atmospheres provide crucial insights into how exoplanets form and evolve over time, which in turn help better understand Solar System planets. Atmospheres of exoplanets are diverse and make some of them potentially habitable for life.
       button:
         text: Download CV
         url: uploads/cv_05_2025.pdf
@@ -63,17 +63,14 @@ sections:
         
 #I simulate the extreme environments of these worlds to investigate their atmospheric dynamics. My work primarily aims to interpret these simulations in the context of real-world data, comparing theoretical models with both existing datasets and future observations to better understand planetary diversity."
 
-  - block: collection
+  - block: markdown
     id: papers
     content:
       title: Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
+      text: |
+        1. **Zhan R.**, D.D.B.Koll , F. Ding (2024), Novel Atmospheric Dynamics shape Inner Edge of Habitable Zone around White Dwarfs, _The Astrophysical Journal_, 971, 125. [\[journal\]](https://iopscience.iop.org/article/10.3847/1538-4357/ad54c1) [\[arxiv\]](https://arxiv.org/abs/2406.03189)
     design:
-      view: article-grid
-      columns: 2
+      columns: '1'
 
 #  - block: collection
 #    content:
@@ -86,27 +83,24 @@ sections:
 #    design:
 #      view: citation
 
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-
-  - block: collection
+  - block: markdown
     id: news
     content:
       title: News and Updates
-      filters:
-        folders:
-          - post 
-        exclude_featured: false
+      text: |
+        - *April 2025*: I attended EGU and gave an [oral presentation](https://doi.org/10.5194/egusphere-egu25-4751) titled "Modeling the Atmosphere of 55 Cancri e with a Non-grey General Circulation Model".
+        
+        - *December 2024*: I attended AGU and gave an [oral presentation](https://ui.adsabs.harvard.edu/abs/2024AGUFMP23F...04Z/abstract).
+        - *August 2024*: My very first paper, **Novel Atmospheric Dynamics shape Inner Edge of Habitable Zone around White Dwarfs** was published in the Astrophysical Journal. In [this work](https://iopscience.iop.org/article/10.3847/1538-4357/ad54c1), we use the ExoCAM global climate model to investigate the inner edge of the habitable zone around white dwarfs. We find tidally locked planets with ultra-short orbital periods (~ 1 day) around white dwarfs exhibit novel atmospheric dynamics, “bat rotation”, which differs from typical atmospheric circulation regimes around M dwarfs. The “bat rotation” regime expands the white dwarf habitable zone by ∼50% compared to estimates based on 1D models. 
+        
+        - *March 2024*: I gave a talk at Wuhan University.
+        - *December 2023*: I attended the Exoplanet and Planet Formation Workshop and presented a poster.
+        - *June 2023*: I attended ExoSLAM and Exoclimes VI in U.K. and presented a poster "Novel Atmospheric Dynamics shape Inner Edge of Habitable Zone around White Dwarfs" (abstract [here](https://exoclimes.org/posters_2.pdf)).
+        - *September 2022*：I started my PhD at Peking University.
+        - *June 2022*：I graduated from Wuhan University.
+        - *November 2000*: Hello world!
     design:
-      view: compact 
-      columns: '2'
+      columns: '1'
 
   - block: collection
     id: life
