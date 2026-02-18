@@ -63,17 +63,17 @@ sections:
         
 #I simulate the extreme environments of these worlds to investigate their atmospheric dynamics. My work primarily aims to interpret these simulations in the context of real-world data, comparing theoretical models with both existing datasets and future observations to better understand planetary diversity."
 
-#  - block: collection
-#    id: papers
-#    content:
-#      title: Publications
-#      filters:
-#        folders:
-#          - publications
-#        featured_only: true
-#    design:
-#      view: article-grid
-#      columns: 2
+  - block: collection
+    id: papers
+    content:
+      title: Publications
+      filters:
+        folders:
+          - publications
+        featured_only: true
+    design:
+      view: article-grid
+      columns: 2
 
 #  - block: collection
 #    content:
@@ -86,27 +86,27 @@ sections:
 #    design:
 #      view: citation
 
-#  - block: collection
-#    id: talks
-#    content:
-#      title: Recent & Upcoming Talks
-#      filters:
-#        folders:
-#          - events
-#    design:
-#      view: card
+  - block: collection
+    id: talks
+    content:
+      title: Recent & Upcoming Talks
+      filters:
+        folders:
+          - events
+    design:
+      view: card
 
-# - block: collection
-#  id: news
-#  content:
-#    title: News and Updates
-#    filters:
-#      folders:
-#        - post 
-#      exclude_featured: false
-#  design:
-#    view: compact 
-#    columns: '2'
+  - block: collection
+    id: news
+    content:
+      title: News and Updates
+      filters:
+        folders:
+          - post 
+        exclude_featured: false
+    design:
+      view: compact 
+      columns: '2'
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:

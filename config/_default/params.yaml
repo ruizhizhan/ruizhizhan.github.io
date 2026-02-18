@@ -108,7 +108,7 @@ hugoblox:
     style: minimal                      # minimal | columns | centered
     language_switcher: true
     # Custom footer text (HTML supported)
-    text: ""
+    text: "© {year} Ruizhi Zhan. All rights reserved."
 
   # ────────────────────────────────────────────────────────────────────────────
   # COPYRIGHT

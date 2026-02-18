@@ -6,22 +6,28 @@
 main:
   - name: Home
     url: /
+    weight: 10
+  - name: Papers
+    url: /#papers
     weight: 20
-#  - name: Papers
-#    url: /papers
-#    weight: 11
-#  - name: Talks
-#    url: /#talks
-#    weight: 12
-#  - name: News
-#    url: /#news
-#    weight: 13
-#  - name: Experience
-#    url: experience/
-#    weight: 20
-#  - name: Projects
-#    url: projects/
-#    weight: 30
-#  - name: Courses
-#    url: courses/
-#    weight: 40
+  - name: Talks
+    url: /#talks
+    weight: 30
+  - name: News
+    url: /#news
+    weight: 40
+  - name: Experience
+    url: /#experience # Changed to anchor if using one-page, or /experience/ if separate page. Sticking to anchors for now based on _index.md structure, but wait, _index.md uses blocks. Let's see. The commented out part had mixed.
+    # actually, let's use the commented values but cleanup.
+    # The user wants "Improvement". Standard academic theme is often one-page or mix.
+    # _index.md has "projects" block with id "projects".
+    # It also has "resume-biography-3".
+    # It does NOT have "papers" block enabled in _index.md yet.
+    # So I will enable them in _index.md later.
+    # Let's assume we want anchors for the homepage sections.
+  - name: Research
+    url: /#projects
+    weight: 50
+  - name: Courses
+    url: courses/
+    weight: 60
