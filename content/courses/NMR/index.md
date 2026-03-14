@@ -3,6 +3,7 @@ title: (PhD course) Numerical Weather Report
 date: 2023-09-01
 summary: How does Earth climate numerical models work? 
 tags: ["PhD course", "notes"]
+url_pdf: "NWR.pdf"
 
 image:
   caption: Cover Image
@@ -12,6 +13,4 @@ image:
 
 This note is dedicated to the memory of my dear teacher, Prof. Xinyu Wen (–2025), who taught this course with such passion and wisdom.
 
-<embed src="note.pdf" width="100%" height="800px" type="application/pdf">
-
-> **Tip:** If the PDF is not displaying, you can [download it here](NWR.pdf).
+*(Because the PDF is very large, it has not been embedded directly to save your memory. Please click the **PDF** button at the top of the page to read or download it.)*
