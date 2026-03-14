@@ -16,21 +16,13 @@ date: "2024-08-20T00:00:00Z"
 image:
   caption: Bat Rotation Regimes
   focal_point: Smart
+  preview_only: true
 
 links:
-  - name: arXiv
+  - name: 📄 arXiv
     url: https://arxiv.org/abs/2406.03189
-    # 使用 FontAwesome 的 "文件-PDF" 图标
-    icon: file-pdf
-    icon_pack: fas  # fas 代表 FontAwesome Solid (实心图标)
-  - name: Journal
+  - name: 📖 Journal
     url: https://iopscience.iop.org/article/10.3847/1538-4357/ad54c1
-    icon: article
-    icon_pack: fas
-#  - name: Follow
-#    url: https://ruizhizhan.github.io/
-#    icon: twitter
-#    icon_pack: fab
 url_code: ""
 url_pdf: ""
 url_slides: ""
@@ -49,7 +41,7 @@ slides: ""
 
 Due to the small size, white dwarfs offer a unique opportunity to search nearby stellar systems for signs of life. The habitable zone around white dwarfs, however, is still poorly understood.
 
-{{< figure src="/images/transit_sketch.jpg" caption="A schematic of transit timing variations of a G dwarf, M dwarf and a white dwarf planet system." width="95%" >}}
+{{< figure src="/images/transit_sketch.jpg" caption="A schematic of transit timing variations of a G dwarf, M dwarf and a white dwarf planet system. Transit depth is proportional to the square of the planet-to-star radius ratio. The extremely small size of the white dwarf (radius $\approx 0.01 R_{\odot}$) makes it ideal for atmospheric characterization. Previous estimates suggest that the James Webb Space Telescope (JWST) might be able to detect a biosignature gas like CH$_4$ in a single transit ([Lin et al. 2022](https://doi.org/10.3847/2041-8213/ac4788))" width="95%" >}}
 
 Here we use the [ExoCAM](https://github.com/storyofthewolf/ExoCAM) Global Climate Model to investigate the inner edge of the habitable zone around white dwarfs. 
 
@@ -63,4 +55,4 @@ The <span style="color: #AD4344; font-weight: bold;">“bat rotation” regime</
 
 The James Webb Space Telescope should be able to quickly characterize bat rotators around nearby white dwarfs thanks to their distinct [JWST](https://www.jwst.nasa.gov/) via [thermal phase curves](https://en.wikipedia.org/wiki/Phase_curve_(astronomy)). 
 
-We also qualitatively explain the onset of bat rotation using shallow water theory. You can access the full paper via the buttons at the top of this page.
+We also qualitatively explain the onset of bat rotation using shallow water theory. 
