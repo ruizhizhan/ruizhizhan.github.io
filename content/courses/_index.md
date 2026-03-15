@@ -16,9 +16,8 @@ sections:
     content:
       title: Class Notes
       filters:
-        tag: Course
-        kinds:
-          - section
+        folders:
+          - courses
     design:
       view: masonry
       show_read_time: false
