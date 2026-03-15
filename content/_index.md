@@ -103,6 +103,18 @@ sections:
       columns: '1'
 
   - block: collection
+    id: courses
+    content:
+      title: Class Notes
+      filters:
+        tag: Course
+        kinds:
+          - section
+    design:
+      view: masonry
+      columns: 3
+
+  - block: collection
     id: life
     content:
       title: After School Life

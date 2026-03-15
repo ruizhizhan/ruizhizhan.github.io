@@ -13,4 +13,8 @@ image:
 
 This note is dedicated to the memory of my dear teacher, Prof. Xinyu Wen (–2025), who taught this course with such passion and wisdom.
 
-*(Because the PDF is very large, it has not been embedded directly to save your memory. Please click the **PDF** button at the top of the page to read or download it.)*
+*Note: This material is predominantly written in Chinese.*
+
+<embed src="NWR_display.pdf" width="100%" height="800px" type="application/pdf">
+
+*(The preview above shows the first few pages. Please click the **PDF** button at the top of the page to read or download the complete file.)*
