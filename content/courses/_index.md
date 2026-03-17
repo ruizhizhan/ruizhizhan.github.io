@@ -14,7 +14,7 @@ sections:
   - block: collection
     id: courses
     content:
-      title: Class Notes
+      title: Notes
       filters:
         folders:
           - courses

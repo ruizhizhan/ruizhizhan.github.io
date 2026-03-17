@@ -7,18 +7,18 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Papers
-    url: /#papers
-    weight: 20
-  - name: News
-    url: /#news
-    weight: 40
   - name: Research
-    url: /#projects
-    weight: 50
-  - name: Class Notes
+    url: research/
+    weight: 20
+  - name: Papers
+    url: papers/
+    weight: 30
+  - name: News
+    url: news/
+    weight: 40
+  - name: Notes
     url: courses/
-    weight: 60
+    weight: 50
   - name: Life
-    url: /#life
-    weight: 70
+    url: life/
+    weight: 60
