@@ -3,6 +3,11 @@ title: After School Life
 date: 2026-03-17
 type: landing
 
+cascade:
+  - target:
+      path: '{/life/*/**}'
+    type: article
+
 sections:
   - block: collection
     content:

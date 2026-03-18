@@ -3,6 +3,11 @@ title: Research
 date: 2026-03-17
 type: landing
 
+cascade:
+  - target:
+      path: '{/research/*/**}'
+    type: project
+
 sections:
   - block: collection
     content:

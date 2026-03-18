@@ -3,6 +3,11 @@ title: News and Updates
 date: 2026-03-17
 type: landing
 
+cascade:
+  - target:
+      path: '{/news/*/**}'
+    type: post
+
 sections:
   - block: markdown
     content:
