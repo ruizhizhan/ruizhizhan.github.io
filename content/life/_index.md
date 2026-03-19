@@ -17,6 +17,9 @@ sections:
         folders:
           - life
     design:
-      view: masonry
+      view: card
+      show_read_time: false
+      show_date: false
+      show_author: false
       columns: 2
 ---
