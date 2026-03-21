@@ -1,0 +1,43 @@
+{{ $album := .Get "album" }}
+{{ $dir := printf "media/albums/%s/*" $album }}
+{{ $images := resources.Match $dir }}
+
+<style>
+.custom-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+.custom-gallery a {
+  display: block;
+  flex: 1 1 auto;
+  height: 250px;
+}
+.custom-gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  background-color: #f3f4f6;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.custom-gallery a:hover img {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+</style>
+
+<div class="custom-gallery">
+{{ range $images }}
+  {{ if eq .ResourceType "image" }}
+    {{ $thumbnail := .Resize "x500 webp q80" }}
+    {{ $caption := replaceRE "\\.(jpeg|jpg|png|webp|gif|JPG)$" "" .Name }}
+    {{ $caption = replace $caption "_" " " }}
+    
+    <a data-fancybox="gallery" href="{{ .RelPermalink }}" data-caption="{{ $caption | humanize | title }}">
+      <img src="{{ $thumbnail.RelPermalink }}" alt="{{ $caption | humanize | title }}" loading="lazy" />
+    </a>
+  {{ end }}
+{{ end }}
+</div>
