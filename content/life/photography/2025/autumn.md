@@ -1,5 +1,5 @@
 ---
-title: 2025 Autumn
+title: Autumn
 date: 2025-09-01
 summary: Golden autumn.
 weight: 30

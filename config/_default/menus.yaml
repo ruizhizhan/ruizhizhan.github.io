@@ -8,7 +8,7 @@ main:
     url: /
     weight: 10
   - name: Research
-    url: research/
+    url: research/hot_gcm/
     weight: 20
   - name: Papers
     url: papers/
@@ -20,5 +20,5 @@ main:
     url: courses/
     weight: 50
   - name: Life
-    url: life/
+    url: life/photography/2026/spring/
     weight: 60

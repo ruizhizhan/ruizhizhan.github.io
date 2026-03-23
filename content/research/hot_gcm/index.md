@@ -33,6 +33,10 @@ links:
     icon_pack: fas
 ---
 
+### 🪐 My Research
+My Ph.D project focuses on atmosphere modeling of rocky exoplanets with ultra-short orbital periods, utilizing 3D GCMs (Global Climate Model / General Circulation Model).
+
+---
 Rocky exoplanets with ultra-short orbital period are ideal targets for observations and offer a unique opportunity to study planets in extremely hot environment. Due to atmospheric escape, these planets are more likely to be airless like Mercury or have a secondary atmosphere (non-hydrogen dominated) like Earth. Characterizing secondary atmospheres of such exoplanets provides crucial insights into atmospheric escape, redox and equilibrium chemistry, and the exchange with the interior.
 
 {{< figure src="/images/exoplanet_distribution.png" caption="Orbital periods and radii of confirmed exoplanets as of May 2025. The planets located in the red box are rocky exoplanets with ultra-short orbital periods. The color of each point represents the equilibrium temperature of the planet, ranging from 500 to 3,000 K." width="95%" >}}

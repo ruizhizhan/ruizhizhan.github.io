@@ -1,5 +1,5 @@
 ---
-title: 2025 Summer
+title: Summer
 date: 2025-06-01
 summary: Summer times.
 weight: 40

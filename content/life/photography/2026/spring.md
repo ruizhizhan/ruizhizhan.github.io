@@ -1,12 +1,12 @@
 ---
-title: 2025 Spring
-date: 2025-03-01
+title: Spring
+date: 2026-03-01
 summary: Spring moments.
-weight: 50
+weight: 10
 ---
 
 Spring moments.
 
-{{< gallery album="2025spring" >}}
+{{< gallery album="2026spring" >}}
 
 *(Click any photo above to open the gallery. Look for the thumbnail strip at the bottom of the screen to swipe between them!)*
