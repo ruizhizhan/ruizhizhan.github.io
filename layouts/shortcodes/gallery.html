@@ -1,3 +1,16 @@
+{{ if not (.Page.Scratch.Get "fancybox_loaded") }}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      Fancybox.bind("[data-fancybox]", {
+        // basic options
+      });
+    });
+  </script>
+  {{ .Page.Scratch.Set "fancybox_loaded" true }}
+{{ end }}
+
 {{ $album := .Get "album" }}
 {{ $dir := printf "media/albums/%s/*" $album }}
 {{ $images := resources.Match $dir }}
