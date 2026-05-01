@@ -21,7 +21,7 @@ sections:
         Now I work on the **atmospheres of exoplanets**, mainly the small terrestrial ones. As of February 2026, there are 6,100 confirmed exoplanets, yet characterizing their atmospheres remains a challenge in modern astronomy. Nevertheless, atmospheric studies, including the chemistry and dynamics, are of central importance. Atmospheres provide crucial insights into how exoplanets form and evolve over time, which in turn help better understand Solar System planets. Atmospheres of exoplanets are diverse and make some of them potentially habitable for life.
       button:
         text: Download CV
-        url: uploads/cv_05_2025.pdf
+        url: uploads/cv_04_2026.pdf
       headings:
         about: About Me
         education: '' # read from me.yaml
