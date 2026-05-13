@@ -5,6 +5,8 @@ summary: Golden autumn.
 weight: 30
 ---
 
+[Back to 2025 Photography](/life/photography/2025/) | [Back to Photography Log](/life/photography/)
+
 Autumn is a second spring when everyleaf is a flower.
 ————Albert Camus
 

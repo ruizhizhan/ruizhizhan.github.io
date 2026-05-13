@@ -5,6 +5,8 @@ summary: Summer times.
 weight: 40
 ---
 
+[Back to 2025 Photography](/life/photography/2025/) | [Back to Photography Log](/life/photography/)
+
 Summer times.
 
 {{< gallery album="2025summer" >}}

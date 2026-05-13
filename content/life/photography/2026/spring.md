@@ -5,6 +5,8 @@ summary: Spring moments.
 weight: 10
 ---
 
+[Back to 2026 Photography](/life/photography/2026/) | [Back to Photography Log](/life/photography/)
+
 Spring moments.
 
 {{< gallery album="2026spring" >}}

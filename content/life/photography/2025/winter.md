@@ -5,6 +5,7 @@ summary: Winter.
 weight: 20
 ---
 
+[Back to 2025 Photography](/life/photography/2025/) | [Back to Photography Log](/life/photography/)
 
 {{< gallery album="2025winter" >}}
 

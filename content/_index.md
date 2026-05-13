@@ -14,11 +14,11 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: |
-        Hi there! I am a 4th year Ph.D student at [Peking University](https://www.pku.edu.cn/) under the supervision of [Prof. Daniel Koll](https://danielkoll.github.io/). I was an undergraduate student of physics and astronomy at [Wuhan University](https://www.whu.edu.cn/) (BSc 2022). 
+        Hi there! I am a 4th year Ph.D student at [Peking University](https://www.pku.edu.cn/) under the supervision of [Prof. Daniel Koll](https://danielkoll.github.io/). From May to November 2026, I am a visiting PhD student at the [Institute of Astronomy](https://www.ast.cam.ac.uk/), [University of Cambridge](https://www.cam.ac.uk/). I was an undergraduate student of physics and astronomy at [Wuhan University](https://www.whu.edu.cn/) (BSc 2022). 
 
         I have been longing for the universe and space since I was a child. This passion led me to choose physics as my major in college, where I was fortunate to join the Qibin (启斌) Astronomy Program and gained some hands-on experience in modeling strong gravitational lensing. Later by chance, I got to know and fell in love with the field of [exoplanets](https://en.wikipedia.org/wiki/Exoplanet), the worlds beyond the Solar System. 
 
-        Now I work on the **atmospheres of exoplanets**, mainly the small terrestrial ones. As of February 2026, there are 6,100 confirmed exoplanets, yet characterizing their atmospheres remains a challenge in modern astronomy. Nevertheless, atmospheric studies, including the chemistry and dynamics, are of central importance. Atmospheres provide crucial insights into how exoplanets form and evolve over time, which in turn help better understand Solar System planets. Atmospheres of exoplanets are diverse and make some of them potentially habitable for life.
+        Now I work on the [**atmospheres of exoplanets**](/research/), mainly the small terrestrial ones. As of February 2026, there are 6,100 confirmed exoplanets, yet characterizing their atmospheres remains a challenge in modern astronomy. Nevertheless, atmospheric studies, including the chemistry and dynamics, are of central importance. Atmospheres provide crucial insights into how exoplanets form and evolve over time, which in turn help better understand Solar System planets. Atmospheres of exoplanets are diverse and make some of them potentially habitable for life.
       button:
         text: Download CV
         url: uploads/cv_04_2026.pdf
@@ -44,4 +44,3 @@ sections:
       #  filename: "background.jpg"
 
 ---
-

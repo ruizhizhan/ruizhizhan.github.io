@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Asteroid">
+  <rect width="512" height="512" rx="112" fill="#0b1020"/>
+  <g transform="rotate(-18 256 256)">
+    <ellipse cx="256" cy="274" rx="150" ry="118" fill="#b7a58b"/>
+    <path d="M139 238c26-70 88-106 159-95 68 10 115 58 124 124-33-40-78-63-137-69-59-6-107 9-146 40z" fill="#d2c2a5"/>
+    <path d="M153 309c53 44 116 58 190 38 34-9 62-25 84-48-16 54-59 94-115 108-73 18-142-22-159-98z" fill="#7f715f"/>
+    <circle cx="190" cy="255" r="27" fill="#776853"/>
+    <circle cx="300" cy="214" r="20" fill="#8d7c65"/>
+    <circle cx="330" cy="318" r="34" fill="#6c5f4e"/>
+    <circle cx="241" cy="349" r="18" fill="#8a7962"/>
+    <circle cx="244" cy="284" r="13" fill="#5e5346"/>
+    <path d="M115 271c28 18 58 30 90 37 77 18 148 6 211-34 11-7 27 2 19 14-65 90-237 101-340 11-16-14 4-39 20-28z" fill="none" stroke="#e6d9bd" stroke-width="18" stroke-linecap="round" opacity=".95"/>
+  </g>
+</svg>
