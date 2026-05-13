@@ -13,5 +13,10 @@
     "@tailwindcss/typography": "^0.5.10",
     "preact": "^10.28.2",
     "tailwindcss": "^4.1.12"
+  },
+  "pnpm": {
+    "overrides": {
+      "picomatch": "2.3.2"
+    }
   }
 }
