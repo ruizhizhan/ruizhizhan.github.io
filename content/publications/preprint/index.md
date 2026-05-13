@@ -1,6 +1,10 @@
 ---
 title: "An example preprint / working paper"
 draft: true
+_build:
+  render: never
+  list: never
+  publishResources: false
 authors:
 - me
 date: "2019-04-07T00:00:00Z"

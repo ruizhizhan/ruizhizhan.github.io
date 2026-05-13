@@ -1,6 +1,10 @@
 ---
 title: 'An example conference paper'
 draft: true
+_build:
+  render: never
+  list: never
+  publishResources: false
 
 # Authors
 # If you created a profile for a user (e.g. the default `me` user), write the username (folder name) here

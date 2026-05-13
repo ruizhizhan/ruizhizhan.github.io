@@ -2,6 +2,15 @@
 title: 'Projects'
 date: 2024-05-19
 type: landing
+_build:
+  render: never
+  list: never
+  publishResources: false
+cascade:
+  _build:
+    render: never
+    list: never
+    publishResources: false
 
 design:
   # Section spacing

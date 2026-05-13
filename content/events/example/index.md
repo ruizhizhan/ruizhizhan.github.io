@@ -1,6 +1,10 @@
 ---
 title: "Create Beautiful Presentations with Markdown"
 draft: true
+_build:
+  render: never
+  list: never
+  publishResources: false
 
 event: HugoBlox Showcase
 event_url: https://hugoblox.com

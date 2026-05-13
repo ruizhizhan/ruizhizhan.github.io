@@ -1,6 +1,10 @@
 ---
 title: "An example journal article"
 draft: true
+_build:
+  render: never
+  list: never
+  publishResources: false
 authors:
 - me
 - Robert Ford

@@ -1,5 +1,5 @@
 ---
-title: After School Life
+title: Life
 type: docs
 cascade:
   - type: docs
