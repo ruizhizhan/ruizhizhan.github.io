@@ -6,7 +6,7 @@ cascade:
   type: docs
 ---
 
-[Back to Photography Log](/life/photography/) | [Back to After School Life](/life/)
+[Back to Photography Log](/life/photography/) | [Back to Life](/life/)
 
 ## 2026
 

@@ -6,7 +6,7 @@ tags: ["music"]
 type: docs
 ---
 
-[Back to After School Life](/life/)
+[Back to Life](/life/)
 
 Music has always been a significant part of my life, evolving from a childhood hobby into a lifelong passion. Under the influence of my grandma, I began learning to sing and read sheet music at a very young age. She was a talented multi-instrumentalist who played the accordion, Pipa(琵琶), Zhongruan(中阮), and Yangqin(扬琴). When I entered primary school, she chose **Erhu(二胡)** for me to learn. This beautiful instrument accompanied me throughout my entire primary and middle school years.
 

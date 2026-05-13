@@ -1,14 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Asteroid">
-  <rect width="512" height="512" rx="112" fill="#0b1020"/>
-  <g transform="rotate(-18 256 256)">
-    <ellipse cx="256" cy="274" rx="150" ry="118" fill="#b7a58b"/>
-    <path d="M139 238c26-70 88-106 159-95 68 10 115 58 124 124-33-40-78-63-137-69-59-6-107 9-146 40z" fill="#d2c2a5"/>
-    <path d="M153 309c53 44 116 58 190 38 34-9 62-25 84-48-16 54-59 94-115 108-73 18-142-22-159-98z" fill="#7f715f"/>
-    <circle cx="190" cy="255" r="27" fill="#776853"/>
-    <circle cx="300" cy="214" r="20" fill="#8d7c65"/>
-    <circle cx="330" cy="318" r="34" fill="#6c5f4e"/>
-    <circle cx="241" cy="349" r="18" fill="#8a7962"/>
-    <circle cx="244" cy="284" r="13" fill="#5e5346"/>
-    <path d="M115 271c28 18 58 30 90 37 77 18 148 6 211-34 11-7 27 2 19 14-65 90-237 101-340 11-16-14 4-39 20-28z" fill="none" stroke="#e6d9bd" stroke-width="18" stroke-linecap="round" opacity=".95"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Ringed planet">
+  <rect width="512" height="512" rx="112" fill="#111827"/>
+  <g transform="rotate(-22 256 256)">
+    <ellipse cx="256" cy="267" rx="205" ry="70" fill="none" stroke="#dbeafe" stroke-width="30" opacity=".95"/>
+    <ellipse cx="256" cy="267" rx="174" ry="50" fill="none" stroke="#93c5fd" stroke-width="13" opacity=".9"/>
+    <circle cx="256" cy="256" r="118" fill="#f59e0b"/>
+    <path d="M162 206c40-54 124-81 188-41 24 15 41 37 50 62-75-27-156-30-238-21z" fill="#fcd34d" opacity=".95"/>
+    <path d="M151 269c61 22 143 27 252 3-6 32-23 61-49 82-72 26-146 16-207-30-8-18-10-36-4-55z" fill="#d97706" opacity=".9"/>
+    <path d="M157 303c65 19 141 19 228 0-8 19-21 37-38 50-57 22-117 18-166-12-12-11-20-24-24-38z" fill="#b45309" opacity=".85"/>
+    <path d="M108 286c51 23 105 35 164 34 54-1 100-11 141-31 13-6 26 11 15 22-58 55-203 68-318 15-20-9-20-48-2-40z" fill="#bfdbfe" opacity=".98"/>
+    <path d="M104 256c46 18 95 27 147 28 57 0 107-9 151-28" fill="none" stroke="#eff6ff" stroke-width="18" stroke-linecap="round" opacity=".9"/>
   </g>
 </svg>

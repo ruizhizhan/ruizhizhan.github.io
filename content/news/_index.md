@@ -13,6 +13,7 @@ sections:
     content:
       title: News and Updates
       text: |
+        - *May 2026*: I started a research visit at the Institute of Astronomy, University of Cambridge.
         - *January 2026*: I attended Rocky Worlds 4 Conference and gave an oral presentation.
         - *December 2025*: I attended ICEPF conference at Shanghai and presented two posters.
         - *April 2025*: I attended EGU and gave an [oral presentation](https://doi.org/10.5194/egusphere-egu25-4751) titled "Modeling the Atmosphere of 55 Cancri e with a Non-grey General Circulation Model".

@@ -6,7 +6,7 @@ tags: ["recording"]
 type: docs
 ---
 
-[Back to Music](/life/music/) | [Back to After School Life](/life/)
+[Back to Music](/life/music/) | [Back to Life](/life/)
 
 Here are some of my favorite recordings. I hope you enjoy them as much as I do!
 

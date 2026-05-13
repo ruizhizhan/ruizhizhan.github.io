@@ -9,7 +9,7 @@ cascade:
   - type: docs
 ---
 
-[Back to After School Life](/life/)
+[Back to Life](/life/)
 
 Welcome to my photography log. Use the index below to navigate through times and locations.
 
