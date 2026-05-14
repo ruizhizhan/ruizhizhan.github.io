@@ -5,8 +5,7 @@ cascade:
   - type: docs
 ---
 
-🪐 My Research
-My Ph.D project focuses on atmosphere modeling of rocky exoplanets with ultra-short orbital periods, utilizing 3D GCMs (Global Climate Model / General Circulation Model).
+My PhD research focuses on atmospheric modeling of rocky exoplanets with ultra-short orbital periods, using 3D General Circulation Models (GCMs).
 
 ## Research Topics
 
