@@ -485,7 +485,7 @@ sections:
               <div class="research-thread-grid">
                 <article class="research-thread" id="wd-extension">
                   <div class="research-thread__media">
-                    <img src="/images/4rotatorTS.png" alt="Surface temperature and zonal wind patterns for different rotation regimes">
+                    <img src="/research/wd_hz/featured.jpg" alt="Featured image for the white dwarf habitable-zone study">
                   </div>
                   <div class="research-thread__body">
                     <div class="research-thread__label">White dwarf habitable zones</div>
