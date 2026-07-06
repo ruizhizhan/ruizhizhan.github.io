@@ -29,7 +29,7 @@ sections:
             color: var(--research-ink);
             font-family: inherit;
             margin-left: calc(50% - 50vw);
-            margin-top: -4rem;
+            margin-top: -6rem;
             width: 100vw;
           }
 
@@ -195,8 +195,17 @@ sections:
           .research-thread-grid {
             display: grid;
             gap: 1rem;
-            grid-template-columns: 1.15fr 0.85fr;
-            margin-top: 2.3rem;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 1.5rem;
+          }
+
+          .research-branch-note {
+            border-left: 3px solid var(--research-line);
+            color: var(--research-muted);
+            line-height: 1.7;
+            margin: 1.4rem 0 0;
+            max-width: 860px;
+            padding-left: 1rem;
           }
 
           .research-thread-grid .research-thread:nth-child(3) {
@@ -380,7 +389,7 @@ sections:
 
           @media (max-width: 860px) {
             .research-redesign {
-              margin-top: -3rem;
+              margin-top: -4.5rem;
             }
 
             .research-hero {
@@ -442,9 +451,9 @@ sections:
             <div class="research-wrap research-two-col">
               <div>
                 <div class="research-eyebrow">Ultra-short-period planets</div>
-                <h2>Fast orbits, permanent hemispheres, observable atmospheres.</h2>
-                <p class="research-copy">Ultra-short-period rocky planets, with orbital periods of hours to days, are among the most favorable small planets for atmospheric characterization. They include possible habitable-zone planets around white dwarfs, warm terrestrial planets around M stars such as TRAPPIST-1 b, and lava worlds around K and G stars such as 55 Cancri e and TOI-561 b.</p>
-                <p class="research-copy">Because they orbit within the tidal-locking radius, many likely keep permanent daysides and nightsides, like the Moon facing Earth. At the same time, their short orbital periods imply rapid rotation, raising new questions about atmospheric circulation, heat transport, escape, and long-term evolution.</p>
+                <h2>The central thread: rocky planets on extremely short orbits.</h2>
+                <p class="research-copy">Ultra-short-period rocky planets, with orbital periods of hours to days, are among the most favorable small planets for atmospheric characterization. They can be habitable-zone planets around white dwarfs, warm terrestrial planets around M stars such as TRAPPIST-1 b, or lava worlds around K and G stars such as 55 Cancri e and TOI-561 b.</p>
+                <p class="research-copy">Because they orbit within the tidal-locking radius, many likely keep permanent daysides and nightsides, like the Moon facing Earth. At the same time, their short orbital periods imply rapid rotation. My white-dwarf habitable-zone work and my non-grey hot-rocky-planet work are two extensions of this same ultra-short-period problem: one asks how close-in rocky planets may remain temperate, and the other asks how the hottest rocky planets move, lose, or reveal their atmospheres.</p>
               </div>
               <figure class="research-image-panel">
                 <img src="/images/transit_sketch.jpg" alt="Transit geometry for planets orbiting a G dwarf, M dwarf, and white dwarf">
@@ -456,13 +465,14 @@ sections:
           <section class="research-band research-band--soft">
             <div class="research-wrap">
               <div class="research-eyebrow">Research threads</div>
-              <h2>How rocky planets keep, move, and lose atmospheres.</h2>
+              <h2>Two extensions of ultra-short-period rocky exoplanets.</h2>
+              <p class="research-branch-note">Both projects start from the same observational advantage: close-in small planets produce stronger signals and are often tidally locked. The white-dwarf project pushes the theme toward habitability, while the non-grey GCM project pushes it toward hot rocky planets and JWST observables.</p>
               <div class="research-thread-grid">
                 <article class="research-thread">
                   <div class="research-thread__body">
-                    <div class="research-thread__label">White dwarf habitable zones</div>
+                    <div class="research-thread__label">Extension 1 / white dwarf habitable zones</div>
                     <h3>Habitable zones around "dead stars"?</h3>
-                    <p>I use the ExoCAM general circulation model to study the inner edge of the habitable zone around white dwarfs. Ultra-short-period habitable planets can enter a bat-rotation regime, changing both climate stability and observability.</p>
+                    <p>I use the ExoCAM general circulation model to study the inner edge of the habitable zone around white dwarfs. These planets can have ultra-short orbital periods yet temperate instellation, and they can enter a bat-rotation regime that changes both climate stability and observability.</p>
                     <a class="research-thread__link" href="/research/wd_hz/">Read the white dwarf study</a>
                   </div>
                   <div class="research-thread__media">
@@ -472,9 +482,9 @@ sections:
 
                 <article class="research-thread">
                   <div class="research-thread__body">
-                    <div class="research-thread__label">Hot rocky planets</div>
-                    <h3>Lava worlds and secondary atmospheres.</h3>
-                    <p>I model hot, non-habitable rocky planets such as 55 Cancri e with non-grey radiative transfer to reinterpret JWST observations and test whether thin secondary atmospheres can survive.</p>
+                    <div class="research-thread__label">Extension 2 / non-grey hot rocky planets</div>
+                    <h3>Lava worlds, realistic radiation, and secondary atmospheres.</h3>
+                    <p>I model hot, non-habitable ultra-short-period planets such as 55 Cancri e with non-grey radiative transfer to reinterpret JWST observations and test whether thin secondary atmospheres can survive.</p>
                     <a class="research-thread__link" href="/research/hot_gcm/">Read the hot rocky planet work</a>
                   </div>
                   <div class="research-thread__media">
