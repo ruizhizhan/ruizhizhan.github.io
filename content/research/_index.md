@@ -146,13 +146,24 @@ sections:
             box-shadow: 0 24px 70px rgba(15, 23, 42, 0.10);
             display: grid;
             grid-template-columns: minmax(0, 1fr) minmax(320px, 0.95fr);
+            grid-template-rows: auto 1fr;
             min-height: 500px;
             overflow: hidden;
           }
 
+          .research-usp__header {
+            grid-column: 1 / -1;
+            padding: clamp(2rem, 4vw, 3.5rem) clamp(2rem, 5vw, 4.25rem) 0;
+          }
+
+          .research-usp__header h2 {
+            margin-bottom: 0;
+            max-width: 980px;
+          }
+
           .research-usp__body {
             align-self: center;
-            padding: clamp(2rem, 5vw, 4.25rem);
+            padding: clamp(1.5rem, 3vw, 2.5rem) clamp(2rem, 5vw, 4.25rem) clamp(2rem, 4vw, 3.5rem);
           }
 
           .research-usp__figure {
@@ -454,9 +465,11 @@ sections:
 
           <section class="research-band">
             <div class="research-wrap research-usp">
-              <div class="research-usp__body">
+              <div class="research-usp__header">
                 <div class="research-eyebrow">Ultra-short-period planets</div>
                 <h2>Ultra-Short-Period Rocky Planets: From Temperate Worlds to Lava Worlds</h2>
+              </div>
+              <div class="research-usp__body">
                 <p class="research-copy">Ultra-short-period rocky planets, with orbital periods of hours to days, are among the most favorable small planets for atmospheric characterization. They can be habitable-zone planets around white dwarfs, warm terrestrial planets around M stars such as TRAPPIST-1 b, or lava worlds around K or G stars such as 55 Cancri e and TOI-561 b.</p>
                 <p class="research-copy">Many ultra-short-period rocky planets orbit so close to their host stars that they are likely tidally locked, with permanent daysides and nightsides. At the same time, their short orbital periods correspond to rapid synchronous rotation. Much of my PhD work focuses on modeling the atmospheres of these close-in, tidally locked rocky worlds. Read the blocks below to learn more.</p>
                 <p class="research-caption">Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets.</p>
@@ -477,11 +490,10 @@ sections:
                   <div class="research-thread__body">
                     <div class="research-thread__label">White dwarf habitable zones</div>
                     <h3>Habitable zones around "dead stars"?</h3>
-                    <p>Ultra-short-period planets around white dwarfs can still receive temperate stellar flux. My simulations show that they can enter a bat-rotation regime, reshaping the inner edge of the habitable zone and their thermal phase-curve signatures.</p>
+                    <p>White dwarfs offer a unique opportunity to search nearby stellar systems for signs of life. My simulations show that most white dwarf planets enter a bat-rotation atmospheric dynamical regime, reshaping the inner edge of the habitable zone and their thermal phase-curve signatures.</p>
                     <a class="research-thread__link" href="/research/wd_hz/">Read more</a>
                   </div>
                 </article>
-
                 <article class="research-thread research-thread--reverse" id="hot-extension">
                   <div class="research-thread__body">
                     <div class="research-thread__label">Non-grey hot rocky planets</div>
@@ -494,7 +506,6 @@ sections:
                   </div>
                 </article>
               </div>
-
               <div class="research-methods">
                 <div class="research-methods__copy">
                   <div class="research-kicker">Modeling pipeline</div>
