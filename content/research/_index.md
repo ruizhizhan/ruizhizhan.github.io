@@ -103,8 +103,8 @@ sections:
 
           .research-hero__credit {
             bottom: 1rem;
-            color: rgba(255, 255, 255, 0.62);
-            font-size: 0.72rem;
+            color: rgba(255, 255, 255, 0.74);
+            font-size: 0.9rem;
             line-height: 1.4;
             position: absolute;
             right: clamp(2rem, 7vw, 7rem);
@@ -145,21 +145,32 @@ sections:
             border-radius: 8px;
             box-shadow: 0 24px 70px rgba(15, 23, 42, 0.10);
             display: grid;
-            grid-template-columns: minmax(300px, 0.95fr) minmax(0, 1fr);
-            min-height: 520px;
+            grid-template-columns: minmax(0, 1fr) minmax(320px, 0.95fr);
+            min-height: 500px;
             overflow: hidden;
-          }
-
-          .research-usp__image {
-            background:
-              linear-gradient(90deg, rgba(248, 250, 252, 0) 0%, rgba(248, 250, 252, 0.18) 58%, var(--research-panel) 100%),
-              url('/images/exoplanet_distribution.png') center / cover no-repeat;
-            min-height: 100%;
           }
 
           .research-usp__body {
             align-self: center;
             padding: clamp(2rem, 5vw, 4.25rem);
+          }
+
+          .research-usp__figure {
+            align-self: stretch;
+            background: #10131a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100%;
+            padding: clamp(1rem, 2vw, 1.5rem);
+          }
+
+          .research-usp__figure img {
+            display: block;
+            height: auto;
+            max-height: 100%;
+            object-fit: contain;
+            width: 100%;
           }
 
           .research-eyebrow {
@@ -234,6 +245,7 @@ sections:
             background: var(--research-panel);
             border: 1px solid var(--research-line);
             border-radius: 8px;
+            box-shadow: 0 22px 64px rgba(15, 23, 42, 0.12);
             display: grid;
             gap: 1rem;
             grid-template-columns: minmax(280px, 0.92fr) minmax(0, 1fr);
@@ -342,12 +354,6 @@ sections:
             .research-thread {
               background: #181c22;
             }
-
-            .research-usp__image {
-              background:
-                linear-gradient(90deg, rgba(17, 24, 39, 0) 0%, rgba(17, 24, 39, 0.20) 58%, var(--research-panel) 100%),
-                url('/images/exoplanet_distribution.png') center / cover no-repeat;
-            }
           }
 
           .dark .research-redesign,
@@ -365,13 +371,6 @@ sections:
           .dark .research-thread,
           [data-theme="dark"] .research-thread {
             background: #181c22;
-          }
-
-          .dark .research-usp__image,
-          [data-theme="dark"] .research-usp__image {
-            background:
-              linear-gradient(90deg, rgba(17, 24, 39, 0) 0%, rgba(17, 24, 39, 0.20) 58%, var(--research-panel) 100%),
-              url('/images/exoplanet_distribution.png') center / cover no-repeat;
           }
 
           .light .research-redesign,
@@ -427,20 +426,6 @@ sections:
               grid-template-columns: 1fr;
             }
 
-            .research-usp__image {
-              background:
-                linear-gradient(to bottom, rgba(248, 250, 252, 0) 0%, rgba(248, 250, 252, 0.12) 55%, var(--research-panel) 100%),
-                url('/images/exoplanet_distribution.png') center / cover no-repeat;
-              min-height: 300px;
-            }
-
-            .dark .research-usp__image,
-            [data-theme="dark"] .research-usp__image {
-              background:
-                linear-gradient(to bottom, rgba(17, 24, 39, 0) 0%, rgba(17, 24, 39, 0.16) 55%, var(--research-panel) 100%),
-                url('/images/exoplanet_distribution.png') center / cover no-repeat;
-            }
-
             .research-thread--reverse .research-thread__media {
               order: -1;
             }
@@ -469,7 +454,6 @@ sections:
 
           <section class="research-band">
             <div class="research-wrap research-usp">
-              <div class="research-usp__image" role="img" aria-label="Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets"></div>
               <div class="research-usp__body">
                 <div class="research-eyebrow">Ultra-short-period planets</div>
                 <h2>Ultra-Short-Period Rocky Planets: From Temperate Worlds to Lava Worlds</h2>
@@ -477,14 +461,14 @@ sections:
                 <p class="research-copy">Many ultra-short-period rocky planets orbit so close to their host stars that they are likely tidally locked, with permanent daysides and nightsides. At the same time, their short orbital periods correspond to rapid synchronous rotation. Much of my PhD work focuses on modeling the atmospheres of these close-in, tidally locked rocky worlds. Read the blocks below to learn more.</p>
                 <p class="research-caption">Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets.</p>
               </div>
+              <figure class="research-usp__figure">
+                <img src="/images/exoplanet_distribution.png" alt="Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets">
+              </figure>
             </div>
           </section>
 
           <section class="research-band research-band--soft">
             <div class="research-wrap">
-              <div class="research-eyebrow">Research threads</div>
-              <h2>Growing research directions.</h2>
-              <p class="research-branch-note">My current projects explore ultra-short-period rocky planets across a wide temperature range, from temperate worlds around white dwarfs to hot lava planets observed with JWST.</p>
               <div class="research-thread-grid">
                 <article class="research-thread" id="wd-extension">
                   <div class="research-thread__media">
