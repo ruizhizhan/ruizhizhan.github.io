@@ -336,36 +336,24 @@ sections:
             width: 100%;
           }
 
-          .research-methods {
-            align-items: center;
-            background: #15161a;
-            color: #ffffff;
-            display: grid;
-            gap: clamp(1.5rem, 4vw, 3rem);
-            grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1fr);
-            margin-top: 2.5rem;
-            overflow: hidden;
+          .research-continuation {
+            background: var(--research-panel);
+            border: 1px solid var(--research-line);
+            border-radius: 8px;
+            box-shadow: 0 22px 64px rgba(15, 23, 42, 0.10);
+            margin-top: 1.35rem;
+            padding: clamp(1.75rem, 4vw, 3.25rem);
           }
 
-          .research-methods__copy {
-            padding: clamp(1.5rem, 4vw, 3rem);
+          .research-continuation h3 {
+            max-width: 760px;
           }
 
-          .research-methods h3 {
-            color: #ffffff;
-          }
-
-          .research-methods p {
-            color: rgba(255, 255, 255, 0.74);
-            line-height: 1.65;
+          .research-continuation p {
+            color: var(--research-muted);
+            line-height: 1.7;
             margin: 0;
-          }
-
-          .research-methods img {
-            display: block;
-            height: 100%;
-            object-fit: cover;
-            width: 100%;
+            max-width: 900px;
           }
 
           @media (prefers-color-scheme: dark) {
@@ -450,8 +438,7 @@ sections:
             .research-two-col,
             .research-usp,
             .research-thread-grid,
-            .research-thread,
-            .research-methods {
+            .research-thread {
               grid-template-columns: 1fr;
             }
 
@@ -514,9 +501,9 @@ sections:
                 </article>
                 <article class="research-thread research-thread--reverse" id="hot-extension">
                   <div class="research-thread__body">
-                    <div class="research-thread__label">Non-grey hot rocky planets</div>
-                    <h3>Lava worlds, realistic radiation, and secondary atmospheres.</h3>
-                    <p>Hot rocky planets such as 55 Cancri e require radiative transfer built for extreme temperatures. I use non-grey GCM simulations to connect atmospheric dynamics, emission spectra, and the survival of thin secondary atmospheres.</p>
+                    <div class="research-thread__label">Case study: 55 Cancri e</div>
+                    <h3>Utilizing 3D GCMs to reinterpret JWST observations of 55 Cancri e.</h3>
+                    <p>This new research uses non-grey three-dimensional GCM simulations to test how realistic circulation, heat transport, and high-temperature radiation alter the interpretation of JWST thermal-emission observations of a lava world.</p>
                     <a class="research-thread__link" href="/research/hot_gcm/">Read more</a>
                   </div>
                   <div class="research-thread__media">
@@ -524,13 +511,10 @@ sections:
                   </div>
                 </article>
               </div>
-              <div class="research-methods">
-                <div class="research-methods__copy">
-                  <div class="research-kicker">Modeling pipeline</div>
-                  <h3>Realistic radiation for extreme rocky atmospheres.</h3>
-                  <p>The hot-planet work builds opacity tables from high-temperature molecular line lists, validates correlated-k coefficients against line-by-line calculations, and couples the results to three-dimensional general circulation models.</p>
-                </div>
-                <img src="/images/pipeline.png" alt="Pipeline for non-grey atmospheric modeling of hot rocky planets">
+              <div class="research-continuation">
+                <div class="research-thread__label">Growing questions</div>
+                <h3>Interesting science to be continued.</h3>
+                <p>The next step is to connect individual case studies to broader questions about how hot rocky planets form, lose, retain, or regenerate atmospheres over time. Escape, chemistry, circulation, surface-atmosphere exchange, and interior evolution may all leave observable signatures.</p>
               </div>
             </div>
           </section>
