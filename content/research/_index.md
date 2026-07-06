@@ -29,7 +29,7 @@ sections:
             color: var(--research-ink);
             font-family: inherit;
             margin-left: calc(50% - 50vw);
-            margin-top: -6rem;
+            margin-top: -8rem;
             width: 100vw;
           }
 
@@ -305,35 +305,6 @@ sections:
             width: 100%;
           }
 
-          .research-observation {
-            border-top: 1px solid var(--research-line);
-            display: grid;
-            gap: clamp(2rem, 4vw, 3rem);
-            grid-template-columns: minmax(0, 0.75fr) minmax(0, 1fr);
-            padding-top: clamp(2rem, 5vw, 4rem);
-          }
-
-          .research-observation__list {
-            display: grid;
-            gap: 1rem;
-          }
-
-          .research-observation__item {
-            border-left: 3px solid var(--research-line);
-            padding-left: 1rem;
-          }
-
-          .research-observation__item strong {
-            color: var(--research-ink);
-            display: block;
-            margin-bottom: 0.25rem;
-          }
-
-          .research-observation__item span {
-            color: var(--research-muted);
-            line-height: 1.6;
-          }
-
           @media (prefers-color-scheme: dark) {
             .research-redesign {
               --research-bg: #020617;
@@ -389,7 +360,7 @@ sections:
 
           @media (max-width: 860px) {
             .research-redesign {
-              margin-top: -4.5rem;
+              margin-top: -6rem;
             }
 
             .research-hero {
@@ -416,8 +387,7 @@ sections:
             .research-two-col,
             .research-thread-grid,
             .research-thread,
-            .research-methods,
-            .research-observation {
+            .research-methods {
               grid-template-columns: 1fr;
             }
 
@@ -451,13 +421,13 @@ sections:
             <div class="research-wrap research-two-col">
               <div>
                 <div class="research-eyebrow">Ultra-short-period planets</div>
-                <h2>The central thread: rocky planets on extremely short orbits.</h2>
-                <p class="research-copy">Ultra-short-period rocky planets, with orbital periods of hours to days, are among the most favorable small planets for atmospheric characterization. They can be habitable-zone planets around white dwarfs, warm terrestrial planets around M stars such as TRAPPIST-1 b, or lava worlds around K and G stars such as 55 Cancri e and TOI-561 b.</p>
+                <h2>Ultra-Short-Period Rocky Planets: From Temperate Worlds to Lava Worlds</h2>
+                <p class="research-copy">Ultra-short-period rocky planets, with orbital periods of hours to days, are among the most favorable small planets for atmospheric characterization. They can be habitable-zone planets around white dwarfs, warm terrestrial planets around M stars such as TRAPPIST-1 b, or lava worlds around K or G stars such as 55 Cancri e and TOI-561 b.</p>
                 <p class="research-copy">Because they orbit within the tidal-locking radius, many likely keep permanent daysides and nightsides, like the Moon facing Earth. At the same time, their short orbital periods imply rapid rotation. My white-dwarf habitable-zone work and my non-grey hot-rocky-planet work are two extensions of this same ultra-short-period problem: one asks how close-in rocky planets may remain temperate, and the other asks how the hottest rocky planets move, lose, or reveal their atmospheres.</p>
               </div>
               <figure class="research-image-panel">
-                <img src="/images/transit_sketch.jpg" alt="Transit geometry for planets orbiting a G dwarf, M dwarf, and white dwarf">
-                <figcaption class="research-caption">Small stars and compact remnants make terrestrial planets unusually accessible to transit and atmospheric observations.</figcaption>
+                <img src="/images/exoplanet_distribution.png" alt="Orbital periods and radii of confirmed exoplanets">
+                <figcaption class="research-caption">Confirmed exoplanets show that ultra-short-period small planets occupy the most observationally accessible end of the rocky-planet population.</figcaption>
               </figure>
             </div>
           </section>
@@ -512,28 +482,6 @@ sections:
             </div>
           </section>
 
-          <section class="research-band">
-            <div class="research-wrap research-observation">
-              <div>
-                <div class="research-eyebrow">What ties the projects together</div>
-                <h2>Comparative climatology for small worlds.</h2>
-              </div>
-              <div class="research-observation__list">
-                <div class="research-observation__item">
-                  <strong>Atmospheric dynamics</strong>
-                  <span>How tidal locking, rapid rotation, stellar spectra, and radiative timescales control heat transport between permanent daysides and nightsides.</span>
-                </div>
-                <div class="research-observation__item">
-                  <strong>Atmospheric characterization</strong>
-                  <span>How transit spectra, thermal emission, and phase curves can distinguish airless planets from worlds with secondary atmospheres.</span>
-                </div>
-                <div class="research-observation__item">
-                  <strong>Planetary evolution</strong>
-                  <span>How rocky planets and their atmospheres change over time through escape, chemistry, interior exchange, and changing stellar environments.</span>
-                </div>
-              </div>
-            </div>
-          </section>
         </div>
     design:
       columns: '1'
