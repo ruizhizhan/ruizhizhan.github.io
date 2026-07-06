@@ -139,6 +139,29 @@ sections:
             grid-template-columns: minmax(0, 1fr) minmax(280px, 0.85fr);
           }
 
+          .research-usp {
+            background: var(--research-panel);
+            border: 1px solid var(--research-line);
+            border-radius: 8px;
+            box-shadow: 0 24px 70px rgba(15, 23, 42, 0.10);
+            display: grid;
+            grid-template-columns: minmax(300px, 0.95fr) minmax(0, 1fr);
+            min-height: 520px;
+            overflow: hidden;
+          }
+
+          .research-usp__image {
+            background:
+              linear-gradient(90deg, rgba(248, 250, 252, 0) 0%, rgba(248, 250, 252, 0.18) 58%, var(--research-panel) 100%),
+              url('/images/exoplanet_distribution.png') center / cover no-repeat;
+            min-height: 100%;
+          }
+
+          .research-usp__body {
+            align-self: center;
+            padding: clamp(2rem, 5vw, 4.25rem);
+          }
+
           .research-eyebrow {
             color: var(--research-accent);
             font-size: 0.78rem;
@@ -194,9 +217,8 @@ sections:
 
           .research-thread-grid {
             display: grid;
-            gap: 1rem;
-            grid-template-columns: 1fr 1fr;
-            margin-top: 1.5rem;
+            gap: 1.35rem;
+            margin-top: 2rem;
           }
 
           .research-branch-note {
@@ -208,30 +230,30 @@ sections:
             padding-left: 1rem;
           }
 
-          .research-thread-grid .research-thread:nth-child(3) {
-            grid-column: 1 / -1;
-          }
-
           .research-thread {
             background: var(--research-panel);
             border: 1px solid var(--research-line);
             border-radius: 8px;
             display: grid;
             gap: 1rem;
-            grid-template-columns: minmax(0, 0.9fr) minmax(190px, 0.65fr);
-            min-height: 280px;
+            grid-template-columns: minmax(280px, 0.92fr) minmax(0, 1fr);
+            min-height: 360px;
             overflow: hidden;
           }
 
-          .research-thread--text-only {
-            grid-template-columns: 1fr;
-            min-height: 0;
+          .research-thread--reverse {
+            grid-template-columns: minmax(0, 1fr) minmax(280px, 0.92fr);
+          }
+
+          .research-thread--reverse .research-thread__media {
+            order: 2;
           }
 
           .research-thread__body {
             display: flex;
             flex-direction: column;
-            padding: clamp(1.4rem, 3vw, 2rem);
+            justify-content: center;
+            padding: clamp(1.75rem, 4vw, 3.25rem);
           }
 
           .research-thread__label {
@@ -263,7 +285,7 @@ sections:
 
           .research-thread__media {
             background: #111827;
-            min-height: 230px;
+            min-height: 320px;
           }
 
           .research-thread__media img {
@@ -320,6 +342,12 @@ sections:
             .research-thread {
               background: #181c22;
             }
+
+            .research-usp__image {
+              background:
+                linear-gradient(90deg, rgba(17, 24, 39, 0) 0%, rgba(17, 24, 39, 0.20) 58%, var(--research-panel) 100%),
+                url('/images/exoplanet_distribution.png') center / cover no-repeat;
+            }
           }
 
           .dark .research-redesign,
@@ -337,6 +365,13 @@ sections:
           .dark .research-thread,
           [data-theme="dark"] .research-thread {
             background: #181c22;
+          }
+
+          .dark .research-usp__image,
+          [data-theme="dark"] .research-usp__image {
+            background:
+              linear-gradient(90deg, rgba(17, 24, 39, 0) 0%, rgba(17, 24, 39, 0.20) 58%, var(--research-panel) 100%),
+              url('/images/exoplanet_distribution.png') center / cover no-repeat;
           }
 
           .light .research-redesign,
@@ -385,14 +420,29 @@ sections:
             }
 
             .research-two-col,
+            .research-usp,
             .research-thread-grid,
             .research-thread,
             .research-methods {
               grid-template-columns: 1fr;
             }
 
-            .research-thread-grid .research-thread:nth-child(3) {
-              grid-column: auto;
+            .research-usp__image {
+              background:
+                linear-gradient(to bottom, rgba(248, 250, 252, 0) 0%, rgba(248, 250, 252, 0.12) 55%, var(--research-panel) 100%),
+                url('/images/exoplanet_distribution.png') center / cover no-repeat;
+              min-height: 300px;
+            }
+
+            .dark .research-usp__image,
+            [data-theme="dark"] .research-usp__image {
+              background:
+                linear-gradient(to bottom, rgba(17, 24, 39, 0) 0%, rgba(17, 24, 39, 0.16) 55%, var(--research-panel) 100%),
+                url('/images/exoplanet_distribution.png') center / cover no-repeat;
+            }
+
+            .research-thread--reverse .research-thread__media {
+              order: -1;
             }
 
             .research-thread__link {
@@ -418,55 +468,45 @@ sections:
           </section>
 
           <section class="research-band">
-            <div class="research-wrap research-two-col">
-              <div>
+            <div class="research-wrap research-usp">
+              <div class="research-usp__image" role="img" aria-label="Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets"></div>
+              <div class="research-usp__body">
                 <div class="research-eyebrow">Ultra-short-period planets</div>
                 <h2>Ultra-Short-Period Rocky Planets: From Temperate Worlds to Lava Worlds</h2>
                 <p class="research-copy">Ultra-short-period rocky planets, with orbital periods of hours to days, are among the most favorable small planets for atmospheric characterization. They can be habitable-zone planets around white dwarfs, warm terrestrial planets around M stars such as TRAPPIST-1 b, or lava worlds around K or G stars such as 55 Cancri e and TOI-561 b.</p>
                 <p class="research-copy">Many ultra-short-period rocky planets orbit so close to their host stars that they are likely tidally locked, with permanent daysides and nightsides. At the same time, their short orbital periods correspond to rapid synchronous rotation. Much of my PhD work focuses on modeling the atmospheres of these close-in, tidally locked rocky worlds. Read the blocks below to learn more.</p>
+                <p class="research-caption">Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets.</p>
               </div>
-              <figure class="research-image-panel">
-                <img src="/images/exoplanet_distribution.png" alt="Orbital periods and radii of confirmed exoplanets">
-                <figcaption class="research-caption">Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets.</figcaption>
-              </figure>
             </div>
           </section>
 
           <section class="research-band research-band--soft">
             <div class="research-wrap">
               <div class="research-eyebrow">Research threads</div>
-              <h2>Two extensions of ultra-short-period rocky exoplanets.</h2>
-              <p class="research-branch-note">Both projects start from the same observational advantage: close-in small planets produce stronger signals and are often tidally locked. The white-dwarf project pushes the theme toward habitability, while the non-grey GCM project pushes it toward hot rocky planets and JWST observables.</p>
+              <h2>Growing research directions.</h2>
+              <p class="research-branch-note">My current projects explore ultra-short-period rocky planets across a wide temperature range, from temperate worlds around white dwarfs to hot lava planets observed with JWST.</p>
               <div class="research-thread-grid">
                 <article class="research-thread" id="wd-extension">
-                  <div class="research-thread__body">
-                    <div class="research-thread__label">Extension 1 / white dwarf habitable zones</div>
-                    <h3>Habitable zones around "dead stars"?</h3>
-                    <p>I use the ExoCAM general circulation model to study the inner edge of the habitable zone around white dwarfs. These planets can have ultra-short orbital periods yet temperate instellation, and they can enter a bat-rotation regime that changes both climate stability and observability.</p>
-                    <a class="research-thread__link" href="/research/wd_hz/">Read the white dwarf study</a>
-                  </div>
                   <div class="research-thread__media">
                     <img src="/images/4rotatorTS.png" alt="Surface temperature and zonal wind patterns for different rotation regimes">
                   </div>
+                  <div class="research-thread__body">
+                    <div class="research-thread__label">White dwarf habitable zones</div>
+                    <h3>Habitable zones around "dead stars"?</h3>
+                    <p>Ultra-short-period planets around white dwarfs can still receive temperate stellar flux. My simulations show that they can enter a bat-rotation regime, reshaping the inner edge of the habitable zone and their thermal phase-curve signatures.</p>
+                    <a class="research-thread__link" href="/research/wd_hz/">Read more</a>
+                  </div>
                 </article>
 
-                <article class="research-thread" id="hot-extension">
+                <article class="research-thread research-thread--reverse" id="hot-extension">
                   <div class="research-thread__body">
-                    <div class="research-thread__label">Extension 2 / non-grey hot rocky planets</div>
+                    <div class="research-thread__label">Non-grey hot rocky planets</div>
                     <h3>Lava worlds, realistic radiation, and secondary atmospheres.</h3>
-                    <p>I model hot, non-habitable ultra-short-period planets such as 55 Cancri e with non-grey radiative transfer to reinterpret JWST observations and test whether thin secondary atmospheres can survive.</p>
-                    <a class="research-thread__link" href="/research/hot_gcm/">Read the hot rocky planet work</a>
+                    <p>Hot rocky planets such as 55 Cancri e require radiative transfer built for extreme temperatures. I use non-grey GCM simulations to connect atmospheric dynamics, emission spectra, and the survival of thin secondary atmospheres.</p>
+                    <a class="research-thread__link" href="/research/hot_gcm/">Read more</a>
                   </div>
                   <div class="research-thread__media">
                     <img src="/images/line_profile.png" alt="Gaussian and Lorentz absorption line profiles">
-                  </div>
-                </article>
-
-                <article class="research-thread research-thread--text-only">
-                  <div class="research-thread__body">
-                    <div class="research-thread__label">Observations and evolution</div>
-                    <h3>From JWST spectra to atmospheric histories.</h3>
-                    <p>I am interested in connecting atmospheric models to observations and planetary evolution: how spectra and phase curves constrain present-day atmospheres, and how escape, chemistry, volatile exchange, and surface-interior coupling shape rocky planets over time. The JWST Rocky Worlds DDT program provides a timely observational context for this broader question.</p>
                   </div>
                 </article>
               </div>
