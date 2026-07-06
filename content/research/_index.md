@@ -145,9 +145,9 @@ sections:
             border-radius: 8px;
             box-shadow: 0 24px 70px rgba(15, 23, 42, 0.10);
             display: grid;
-            grid-template-columns: minmax(0, 1fr) minmax(320px, 0.95fr);
+            grid-template-columns: minmax(0, 0.9fr) minmax(340px, 1.1fr);
             grid-template-rows: auto 1fr;
-            min-height: 500px;
+            min-height: 480px;
             overflow: hidden;
           }
 
@@ -163,25 +163,47 @@ sections:
 
           .research-usp__body {
             align-self: center;
-            padding: clamp(1.5rem, 3vw, 2.5rem) clamp(2rem, 5vw, 4.25rem) clamp(2rem, 4vw, 3.5rem);
+            padding: clamp(1.25rem, 3vw, 2.35rem) clamp(1.75rem, 4vw, 3.6rem) clamp(2rem, 4vw, 3.5rem) clamp(2rem, 5vw, 4.25rem);
+          }
+
+          .research-usp__body .research-copy {
+            max-width: 620px;
           }
 
           .research-usp__figure {
             align-self: stretch;
-            background: #10131a;
+            background:
+              radial-gradient(circle at center, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.94) 52%, rgba(255, 255, 255, 0.66) 78%, rgba(255, 255, 255, 0) 100%);
+            color: #334155;
             display: flex;
             flex-direction: column;
+            gap: 0.8rem;
             justify-content: center;
+            margin: 0;
             min-height: 100%;
-            padding: clamp(1rem, 2vw, 1.5rem);
+            padding: clamp(1.25rem, 3vw, 2.75rem) clamp(1.25rem, 3vw, 2.5rem) clamp(1.1rem, 2.5vw, 1.9rem);
           }
 
           .research-usp__figure img {
             display: block;
             height: auto;
-            max-height: 100%;
+            margin: 0 auto;
+            max-height: clamp(280px, 35vw, 430px);
             object-fit: contain;
-            width: 100%;
+            width: min(100%, 680px);
+          }
+
+          .research-usp__caption {
+            background: rgba(255, 255, 255, 0.78);
+            border: 1px solid rgba(148, 163, 184, 0.22);
+            border-radius: 6px;
+            color: #334155;
+            font-size: clamp(0.82rem, 0.9vw, 0.92rem);
+            line-height: 1.5;
+            margin: 0 auto;
+            max-width: 680px;
+            padding: 0.65rem 0.8rem;
+            width: min(100%, 680px);
           }
 
           .research-eyebrow {
@@ -472,10 +494,10 @@ sections:
               <div class="research-usp__body">
                 <p class="research-copy">Ultra-short-period rocky planets, with orbital periods of hours to days, are among the most favorable small planets for atmospheric characterization. They can be habitable-zone planets around white dwarfs, warm terrestrial planets around M stars such as TRAPPIST-1 b, or lava worlds around K or G stars such as 55 Cancri e and TOI-561 b.</p>
                 <p class="research-copy">Many ultra-short-period rocky planets orbit so close to their host stars that they are likely tidally locked, with permanent daysides and nightsides. At the same time, their short orbital periods correspond to rapid synchronous rotation. Much of my PhD work focuses on modeling the atmospheres of these close-in, tidally locked rocky worlds. Read the blocks below to learn more.</p>
-                <p class="research-caption">Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets.</p>
               </div>
               <figure class="research-usp__figure">
                 <img src="/images/exoplanet_distribution.png" alt="Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets">
+                <figcaption class="research-usp__caption">Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets.</figcaption>
               </figure>
             </div>
           </section>
