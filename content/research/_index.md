@@ -17,14 +17,13 @@ sections:
       text: |
         <style>
           .research-redesign {
-            --research-ink: #15161a;
-            --research-muted: #5f6672;
-            --research-line: rgba(21, 22, 26, 0.14);
+            --research-ink: #111827;
+            --research-muted: #4b5563;
+            --research-subtle: #64748b;
+            --research-line: rgba(17, 24, 39, 0.12);
             --research-panel: #ffffff;
-            --research-panel-soft: #f5f7f9;
-            --research-red: #a53c35;
-            --research-teal: #0f766e;
-            --research-gold: #b7791f;
+            --research-panel-soft: #f8fafc;
+            --research-accent: #475569;
             color: var(--research-ink);
             font-family: inherit;
             margin-left: calc(50% - 50vw);
@@ -42,20 +41,21 @@ sections:
           .research-hero {
             align-items: end;
             background:
-              linear-gradient(90deg, rgba(7, 10, 15, 0.92) 0%, rgba(7, 10, 15, 0.70) 48%, rgba(7, 10, 15, 0.26) 100%),
-              url('/images/exoplanet_distribution.png') center / cover no-repeat;
+              linear-gradient(90deg, rgba(5, 8, 13, 0.90) 0%, rgba(5, 8, 13, 0.72) 48%, rgba(5, 8, 13, 0.32) 100%),
+              url('/images/trappist1-system.jpg') center / cover no-repeat;
             color: #ffffff;
             display: grid;
             min-height: min(72svh, 720px);
-            padding: clamp(5rem, 10vw, 8rem) clamp(1.25rem, 6vw, 6rem) clamp(2rem, 5vw, 4rem);
+            padding: clamp(5rem, 10vw, 8rem) clamp(1.25rem, 6vw, 6rem) clamp(3.5rem, 6vw, 5rem);
+            position: relative;
           }
 
           .research-hero__inner {
-            max-width: 850px;
+            max-width: 960px;
           }
 
           .research-kicker {
-            color: #7dd3c7;
+            color: rgba(255, 255, 255, 0.76);
             font-size: 0.78rem;
             font-weight: 700;
             letter-spacing: 0.14em;
@@ -65,19 +65,38 @@ sections:
 
           .research-hero h1 {
             color: #ffffff;
-            font-size: clamp(3rem, 8vw, 7.5rem);
+            font-size: clamp(3rem, 7vw, 6.6rem);
             letter-spacing: 0;
-            line-height: 0.9;
+            line-height: 0.95;
             margin: 0 0 1.4rem;
-            max-width: 780px;
+            max-width: 960px;
           }
 
           .research-hero p {
             color: rgba(255, 255, 255, 0.88);
             font-size: clamp(1.05rem, 2vw, 1.35rem);
             line-height: 1.65;
-            margin: 0;
-            max-width: 760px;
+            margin: 0 0 1rem;
+            max-width: 850px;
+          }
+
+          .research-hero p:last-of-type {
+            margin-bottom: 0;
+          }
+
+          .research-hero__credit {
+            bottom: 1rem;
+            color: rgba(255, 255, 255, 0.62);
+            font-size: 0.72rem;
+            line-height: 1.4;
+            position: absolute;
+            right: clamp(1.25rem, 6vw, 6rem);
+          }
+
+          .research-hero__credit a {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+            color: inherit;
+            text-decoration: none;
           }
 
           .research-band {
@@ -101,7 +120,7 @@ sections:
           }
 
           .research-eyebrow {
-            color: var(--research-teal);
+            color: var(--research-accent);
             font-size: 0.78rem;
             font-weight: 700;
             letter-spacing: 0.12em;
@@ -187,7 +206,7 @@ sections:
           }
 
           .research-thread__label {
-            color: var(--research-red);
+            color: var(--research-subtle);
             font-size: 0.76rem;
             font-weight: 700;
             letter-spacing: 0.11em;
@@ -203,7 +222,7 @@ sections:
 
           .research-thread__link {
             border-bottom: 1px solid currentColor;
-            color: var(--research-teal);
+            color: var(--research-accent);
             display: inline-flex;
             font-size: 0.95rem;
             font-weight: 700;
@@ -271,7 +290,7 @@ sections:
           }
 
           .research-observation__item {
-            border-left: 3px solid var(--research-gold);
+            border-left: 3px solid var(--research-line);
             padding-left: 1rem;
           }
 
@@ -288,11 +307,13 @@ sections:
 
           @media (prefers-color-scheme: dark) {
             .research-redesign {
-              --research-ink: #eef2f7;
-              --research-muted: #bac3cf;
-              --research-line: rgba(255, 255, 255, 0.16);
-              --research-panel: #181c22;
-              --research-panel-soft: #0f1318;
+              --research-ink: #f8fafc;
+              --research-muted: #cbd5e1;
+              --research-subtle: #94a3b8;
+              --research-line: rgba(248, 250, 252, 0.14);
+              --research-panel: #111827;
+              --research-panel-soft: #0f172a;
+              --research-accent: #cbd5e1;
             }
 
             .research-thread {
@@ -300,9 +321,30 @@ sections:
             }
           }
 
+          .dark .research-redesign,
+          [data-theme="dark"] .research-redesign {
+            --research-ink: #f8fafc;
+            --research-muted: #cbd5e1;
+            --research-subtle: #94a3b8;
+            --research-line: rgba(248, 250, 252, 0.14);
+            --research-panel: #111827;
+            --research-panel-soft: #0f172a;
+            --research-accent: #cbd5e1;
+          }
+
+          .dark .research-thread,
+          [data-theme="dark"] .research-thread {
+            background: #181c22;
+          }
+
           @media (max-width: 860px) {
             .research-hero {
               min-height: 68svh;
+            }
+
+            .research-hero__credit {
+              left: clamp(1.25rem, 6vw, 6rem);
+              right: auto;
             }
 
             .research-two-col,
@@ -332,9 +374,11 @@ sections:
           <section class="research-hero">
             <div class="research-hero__inner">
               <div class="research-kicker">Small terrestrial worlds beyond the Solar System</div>
-              <h1>Are we alone?</h1>
-              <p>Even inside our own Solar System, Earth's closest rocky siblings, Venus and Mars, show that similar beginnings do not guarantee similar worlds. They are comparable to Earth in size and orbit and likely grew from the same protoplanetary disk, yet their present-day climates are radically different. Around other stars, small terrestrial planets occupy a much wider range of stellar, orbital, and thermal environments, so their atmospheres and surfaces may be even more diverse.</p>
+              <h1>What Are Rocky Exo-Worlds Like?</h1>
+              <p>Even within our own Solar System, Earth’s closest rocky siblings, Venus and Mars, remind us that similar size, age, and origin do not lead to similar worlds. Around other stars, rocky planets occupy an even broader range of stellar irradiation, orbital and rotational states, thermal regimes, and chemical inventories. Some may retain thick atmospheres, while others may be stripped nearly bare. Their climates and surfaces are shaped by processes including atmospheric escape, interior–surface–atmosphere exchange, circulation, collapse, and chemistry.</p>
+              <p>My research asks what these rocky exo-worlds are actually like. I use physical models, from coupled interior–atmosphere evolution models to three-dimensional general circulation models, to link planetary environments, atmospheric processes, and observable signatures.</p>
             </div>
+            <div class="research-hero__credit">Image credit: <a href="https://d2pn8kiwq2w21t.cloudfront.net/images/poetry_slide13_PIA22093_vX7eMbL.width-640.jpg">NASA/JPL-Caltech</a></div>
           </section>
 
           <section class="research-band">
