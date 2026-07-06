@@ -145,7 +145,7 @@ sections:
             border-radius: 8px;
             box-shadow: 0 24px 70px rgba(15, 23, 42, 0.10);
             display: grid;
-            grid-template-columns: minmax(0, 0.9fr) minmax(340px, 1.1fr);
+            grid-template-columns: minmax(0, 0.84fr) minmax(360px, 1.16fr);
             grid-template-rows: auto 1fr;
             min-height: 480px;
             overflow: hidden;
@@ -172,38 +172,37 @@ sections:
 
           .research-usp__figure {
             align-self: stretch;
-            background:
-              radial-gradient(circle at center, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.94) 52%, rgba(255, 255, 255, 0.66) 78%, rgba(255, 255, 255, 0) 100%);
-            color: #334155;
+            background: transparent;
+            color: var(--research-subtle);
             display: flex;
             flex-direction: column;
-            gap: 0.8rem;
+            gap: 0.55rem;
             justify-content: center;
             margin: 0;
             min-height: 100%;
-            padding: clamp(1.25rem, 3vw, 2.75rem) clamp(1.25rem, 3vw, 2.5rem) clamp(1.1rem, 2.5vw, 1.9rem);
+            padding: clamp(0.9rem, 2vw, 1.5rem) clamp(0.75rem, 2vw, 1.35rem) clamp(1rem, 2.3vw, 1.65rem);
           }
 
           .research-usp__figure img {
             display: block;
+            filter: drop-shadow(0 18px 32px rgba(15, 23, 42, 0.16));
             height: auto;
             margin: 0 auto;
-            max-height: clamp(280px, 35vw, 430px);
+            mask-image: radial-gradient(ellipse at center, #000 70%, rgba(0, 0, 0, 0.9) 82%, rgba(0, 0, 0, 0.36) 94%, transparent 100%);
+            max-height: clamp(320px, 40vw, 510px);
             object-fit: contain;
-            width: min(100%, 680px);
+            -webkit-mask-image: radial-gradient(ellipse at center, #000 70%, rgba(0, 0, 0, 0.9) 82%, rgba(0, 0, 0, 0.36) 94%, transparent 100%);
+            width: min(112%, 780px);
           }
 
           .research-usp__caption {
-            background: rgba(255, 255, 255, 0.78);
-            border: 1px solid rgba(148, 163, 184, 0.22);
-            border-radius: 6px;
-            color: #334155;
+            color: var(--research-subtle);
             font-size: clamp(0.82rem, 0.9vw, 0.92rem);
             line-height: 1.5;
             margin: 0 auto;
-            max-width: 680px;
-            padding: 0.65rem 0.8rem;
-            width: min(100%, 680px);
+            max-width: 740px;
+            padding: 0 0.4rem;
+            width: min(100%, 740px);
           }
 
           .research-eyebrow {
@@ -251,14 +250,6 @@ sections:
             width: 100%;
           }
 
-          .research-caption {
-            color: rgba(255, 255, 255, 0.72);
-            font-size: 0.82rem;
-            line-height: 1.5;
-            margin: 0;
-            padding: 0.9rem 1rem 1rem;
-          }
-
           .research-thread-grid {
             display: grid;
             gap: 1.35rem;
@@ -280,14 +271,14 @@ sections:
             border-radius: 8px;
             box-shadow: 0 22px 64px rgba(15, 23, 42, 0.12);
             display: grid;
-            gap: 1rem;
-            grid-template-columns: minmax(280px, 0.92fr) minmax(0, 1fr);
-            min-height: 360px;
+            gap: 0;
+            grid-template-columns: minmax(320px, 0.98fr) minmax(0, 1fr);
+            min-height: 340px;
             overflow: hidden;
           }
 
           .research-thread--reverse {
-            grid-template-columns: minmax(0, 1fr) minmax(280px, 0.92fr);
+            grid-template-columns: minmax(0, 1fr) minmax(320px, 0.98fr);
           }
 
           .research-thread--reverse .research-thread__media {
@@ -298,7 +289,7 @@ sections:
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: clamp(1.75rem, 4vw, 3.25rem);
+            padding: clamp(1.6rem, 3.5vw, 2.9rem);
           }
 
           .research-thread__label {
@@ -320,7 +311,7 @@ sections:
             border-bottom: 1px solid currentColor;
             color: var(--research-accent);
             display: inline-flex;
-            font-size: 0.95rem;
+            font-size: 1.08rem;
             font-weight: 700;
             margin-top: auto;
             padding-top: 1.4rem;
@@ -329,14 +320,19 @@ sections:
           }
 
           .research-thread__media {
-            background: #111827;
-            min-height: 320px;
+            align-items: center;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.88));
+            display: flex;
+            justify-content: center;
+            min-height: 300px;
+            padding: clamp(1rem, 2.6vw, 2rem);
           }
 
           .research-thread__media img {
             display: block;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            max-height: 330px;
+            object-fit: contain;
             width: 100%;
           }
 
@@ -524,7 +520,7 @@ sections:
                     <a class="research-thread__link" href="/research/hot_gcm/">Read more</a>
                   </div>
                   <div class="research-thread__media">
-                    <img src="/images/line_profile.png" alt="Gaussian and Lorentz absorption line profiles">
+                    <img src="/research/hot_gcm/feature.jpg" alt="Featured image for the non-grey hot rocky planet modeling study">
                   </div>
                 </article>
               </div>
