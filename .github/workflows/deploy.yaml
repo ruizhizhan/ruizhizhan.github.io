@@ -123,9 +123,28 @@ jobs:
     # Deploy to the github-pages environment
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://ruizhizhan.github.io/
     runs-on: ubuntu-latest
     steps:
-    - name: Deploy to GitHub Pages
-      id: deployment
+    - name: Deploy to GitHub Pages (attempt 1)
+      id: deployment_attempt_1
+      continue-on-error: true
+      uses: actions/deploy-pages@v5
+
+    - name: Wait before deploy retry
+      if: steps.deployment_attempt_1.outcome == 'failure'
+      run: sleep 90
+
+    - name: Deploy to GitHub Pages (attempt 2)
+      id: deployment_attempt_2
+      if: steps.deployment_attempt_1.outcome == 'failure'
+      continue-on-error: true
+      uses: actions/deploy-pages@v5
+
+    - name: Wait before final deploy retry
+      if: steps.deployment_attempt_1.outcome == 'failure' && steps.deployment_attempt_2.outcome == 'failure'
+      run: sleep 180
+
+    - name: Deploy to GitHub Pages (final attempt)
+      if: steps.deployment_attempt_1.outcome == 'failure' && steps.deployment_attempt_2.outcome == 'failure'
       uses: actions/deploy-pages@v5

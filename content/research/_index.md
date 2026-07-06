@@ -423,7 +423,7 @@ sections:
                 <div class="research-eyebrow">Ultra-short-period planets</div>
                 <h2>Ultra-Short-Period Rocky Planets: From Temperate Worlds to Lava Worlds</h2>
                 <p class="research-copy">Ultra-short-period rocky planets, with orbital periods of hours to days, are among the most favorable small planets for atmospheric characterization. They can be habitable-zone planets around white dwarfs, warm terrestrial planets around M stars such as TRAPPIST-1 b, or lava worlds around K or G stars such as 55 Cancri e and TOI-561 b.</p>
-                <p class="research-copy">Because they orbit within the tidal-locking radius, many likely keep permanent daysides and nightsides, like the Moon facing Earth. At the same time, their short orbital periods imply rapid rotation. My white-dwarf habitable-zone work and my non-grey hot-rocky-planet work are two extensions of this same ultra-short-period problem: one asks how close-in rocky planets may remain temperate, and the other asks how the hottest rocky planets move, lose, or reveal their atmospheres.</p>
+                <p class="research-copy">Because they orbit within the tidal-locking radius, many likely keep permanent daysides and nightsides, like the Moon facing Earth. At the same time, their short orbital periods imply rapid rotation. The two project blocks below follow this theme from <a href="#wd-extension">temperate white-dwarf planets</a> to <a href="#hot-extension">lava worlds with non-grey radiative transfer</a>: the first shows that ultra-short-period habitable-zone planets can develop a bat-rotation regime, while the second tests how realistic radiation changes the interpretation of hot rocky exoplanet atmospheres.</p>
               </div>
               <figure class="research-image-panel">
                 <img src="/images/exoplanet_distribution.png" alt="Orbital periods and radii of confirmed exoplanets">
@@ -438,7 +438,7 @@ sections:
               <h2>Two extensions of ultra-short-period rocky exoplanets.</h2>
               <p class="research-branch-note">Both projects start from the same observational advantage: close-in small planets produce stronger signals and are often tidally locked. The white-dwarf project pushes the theme toward habitability, while the non-grey GCM project pushes it toward hot rocky planets and JWST observables.</p>
               <div class="research-thread-grid">
-                <article class="research-thread">
+                <article class="research-thread" id="wd-extension">
                   <div class="research-thread__body">
                     <div class="research-thread__label">Extension 1 / white dwarf habitable zones</div>
                     <h3>Habitable zones around "dead stars"?</h3>
@@ -450,7 +450,7 @@ sections:
                   </div>
                 </article>
 
-                <article class="research-thread">
+                <article class="research-thread" id="hot-extension">
                   <div class="research-thread__body">
                     <div class="research-thread__label">Extension 2 / non-grey hot rocky planets</div>
                     <h3>Lava worlds, realistic radiation, and secondary atmospheres.</h3>
