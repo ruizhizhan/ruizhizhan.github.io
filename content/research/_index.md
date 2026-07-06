@@ -423,7 +423,7 @@ sections:
                 <div class="research-eyebrow">Ultra-short-period planets</div>
                 <h2>Ultra-Short-Period Rocky Planets: From Temperate Worlds to Lava Worlds</h2>
                 <p class="research-copy">Ultra-short-period rocky planets, with orbital periods of hours to days, are among the most favorable small planets for atmospheric characterization. They can be habitable-zone planets around white dwarfs, warm terrestrial planets around M stars such as TRAPPIST-1 b, or lava worlds around K or G stars such as 55 Cancri e and TOI-561 b.</p>
-                <p class="research-copy">Because they orbit within the tidal-locking radius, many likely keep permanent daysides and nightsides, like the Moon facing Earth. At the same time, their short orbital periods imply rapid rotation. Read the project blocks below to learn more.</p>
+                <p class="research-copy">Many ultra-short-period rocky planets orbit so close to their host stars that they are likely tidally locked, with permanent daysides and nightsides. At the same time, their short orbital periods correspond to rapid synchronous rotation. Much of my PhD work focuses on modeling the atmospheres of these close-in, tidally locked rocky worlds. Read the blocks below to learn more.</p>
               </div>
               <figure class="research-image-panel">
                 <img src="/images/exoplanet_distribution.png" alt="Orbital periods and radii of confirmed exoplanets">
