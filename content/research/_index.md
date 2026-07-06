@@ -17,6 +17,7 @@ sections:
       text: |
         <style>
           .research-redesign {
+            --research-bg: #ffffff;
             --research-ink: #111827;
             --research-muted: #4b5563;
             --research-subtle: #64748b;
@@ -24,9 +25,11 @@ sections:
             --research-panel: #ffffff;
             --research-panel-soft: #f8fafc;
             --research-accent: #475569;
+            background: var(--research-bg);
             color: var(--research-ink);
             font-family: inherit;
             margin-left: calc(50% - 50vw);
+            margin-top: -4rem;
             width: 100vw;
           }
 
@@ -46,12 +49,26 @@ sections:
             color: #ffffff;
             display: grid;
             min-height: min(72svh, 720px);
-            padding: clamp(5rem, 10vw, 8rem) clamp(1.25rem, 6vw, 6rem) clamp(3.5rem, 6vw, 5rem);
+            padding: clamp(5rem, 10vw, 8rem) clamp(2rem, 7vw, 7rem) clamp(3.5rem, 6vw, 5rem);
             position: relative;
           }
 
+          .research-hero::after {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--research-bg));
+            bottom: 0;
+            content: "";
+            height: clamp(4rem, 9vw, 8rem);
+            left: 0;
+            pointer-events: none;
+            position: absolute;
+            right: 0;
+            z-index: 0;
+          }
+
           .research-hero__inner {
-            max-width: 960px;
+            max-width: 1040px;
+            position: relative;
+            z-index: 1;
           }
 
           .research-kicker {
@@ -65,19 +82,19 @@ sections:
 
           .research-hero h1 {
             color: #ffffff;
-            font-size: clamp(3rem, 7vw, 6.6rem);
+            font-size: clamp(2.5rem, 5.4vw, 5.4rem);
             letter-spacing: 0;
-            line-height: 0.95;
-            margin: 0 0 1.4rem;
-            max-width: 960px;
+            line-height: 1.02;
+            margin: 0 0 1.25rem;
+            max-width: 1040px;
           }
 
           .research-hero p {
             color: rgba(255, 255, 255, 0.88);
-            font-size: clamp(1.05rem, 2vw, 1.35rem);
-            line-height: 1.65;
+            font-size: clamp(1rem, 1.45vw, 1.2rem);
+            line-height: 1.7;
             margin: 0 0 1rem;
-            max-width: 850px;
+            max-width: 920px;
           }
 
           .research-hero p:last-of-type {
@@ -90,7 +107,8 @@ sections:
             font-size: 0.72rem;
             line-height: 1.4;
             position: absolute;
-            right: clamp(1.25rem, 6vw, 6rem);
+            right: clamp(2rem, 7vw, 7rem);
+            z-index: 2;
           }
 
           .research-hero__credit a {
@@ -100,7 +118,9 @@ sections:
           }
 
           .research-band {
-            padding: clamp(3.5rem, 7vw, 6rem) clamp(1.25rem, 6vw, 6rem);
+            background: var(--research-bg);
+            color: var(--research-ink);
+            padding: clamp(3.5rem, 7vw, 6rem) clamp(2rem, 7vw, 7rem);
           }
 
           .research-band--soft {
@@ -307,6 +327,7 @@ sections:
 
           @media (prefers-color-scheme: dark) {
             .research-redesign {
+              --research-bg: #020617;
               --research-ink: #f8fafc;
               --research-muted: #cbd5e1;
               --research-subtle: #94a3b8;
@@ -323,6 +344,7 @@ sections:
 
           .dark .research-redesign,
           [data-theme="dark"] .research-redesign {
+            --research-bg: #020617;
             --research-ink: #f8fafc;
             --research-muted: #cbd5e1;
             --research-subtle: #94a3b8;
@@ -337,13 +359,48 @@ sections:
             background: #181c22;
           }
 
+          .light .research-redesign,
+          [data-theme="light"] .research-redesign,
+          [data-mode="light"] .research-redesign {
+            --research-bg: #ffffff;
+            --research-ink: #111827;
+            --research-muted: #4b5563;
+            --research-subtle: #64748b;
+            --research-line: rgba(17, 24, 39, 0.12);
+            --research-panel: #ffffff;
+            --research-panel-soft: #f8fafc;
+            --research-accent: #475569;
+          }
+
+          .light .research-thread,
+          [data-theme="light"] .research-thread,
+          [data-mode="light"] .research-thread {
+            background: var(--research-panel);
+          }
+
           @media (max-width: 860px) {
+            .research-redesign {
+              margin-top: -3rem;
+            }
+
             .research-hero {
               min-height: 68svh;
+              padding-left: clamp(1.5rem, 7vw, 2rem);
+              padding-right: clamp(1.5rem, 7vw, 2rem);
+            }
+
+            .research-hero h1 {
+              font-size: clamp(2.35rem, 11vw, 3.45rem);
+              line-height: 1.04;
+            }
+
+            .research-hero p {
+              font-size: 1rem;
+              line-height: 1.62;
             }
 
             .research-hero__credit {
-              left: clamp(1.25rem, 6vw, 6rem);
+              left: clamp(1.5rem, 7vw, 2rem);
               right: auto;
             }
 
