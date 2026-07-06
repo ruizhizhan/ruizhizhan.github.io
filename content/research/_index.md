@@ -409,7 +409,7 @@ sections:
         <div class="research-redesign">
           <section class="research-hero">
             <div class="research-hero__inner">
-              <div class="research-kicker">Small terrestrial worlds beyond the Solar System</div>
+              <div class="research-kicker">Terrestrial worlds beyond the Solar System</div>
               <h1>What Are Rocky Exo-Worlds Like?</h1>
               <p>Even within our own Solar System, Earth’s closest rocky siblings, Venus and Mars, remind us that similar size, age, and origin do not lead to similar worlds. Around other stars, rocky planets occupy an even broader range of stellar irradiation, orbital and rotational states, thermal regimes, and chemical inventories. Some may retain thick atmospheres, while others may be stripped nearly bare. Their climates and surfaces are shaped by processes including atmospheric escape, interior–surface–atmosphere exchange, circulation, collapse, and chemistry.</p>
               <p>My research asks what these rocky exo-worlds are actually like. I use physical models, from coupled interior–atmosphere evolution models to three-dimensional general circulation models, to link planetary environments, atmospheric processes, and observable signatures.</p>
