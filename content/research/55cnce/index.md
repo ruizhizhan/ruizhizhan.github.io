@@ -7,8 +7,8 @@ summary: Investigating atmospheric circulation of hot rocky exoplanets using non
 tags:
   - Exoplanets
   - GCM
-  - Radiative Transfer
   - 55 Cancri e
+  - JWST
 
 date: "2025-05-20T00:00:00Z"
 

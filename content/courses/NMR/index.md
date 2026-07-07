@@ -2,7 +2,6 @@
 title: (PhD course) Numerical Weather Report
 date: 2023-09-01
 summary: How do Earth climate numerical models work? 
-tags: ["PhD course", "notes"]
 url_pdf: "NWR.pdf"
 
 image:

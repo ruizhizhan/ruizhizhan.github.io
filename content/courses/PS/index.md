@@ -2,7 +2,7 @@
 title: (TA notes) Fundamental Planetary Science
 date: 2023-09-01
 summary: Class notes covering the derivation of Kepler's laws and orbital dynamics from Newtonian mechanics.
-tags: ["TA notes", "planetary science"]
+tags: ["planetary science"]
 url_pdf: "orbital_dynamics.pdf"
 
 image:

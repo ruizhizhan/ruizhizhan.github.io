@@ -5,8 +5,6 @@ summary: Building non-grey GCM simulations for hot rocky exoplanets with high-te
 tags:
   - Exoplanets
   - GCM
-  - Radiative Transfer
-  - ExoMol
 date: "2025-05-20T00:00:00Z"
 
 image:

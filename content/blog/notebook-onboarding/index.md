@@ -5,11 +5,6 @@ summary: Publish your data science and research directly from Jupyter Notebooks.
 date: 2024-07-15
 authors:
   - me
-tags:
-  - Hugo Blox
-  - Jupyter
-  - Open Science
-  - Tutorials
 cover:
   # image: cover.jpg  # Auto-detected from cover image in this folder
   icon:

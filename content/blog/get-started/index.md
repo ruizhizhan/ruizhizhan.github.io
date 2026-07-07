@@ -29,11 +29,6 @@ authors:
   - me
   - Ted
 
-tags:
-  - Academic
-  - Hugo Blox
-  - Markdown
-
 content_meta:
   trending: true
 ---

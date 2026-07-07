@@ -3,6 +3,8 @@ title: Habitable Zone Around "Dead Stars"?
 type: page
 summary: We use the ExoCAM GCM to investigate the inner edge of the habitable zone around white dwarfs, finding a novel "bat rotation" regime.
 tags:
+  - Exoplanets
+  - GCM
   - White Dwarfs
   - Habitable Zone
   - Atmospheric Dynamics

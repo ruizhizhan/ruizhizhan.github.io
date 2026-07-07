@@ -6,10 +6,6 @@ date: 2023-10-24
 math: true
 authors:
   - me
-tags:
-  - Hugo
-  - Hugo Blox Builder
-  - Markdown
 image:
   caption: 'Embed rich media such as videos and LaTeX math'
 cover:

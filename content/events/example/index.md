@@ -31,12 +31,6 @@ publishDate: '2017-01-01T00:00:00Z'
 authors:
   - me
 
-tags:
-  - Markdown
-  - Presentations
-  - Open Science
-  - Academic
-
 featured: true
 
 image:

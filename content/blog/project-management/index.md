@@ -5,9 +5,6 @@ summary: Easily manage your projects - create ideation mind maps, Gantt charts, 
 date: 2023-10-23
 authors:
   - me
-tags:
-  - Hugo Blox
-  - Markdown
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 cover:
