@@ -336,6 +336,14 @@ sections:
             width: 100%;
           }
 
+          #wd-extension .research-thread__media {
+            padding: clamp(0.55rem, 1.5vw, 1.1rem);
+          }
+
+          #wd-extension .research-thread__media img {
+            max-height: 385px;
+          }
+
           .research-continuation {
             background: var(--research-panel);
             border: 1px solid var(--research-line);
