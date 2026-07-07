@@ -1,5 +1,6 @@
 ---
 title: Habitable Zone Around "Dead Stars"?
+type: page
 summary: We use the ExoCAM GCM to investigate the inner edge of the habitable zone around white dwarfs, finding a novel "bat rotation" regime.
 tags:
   - White Dwarfs
@@ -34,10 +35,9 @@ url_video: ""
 # E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 # Otherwise, set `slides = ""`.
 slides: ""
+toc: false
 ---
 ---
-
-[Back](/research/)
 
 [White dwarfs](https://en.wikipedia.org/wiki/White_dwarf) are compact stars with a size comparable to Earth and a mass comparable to Sun. Planets in the [habitable zone](https://science.nasa.gov/resource/what-is-the-habitable-zone/) (read more about the habitable zone edges [here](https://www.researchgate.net/publication/11809380_Habitable_zones_around_main_sequence_stars)) around white dwarfs have **ultra-short orbital periods** ranging from hours to days. 
 
@@ -58,3 +58,7 @@ The <span style="color: #AD4344; font-weight: bold;">“bat rotation” regime</
 The James Webb Space Telescope should be able to quickly characterize bat rotators around nearby white dwarfs thanks to their distinct [JWST](https://www.jwst.nasa.gov/) via [thermal phase curves](https://en.wikipedia.org/wiki/Phase_curve_(astronomy)). 
 
 We also qualitatively explain the onset of bat rotation using shallow water theory. 
+
+<div style="margin-top: 3rem;">
+  <a href="/research/" style="align-items: center; border: 1px solid currentColor; border-radius: 8px; display: inline-flex; font-weight: 700; gap: 0.45rem; padding: 0.7rem 1rem; text-decoration: none;">← Back to Research</a>
+</div>

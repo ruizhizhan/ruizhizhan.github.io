@@ -1,5 +1,6 @@
 ---
 title: Atmospheres of Hot Rocky Planets with Ultra-Short Orbital Period
+type: page
 # Summary for the homepage list view
 summary: Investigating atmospheric circulation of hot rocky exoplanets using non-grey GCM simulations with custom correlated-k coefficients.
 
@@ -31,9 +32,8 @@ links:
     url: https://execlim.github.io/Isca/
     icon: code
     icon_pack: fas
+toc: false
 ---
-
-[Back](/research/)
 
 Rocky exoplanets with ultra-short orbital periods are ideal targets for observations and offer a unique opportunity to study planets in extremely hot environments. Due to atmospheric escape, these planets are more likely to be airless like Mercury or to have a secondary atmosphere (non-hydrogen dominated) like Earth. Characterizing secondary atmospheres of such exoplanets provides crucial insights into atmospheric escape, redox and equilibrium chemistry, and exchange with the interior.
 
@@ -64,3 +64,7 @@ We apply this framework to reinterpret JWST observations of 55 Cancri e, includi
 ## Interesting Science to Be Continued
 
 Beyond a single planet, this framework connects directly to current observing efforts such as the JWST Rocky Worlds DDT program. Observations can tell us whether a planet has an atmosphere today, while evolution models are needed to understand how that atmosphere formed, changed, or disappeared over time. The next questions are how escape, chemistry, circulation, magma-atmosphere exchange, and interior evolution jointly shape the observable diversity of hot rocky exoplanets.
+
+<div style="margin-top: 3rem;">
+  <a href="/research/" style="align-items: center; border: 1px solid currentColor; border-radius: 8px; display: inline-flex; font-weight: 700; gap: 0.45rem; padding: 0.7rem 1rem; text-decoration: none;">← Back to Research</a>
+</div>
