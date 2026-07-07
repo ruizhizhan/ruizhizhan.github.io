@@ -19,42 +19,6 @@ sections:
             margin: 0 auto;
           }
 
-          .news-lede {
-            margin: 0 0 2rem;
-            color: color-mix(in srgb, currentColor 72%, transparent);
-            font-size: 1rem;
-            line-height: 1.75;
-          }
-
-          .news-highlights {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 1rem;
-            margin: 0 0 2.75rem;
-          }
-
-          .news-highlight {
-            border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
-            border-radius: 8px;
-            padding: 1rem 1.05rem;
-            background: color-mix(in srgb, currentColor 4%, transparent);
-          }
-
-          .news-highlight time {
-            display: block;
-            margin-bottom: .45rem;
-            font-size: .78rem;
-            font-weight: 700;
-            letter-spacing: .04em;
-            text-transform: uppercase;
-            color: color-mix(in srgb, currentColor 58%, transparent);
-          }
-
-          .news-highlight p {
-            margin: 0;
-            line-height: 1.55;
-          }
-
           .news-year {
             display: grid;
             grid-template-columns: 5.5rem minmax(0, 1fr);
@@ -122,19 +86,7 @@ sections:
             line-height: 1.65;
           }
 
-          .news-archive {
-            margin-top: 2.5rem;
-            padding-top: 1.25rem;
-            border-top: 1px solid color-mix(in srgb, currentColor 12%, transparent);
-            color: color-mix(in srgb, currentColor 62%, transparent);
-            font-size: .95rem;
-          }
-
           @media (max-width: 760px) {
-            .news-highlights {
-              grid-template-columns: 1fr;
-            }
-
             .news-year {
               grid-template-columns: 1fr;
               gap: .75rem;
@@ -147,25 +99,6 @@ sections:
         </style>
 
         <div class="news-wrap">
-          <p class="news-lede">
-            Recent visits, talks, conferences, and research milestones.
-          </p>
-
-          <div class="news-highlights" aria-label="Recent highlights">
-            <article class="news-highlight">
-              <time>May 2026</time>
-              <p>I started a research visit at the Institute of Astronomy, University of Cambridge.</p>
-            </article>
-            <article class="news-highlight">
-              <time>January 2026</time>
-              <p>I attended Rocky Worlds 4 Conference and gave an oral presentation.</p>
-            </article>
-            <article class="news-highlight">
-              <time>December 2025</time>
-              <p>I attended ICEPF conference in Shanghai and presented two posters.</p>
-            </article>
-          </div>
-
           <section class="news-year" aria-labelledby="news-2026">
             <h2 id="news-2026">2026</h2>
             <div class="news-items">
@@ -182,7 +115,7 @@ sections:
                   <span class="news-tag">Conference</span>
                   <span class="news-tag">Talk</span>
                 </div>
-                <p>I attended Rocky Worlds 4 Conference and gave an oral presentation.</p>
+                <p>I presented a talk at the Rocky Worlds 4 Conference. The presentation was about 55 Cancri e.</p>
               </article>
             </div>
           </section>
@@ -196,7 +129,7 @@ sections:
                   <span class="news-tag">Conference</span>
                   <span class="news-tag">Poster</span>
                 </div>
-                <p>I attended ICEPF conference in Shanghai and presented two posters.</p>
+                <p>I presented two posters at ICEPF in Shanghai. The presentations were about 55 Cancri e.</p>
               </article>
               <article class="news-item">
                 <div class="news-meta">
@@ -204,7 +137,7 @@ sections:
                   <span class="news-tag">Conference</span>
                   <span class="news-tag">Talk</span>
                 </div>
-                <p>I attended EGU and gave an <a href="https://doi.org/10.5194/egusphere-egu25-4751">oral presentation</a> titled "Modeling the Atmosphere of 55 Cancri e with a Non-grey General Circulation Model".</p>
+                <p>I presented a <a href="https://doi.org/10.5194/egusphere-egu25-4751">talk</a> at EGU 2025. The presentation was about 55 Cancri e.</p>
               </article>
             </div>
           </section>
@@ -218,7 +151,7 @@ sections:
                   <span class="news-tag">Conference</span>
                   <span class="news-tag">Talk</span>
                 </div>
-                <p>I attended AGU and gave an <a href="https://ui.adsabs.harvard.edu/abs/2024AGUFMP23F...04Z/abstract">oral presentation</a>.</p>
+                <p>I presented a <a href="https://ui.adsabs.harvard.edu/abs/2024AGUFMP23F...04Z/abstract">talk</a> at AGU 2024. The presentation was about 55 Cancri e.</p>
               </article>
               <article class="news-item">
                 <div class="news-meta">
@@ -232,7 +165,7 @@ sections:
                   <span class="news-date">March</span>
                   <span class="news-tag">Talk</span>
                 </div>
-                <p>I gave a talk at Wuhan University.</p>
+                <p>I presented a talk at Wuhan University. The presentation was about white dwarf habitable zones.</p>
               </article>
             </div>
           </section>
@@ -246,7 +179,7 @@ sections:
                   <span class="news-tag">Workshop</span>
                   <span class="news-tag">Poster</span>
                 </div>
-                <p>I attended the Exoplanet and Planet Formation Workshop and presented a poster.</p>
+                <p>I presented a poster at the Exoplanet and Planet Formation Workshop. The presentation was about white dwarf habitable zones.</p>
               </article>
               <article class="news-item">
                 <div class="news-meta">
@@ -254,7 +187,7 @@ sections:
                   <span class="news-tag">Conference</span>
                   <span class="news-tag">Poster</span>
                 </div>
-                <p>I attended ExoSLAM and Exoclimes VI in the U.K. and presented a poster on white dwarf habitable zones. <a href="https://exoclimes.org/posters_2.pdf">View abstract</a>.</p>
+                <p>I presented a poster at ExoSLAM and Exoclimes VI in the U.K. The presentation was about white dwarf habitable zones. <a href="https://exoclimes.org/posters_2.pdf">View abstract</a>.</p>
               </article>
             </div>
           </section>
@@ -264,22 +197,26 @@ sections:
             <div class="news-items">
               <article class="news-item">
                 <div class="news-meta">
+                  <span class="news-date">December</span>
+                  <span class="news-tag">Conference</span>
+                  <span class="news-tag">Poster</span>
+                </div>
+                <p>I remotely presented a poster at AGU 2022. The presentation was about white dwarf habitable zones.</p>
+              </article>
+              <article class="news-item">
+                <div class="news-meta">
                   <span class="news-date">September</span>
-                  <span class="news-tag">Milestone</span>
                 </div>
                 <p>I started my PhD at Peking University.</p>
               </article>
               <article class="news-item">
                 <div class="news-meta">
                   <span class="news-date">June</span>
-                  <span class="news-tag">Milestone</span>
                 </div>
                 <p>I graduated from Wuhan University.</p>
               </article>
             </div>
           </section>
-
-          <p class="news-archive">November 2000: Hello world!</p>
         </div>
     design:
       columns: '1'

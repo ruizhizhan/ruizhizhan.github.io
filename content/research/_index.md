@@ -506,9 +506,9 @@ sections:
                 <article class="research-thread research-thread--reverse" id="hot-extension">
                   <div class="research-thread__body">
                     <div class="research-thread__label">Case study: 55 Cancri e</div>
-                    <h3><a href="https://arxiv.org/abs/2606.12116">Utilizing 3D GCMs to reinterpret JWST observations of 55 Cancri e.</a></h3>
+                    <h3>Utilizing 3D GCMs to reinterpret JWST observations of 55 Cancri e.</h3>
                     <p><a href="https://doi.org/10.1038/s41586-024-07432-x">Recent observations of 55 Cancri e</a> suggest an atmosphere rich in CO or CO<sub>2</sub>. Here we perform cloudfree <a href="/research/hot_gcm/">GCM simulations with custom correlated-k coefficients</a> developed from the <a href="https://www.exomol.com/">ExoMol</a> database. Our best-fit simulations match the JWST spectra well, favoring an atmosphere that is both thick (≥ 10 bar) and CO<sub>2</sub>-rich (> 1% CO<sub>2</sub> volume mixing ratio).</p>
-                    <a class="research-thread__link" href="https://arxiv.org/abs/2606.12116">Read more</a>
+                    <a class="research-thread__link" href="/research/55cnce/">Read more</a>
                   </div>
                   <div class="research-thread__media">
                     <img src="/research/55cnce/feature.jpg" alt="Featured image for the non-grey hot rocky planet modeling study">
