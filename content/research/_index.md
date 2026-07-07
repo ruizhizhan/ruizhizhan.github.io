@@ -506,7 +506,7 @@ sections:
                   <div class="research-thread__body">
                     <div class="research-thread__label">White dwarf habitable zones</div>
                     <h3>Habitable zones around "dead stars"?</h3>
-                    <p>White dwarfs offer a unique opportunity to search nearby stellar systems for signs of life. Our GCM simulations show that most white dwarf planets enter a new atmospheric dynamical regime, bat-rotation regime. This dynamical regime reshapes the inner edge of the habitable zone and their thermal phase-curve signatures.</p>
+                    <p>White dwarfs offer a unique opportunity to search nearby stellar systems for signs of life. The orbital periods of potential habitable planets around white dwarfs range from hours to days. Our GCM simulations show that most white dwarf planets enter a new atmospheric dynamical regime, bat-rotation regime. This dynamical regime reshapes the inner edge of the habitable zone and their thermal phase-curve signatures.</p>
                     <a class="research-thread__link" href="/research/wd_hz/">Read more</a>
                   </div>
                 </article>
@@ -514,7 +514,7 @@ sections:
                   <div class="research-thread__body">
                     <div class="research-thread__label">Case study: 55 Cancri e</div>
                     <h3>Utilizing 3D GCMs to reinterpret JWST observations of 55 Cancri e.</h3>
-                    <p><a href="https://doi.org/10.1038/s41586-024-07432-x">Recent observations</a> of 55 Cancri e suggest an atmosphere rich in CO or CO2. Here we perform cloudfree GCM simulations of 55 Cancri e using custom correlated-k coefficients developed from the ExoMol database. Our best-fit simulations match the JWST spectra well, favoring an atmosphere that is both thick (≥ 10 bar) and CO2-rich (> 1% CO2 volume mixing ratio).</p>
+                    <p><a href="https://doi.org/10.1038/s41586-024-07432-x">Recent observations of 55 Cancri e</a> suggest an atmosphere rich in CO or CO2. Here we perform cloudfree GCM simulations of 55 Cancri e using custom correlated-k coefficients developed from the ExoMol database. Our best-fit simulations match the JWST spectra well, favoring an atmosphere that is both thick (≥ 10 bar) and CO2-rich (> 1% CO2 volume mixing ratio).</p>
                     <a class="research-thread__link" href="/research/55cnce/">Read more</a>
                   </div>
                   <div class="research-thread__media">
