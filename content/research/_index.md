@@ -503,7 +503,7 @@ sections:
                   <div class="research-thread__body">
                     <div class="research-thread__label">White dwarf habitable zones</div>
                     <h3>Habitable zones around "dead stars"?</h3>
-                    <p>White dwarfs offer a unique opportunity to search nearby stellar systems for signs of life. My simulations show that most white dwarf planets enter a bat-rotation atmospheric dynamical regime, reshaping the inner edge of the habitable zone and their thermal phase-curve signatures.</p>
+                    <p>White dwarfs offer a unique opportunity to search nearby stellar systems for signs of life. Our GCM simulations show that most white dwarf planets enter a new atmospheric dynamical regime, bat-rotation regime. This dynamical regime reshapes the inner edge of the habitable zone and their thermal phase-curve signatures.</p>
                     <a class="research-thread__link" href="/research/wd_hz/">Read more</a>
                   </div>
                 </article>
