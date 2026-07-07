@@ -324,27 +324,24 @@ sections:
             background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.88));
             display: flex;
             justify-content: center;
-            min-height: 300px;
-            padding: clamp(1rem, 2.6vw, 2rem);
+            min-height: 340px;
+            padding: clamp(0.7rem, 1.8vw, 1.35rem);
           }
 
           .research-thread__media img {
             display: block;
-            filter: drop-shadow(0 18px 32px rgba(15, 23, 42, 0.14));
+            filter: drop-shadow(0 18px 32px rgba(15, 23, 42, 0.16));
             height: auto;
+            margin: 0 auto;
             mask-image: radial-gradient(ellipse at center, #000 70%, rgba(0, 0, 0, 0.9) 82%, rgba(0, 0, 0, 0.36) 94%, transparent 100%);
-            max-height: 330px;
+            max-height: clamp(320px, 40vw, 510px);
             object-fit: contain;
             -webkit-mask-image: radial-gradient(ellipse at center, #000 70%, rgba(0, 0, 0, 0.9) 82%, rgba(0, 0, 0, 0.36) 94%, transparent 100%);
-            width: 100%;
+            width: min(112%, 780px);
           }
 
           #wd-extension .research-thread__media {
             padding: clamp(0.55rem, 1.5vw, 1.1rem);
-          }
-
-          #wd-extension .research-thread__media img {
-            max-height: 385px;
           }
 
           .research-continuation {
@@ -514,7 +511,7 @@ sections:
                   <div class="research-thread__body">
                     <div class="research-thread__label">Case study: 55 Cancri e</div>
                     <h3>Utilizing 3D GCMs to reinterpret JWST observations of 55 Cancri e.</h3>
-                    <p><a href="https://doi.org/10.1038/s41586-024-07432-x">Recent observations of 55 Cancri e</a> suggest an atmosphere rich in CO or CO2. Here we perform cloudfree GCM simulations of 55 Cancri e using custom correlated-k coefficients developed from the ExoMol database. Our best-fit simulations match the JWST spectra well, favoring an atmosphere that is both thick (≥ 10 bar) and CO2-rich (> 1% CO2 volume mixing ratio).</p>
+                    <p><a href="https://doi.org/10.1038/s41586-024-07432-x">Recent observations of 55 Cancri e</a> suggest an atmosphere rich in CO or CO<sub>2</sub>. Here we perform cloudfree GCM simulations of 55 Cancri e using custom correlated-k coefficients developed from the <a href="https://www.exomol.com/">ExoMol</a> database. Our best-fit simulations match the JWST spectra well, favoring an atmosphere that is both thick (≥ 10 bar) and CO<sub>2</sub>-rich (> 1% CO<sub>2</sub> volume mixing ratio).</p>
                     <a class="research-thread__link" href="/research/55cnce/">Read more</a>
                   </div>
                   <div class="research-thread__media">

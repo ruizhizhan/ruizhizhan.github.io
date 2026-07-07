@@ -37,7 +37,7 @@ slides: ""
 ---
 ---
 
-[Back to Research](/research/)
+[Back](/research/)
 
 [White dwarfs](https://en.wikipedia.org/wiki/White_dwarf) are compact stars with a size comparable to Earth and a mass comparable to Sun. Planets in the [habitable zone](https://science.nasa.gov/resource/what-is-the-habitable-zone/) (read more about the habitable zone edges [here](https://www.researchgate.net/publication/11809380_Habitable_zones_around_main_sequence_stars)) around white dwarfs have **ultra-short orbital periods** ranging from hours to days. 
 

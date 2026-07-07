@@ -33,7 +33,7 @@ links:
     icon_pack: fas
 ---
 
-[Back to Research](/research/)
+[Back](/research/)
 
 Rocky exoplanets with ultra-short orbital periods are ideal targets for observations and offer a unique opportunity to study planets in extremely hot environments. Due to atmospheric escape, these planets are more likely to be airless like Mercury or to have a secondary atmosphere (non-hydrogen dominated) like Earth. Characterizing secondary atmospheres of such exoplanets provides crucial insights into atmospheric escape, redox and equilibrium chemistry, and exchange with the interior.
 
