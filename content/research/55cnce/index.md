@@ -59,7 +59,7 @@ Finally, we run three-dimensional simulations with [Isca](https://execlim.github
 
 ## Case Study: Utilizing 3D GCMs to Reinterpret JWST Observations of 55 Cancri e
 
-We apply this framework to reinterpret JWST observations of 55 Cancri e, including the thermal-emission constraints reported by [Hu et al. 2024](https://www.nature.com/articles/s41586-024-07432-x). The goal is to test whether realistic three-dimensional circulation, non-grey radiative transfer, and thin secondary atmospheres can change how we infer atmospheric survival from thermal-emission observations.
+We apply this framework to reinterpret JWST observations of 55 Cancri e, including the thermal-emission constraints reported by [Hu et al. 2024](https://doi.org/10.1038/s41586-024-07432-x). The goal is to test whether realistic three-dimensional circulation, non-grey radiative transfer, and thin secondary atmospheres can change how we infer atmospheric survival from thermal-emission observations.
 
 ## Interesting Science to Be Continued
 
