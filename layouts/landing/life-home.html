@@ -1,12 +1,23 @@
 {{ define "main" }}
 {{ partial "life/styles.html" . }}
-{{ $latest := first 4 (sort (where site.RegularPages "Section" "life") "Date" "desc") }}
+{{ $photoPages := sort (where site.RegularPages "Params.kind" "photography") "Date" "desc" }}
+{{ $recentPhotos := slice }}
+{{ range first 3 $photoPages }}
+  {{ $page := . }}
+  {{ with .Params.album }}
+    {{ range first 4 (resources.Match (printf "media/albums/%s/*" .)) }}
+      {{ if eq .ResourceType "image" }}
+        {{ $recentPhotos = $recentPhotos | append (dict "image" . "page" $page) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
 <main class="life-shell">
   <section class="life-wrap life-hero">
     <div>
       <div class="life-kicker">Off-the-clock archive</div>
       <h1 class="life-title">{{ .Title }}</h1>
-      <p class="life-lede">A personal log for music, photographs, travel fragments, and the small observations that keep life textured beyond research.</p>
+      <p class="life-lede">A personal log for music, photographs, travel fragments, and the small observations that keep my life textured beyond research.</p>
       <div class="life-actions">
         <a class="life-button" href="/life/photography/">Browse photography</a>
         <a class="life-button" href="/life/music/">Browse music</a>
@@ -17,7 +28,7 @@
         {{ partial "life/image.html" (dict "src" "media/albums/2025summer/milkyway.jpeg" "alt" "Milky Way in the 2025 summer photography album" "class" "" "sizes" "(min-width: 900px) 28vw, 50vw" "loading" "eager") }}
       </figure>
       <figure>
-        {{ partial "life/image.html" (dict "src" "media/albums/music/playing-erhu.jpg" "alt" "Playing erhu with orchestra" "class" "" "sizes" "(min-width: 900px) 34vw, 50vw" "loading" "eager") }}
+        {{ partial "life/image.html" (dict "src" "media/albums/music/playing-erhu.png" "alt" "Playing erhu with orchestra" "class" "" "sizes" "(min-width: 900px) 34vw, 50vw" "loading" "eager") }}
       </figure>
     </div>
   </section>
@@ -26,67 +37,21 @@
     <div class="life-wrap">
       <div class="life-section-head">
         <div>
-          <h2>Two Ways Of Keeping Notes</h2>
-          <p>Music gathers the listening and playing side of life; photography keeps seasonal albums and visual fragments.</p>
+          <h2>Recent Photos</h2>
+          <p>The newest frames from the photography log.</p>
         </div>
+        <a class="life-section-link" href="/life/photography/">Open photography log</a>
       </div>
-      <div class="life-grid">
-        <article class="life-card">
-          <a class="life-card-media" href="/life/music/" aria-label="Open Music">
-            {{ partial "life/image.html" (dict "src" "media/albums/music/choir.jpg" "alt" "Choir performance" "sizes" "(min-width: 900px) 28vw, 100vw") }}
+      <div class="life-photo-wall">
+        {{ range first 10 $recentPhotos }}
+          {{ $image := .image }}
+          {{ $page := .page }}
+          {{ $thumb := $image.Fill "900x700 webp q84" }}
+          {{ $caption := replaceRE "\\.(jpeg|jpg|png|webp|gif|JPG|PNG)$" "" (path.Base $image.Name) }}
+          {{ $caption = replace $caption "_" " " }}
+          <a href="{{ $page.RelPermalink }}" aria-label="Open {{ $page.Title }}">
+            <img src="{{ $thumb.RelPermalink }}" alt="{{ $caption | humanize | title }}" loading="lazy" decoding="async">
           </a>
-          <div class="life-card-body">
-            <span class="life-meta">Music</span>
-            <h3><a href="/life/music/">A listening and playing journal</a></h3>
-            <p>From erhu and choir memories to concerts, recordings, and notes on pieces that stay with me.</p>
-            <div class="life-card-links">
-              <a href="/life/music/recording/">Favorite recordings</a>
-              <a href="/life/music/haochen_concert/">Rachmaninoff concert notes</a>
-            </div>
-          </div>
-        </article>
-        <article class="life-card">
-          <a class="life-card-media" href="/life/photography/" aria-label="Open Photography Log">
-            {{ partial "life/image.html" (dict "src" "media/albums/2025winter/sea_istanbul.jpeg" "alt" "Sea in Istanbul" "sizes" "(min-width: 900px) 28vw, 100vw") }}
-          </a>
-          <div class="life-card-body">
-            <span class="life-meta">Photography</span>
-            <h3><a href="/life/photography/">Seasonal photo albums</a></h3>
-            <p>A visual diary of everyday light, travel scenes, campus walks, rivers, mountains, and skies.</p>
-            <div class="life-card-links">
-              <a href="/life/photography/2026/spring/">Spring 2026</a>
-              <a href="/life/photography/2025/summer/">Summer 2025</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="life-section">
-    <div class="life-wrap">
-      <div class="life-section-head">
-        <div>
-          <h2>Latest Notes</h2>
-          <p>Recent music posts and seasonal photography albums.</p>
-        </div>
-      </div>
-      <div class="life-grid life-grid-3">
-        {{ range $latest }}
-          {{ $page := . }}
-          <article class="life-entry-card">
-            {{ with $page.Params.cover }}
-              <a href="{{ $page.RelPermalink }}">
-                <figure>{{ partial "life/image.html" (dict "src" (printf "media/albums/%s" .) "alt" $page.Title "sizes" "(min-width: 900px) 30vw, 100vw") }}</figure>
-              </a>
-            {{ end }}
-            <div class="life-entry-body">
-              <span class="life-meta">{{ with $page.Params.kind }}{{ . | title }}{{ else }}Note{{ end }}</span>
-              <h3><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
-              {{ with $page.Params.summary }}<p>{{ . }}</p>{{ end }}
-              <p><a class="life-entry-link" href="{{ $page.RelPermalink }}">Open note</a></p>
-            </div>
-          </article>
         {{ end }}
       </div>
     </div>

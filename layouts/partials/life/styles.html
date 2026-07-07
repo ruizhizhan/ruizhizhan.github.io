@@ -1,15 +1,14 @@
 <style>
   .life-shell {
-    --life-bg: #ffffff;
-    --life-ink: #111827;
+    --life-ink: currentColor;
     --life-muted: #4b5563;
     --life-subtle: #6b7280;
     --life-line: rgba(17, 24, 39, 0.12);
-    --life-panel: #ffffff;
-    --life-soft: #f7f7f4;
+    --life-panel: rgba(255, 255, 255, 0.72);
+    --life-soft: rgba(17, 24, 39, 0.06);
     --life-accent: #45605f;
     --life-accent-2: #8b5a46;
-    background: var(--life-bg);
+    background: transparent;
     color: var(--life-ink);
     margin-left: calc(50% - 50vw);
     margin-top: -3rem;
@@ -33,9 +32,9 @@
   .life-hero {
     align-items: end;
     display: grid;
-    gap: clamp(1.5rem, 4vw, 3rem);
-    grid-template-columns: minmax(0, 1.05fr) minmax(260px, 0.95fr);
-    min-height: min(76svh, 760px);
+    gap: clamp(1.75rem, 4.5vw, 4rem);
+    grid-template-columns: minmax(0, 0.88fr) minmax(340px, 1.12fr);
+    min-height: min(80svh, 820px);
     padding-top: clamp(5rem, 9vw, 7rem);
   }
 
@@ -91,9 +90,9 @@
   .life-hero-media {
     align-self: stretch;
     display: grid;
-    gap: 0.75rem;
+    gap: clamp(0.75rem, 1.4vw, 1rem);
     grid-template-columns: 0.8fr 1fr;
-    min-height: 420px;
+    min-height: clamp(520px, 54vw, 700px);
   }
 
   .life-hero-media figure,
@@ -122,7 +121,7 @@
   .life-hero-media figure:last-child {
     align-self: start;
     aspect-ratio: 3 / 4;
-    margin-top: 3rem;
+    margin-top: clamp(3rem, 6vw, 5rem);
   }
 
   .life-section {
@@ -268,6 +267,41 @@
     overflow: hidden;
   }
 
+  .life-photo-wall {
+    display: grid;
+    gap: 0.75rem;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .life-photo-wall a {
+    aspect-ratio: 4 / 3;
+    border-radius: 8px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .life-photo-wall a:nth-child(1),
+  .life-photo-wall a:nth-child(6) {
+    aspect-ratio: auto;
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .life-photo-wall img {
+    background: var(--life-soft);
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    width: 100%;
+  }
+
+  .life-photo-wall a:hover img {
+    opacity: 0.92;
+    transform: scale(1.015);
+  }
+
   .life-feature {
     display: grid;
     grid-template-columns: minmax(260px, 0.85fr) minmax(0, 1fr);
@@ -351,18 +385,14 @@
     color: var(--life-accent);
   }
 
-  @media (prefers-color-scheme: dark) {
-    .life-shell {
-      --life-bg: #111111;
-      --life-ink: #f5f5f4;
+  :where(html.dark, body.dark, [data-theme="dark"]) .life-shell {
       --life-muted: #c7c7c3;
       --life-subtle: #a6a6a0;
       --life-line: rgba(245, 245, 244, 0.16);
-      --life-panel: #181817;
-      --life-soft: #20201f;
+      --life-panel: rgba(24, 24, 23, 0.72);
+      --life-soft: rgba(245, 245, 244, 0.08);
       --life-accent: #9ab7b1;
       --life-accent-2: #d4a083;
-    }
   }
 
   @media (max-width: 900px) {
@@ -378,7 +408,7 @@
 
     .life-hero-media {
       grid-template-columns: 1fr 1fr;
-      min-height: 260px;
+      min-height: clamp(340px, 66vw, 520px);
     }
 
     .life-grid,
@@ -389,6 +419,10 @@
     .life-section-head {
       align-items: start;
       flex-direction: column;
+    }
+
+    .life-photo-wall {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
 

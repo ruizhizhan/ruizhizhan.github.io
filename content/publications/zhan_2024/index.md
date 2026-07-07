@@ -31,7 +31,7 @@ featured: true
 url_pdf: "paper.pdf"
 
 # Featured Image
-# Ensure you have a 'featured.jpg' in the same folder!
+# Ensure you have a 'featured.png' in the same folder!
 image:
   caption: ''
   focal_point: ""
@@ -40,4 +40,3 @@ image:
 # Associated Projects
 projects: []
 ---
-

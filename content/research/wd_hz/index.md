@@ -15,7 +15,7 @@ date: "2024-08-20T00:00:00Z"
 # external_link: https://github.com/ruizhizhan/weather-ai
 
 # 图片设置 (关键)
-# 建议在这个文件夹里放一张 featured.jpg
+# 建议在这个文件夹里放一张 featured.png
 image:
   caption: Bat Rotation Regimes
   focal_point: Smart

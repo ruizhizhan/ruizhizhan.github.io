@@ -494,7 +494,7 @@ sections:
               <div class="research-thread-grid">
                 <article class="research-thread" id="wd-extension">
                   <div class="research-thread__media">
-                    <img src="/research/wd_hz/featured.jpg" alt="Featured image for the white dwarf habitable-zone study">
+                    <img src="/research/wd_hz/featured.png" alt="Featured image for the white dwarf habitable-zone study">
                   </div>
                   <div class="research-thread__body">
                     <div class="research-thread__label">White dwarf habitable zones</div>
@@ -511,7 +511,7 @@ sections:
                     <a class="research-thread__link" href="/research/55cnce/">Read more</a>
                   </div>
                   <div class="research-thread__media">
-                    <img src="/research/55cnce/feature.jpg" alt="Featured image for the non-grey hot rocky planet modeling study">
+                    <img src="/research/55cnce/feature.png" alt="Featured image for the non-grey hot rocky planet modeling study">
                   </div>
                 </article>
               </div>
