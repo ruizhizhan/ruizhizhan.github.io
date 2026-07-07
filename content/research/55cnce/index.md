@@ -24,9 +24,9 @@ image:
 
 # 3. Tool/Resource Buttons (Optional)
 links:
-  - name: Modeling Pipeline
-    url: /research/hot_gcm/
-    icon: code-branch
+  - name: arXiv
+    url: https://arxiv.org/abs/2606.12116
+    icon: file-alt
     icon_pack: fas
   - name: ExoMol
     url: https://www.exomol.com/
@@ -36,6 +36,11 @@ links:
     url: https://execlim.github.io/Isca/
     icon: code
     icon_pack: fas
+  - name: SOCRATES
+    url: https://code.metoffice.gov.uk/trac/socrates
+    icon: cloud-sun
+    icon_pack: fas
+url_code: https://execlim.github.io/Isca/
 toc: false
 ---
 
@@ -43,7 +48,7 @@ Recent observations of 55 Cancri e suggest an atmosphere rich in CO or CO<sub>2<
 
 We apply [GCM simulations](/research/hot_gcm/) with custom non-grey radiative transfer to reinterpret JWST observations of 55 Cancri e, including the thermal-emission constraints reported by [Hu et al. 2024](https://doi.org/10.1038/s41586-024-07432-x). The goal is to test whether realistic three-dimensional circulation, non-grey radiative transfer, and thin secondary atmospheres can change how we infer atmospheric survival from thermal-emission observations.
 
-Recent observations of 55 Cancri e suggest an atmosphere rich in CO or CO<sub>2</sub>. We perform cloudfree GCM simulations of 55 Cancri e using custom correlated-k coefficients developed from the [ExoMol](https://www.exomol.com/) database. Our best-fit simulations match the JWST spectra well, favoring an atmosphere that is both thick (≥ 10 bar) and CO<sub>2</sub>-rich (> 1% CO<sub>2</sub> volume mixing ratio).
+
 
 
 <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 3rem;">
