@@ -32,12 +32,12 @@
   }
 
   .life-hero {
-    align-items: end;
+    align-items: center;
     display: grid;
-    gap: clamp(1.75rem, 4.5vw, 4rem);
-    grid-template-columns: minmax(0, 0.88fr) minmax(340px, 1.12fr);
-    min-height: min(80svh, 820px);
-    padding-top: clamp(5rem, 9vw, 7rem);
+    gap: clamp(1.25rem, 3vw, 2.5rem);
+    grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
+    min-height: min(68svh, 700px);
+    padding-top: clamp(3.5rem, 6vw, 5rem);
   }
 
   .life-kicker {
@@ -90,11 +90,9 @@
   }
 
   .life-hero-media {
-    align-self: stretch;
-    display: grid;
-    gap: clamp(0.75rem, 1.4vw, 1rem);
-    grid-template-columns: 0.8fr 1fr;
-    min-height: clamp(470px, 54vw, 700px);
+    align-self: center;
+    min-height: clamp(430px, 42vw, 560px);
+    position: relative;
   }
 
   .life-hero-media figure,
@@ -116,14 +114,21 @@
   }
 
   .life-hero-media figure:first-child {
-    align-self: end;
     aspect-ratio: 4 / 5;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 58%;
+    z-index: 2;
   }
 
   .life-hero-media figure:last-child {
-    align-self: start;
     aspect-ratio: 3 / 4;
-    margin-top: clamp(3rem, 6vw, 5rem);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 66%;
+    z-index: 1;
   }
 
   .life-section {
@@ -411,8 +416,15 @@
     }
 
     .life-hero-media {
-      grid-template-columns: 1fr 1fr;
-      min-height: clamp(340px, 66vw, 520px);
+      min-height: clamp(380px, 70vw, 620px);
+    }
+
+    .life-hero-media figure:first-child {
+      width: 46%;
+    }
+
+    .life-hero-media figure:last-child {
+      width: 56%;
     }
 
     .life-grid,
@@ -447,6 +459,8 @@
 
     .life-hero-media figure:first-child {
       aspect-ratio: 4 / 3;
+      position: static;
+      width: 100%;
     }
 
     .life-hero-media figure:last-child {

@@ -5,7 +5,7 @@ summary: Spring moments.
 weight: 10
 params:
   album: 2026spring
-  cover: 2026spring/flower_classroom.jpeg
+  cover: 2026spring/cherry.jpeg
   period: Spring 2026
   kind: photography
 ---
