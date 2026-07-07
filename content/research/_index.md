@@ -273,7 +273,7 @@ sections:
             display: grid;
             gap: 0;
             grid-template-columns: minmax(320px, 0.98fr) minmax(0, 1fr);
-            min-height: 340px;
+            min-height: 420px;
             overflow: hidden;
           }
 
@@ -321,11 +321,11 @@ sections:
 
           .research-thread__media {
             align-items: center;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.88));
+            background: inherit;
             display: flex;
             justify-content: center;
-            min-height: 340px;
-            padding: clamp(0.7rem, 1.8vw, 1.35rem);
+            min-height: 420px;
+            padding: 0;
           }
 
           .research-thread__media img {
@@ -334,14 +334,10 @@ sections:
             height: auto;
             margin: 0 auto;
             mask-image: radial-gradient(ellipse at center, #000 70%, rgba(0, 0, 0, 0.9) 82%, rgba(0, 0, 0, 0.36) 94%, transparent 100%);
-            max-height: clamp(320px, 40vw, 510px);
+            max-height: 100%;
             object-fit: contain;
             -webkit-mask-image: radial-gradient(ellipse at center, #000 70%, rgba(0, 0, 0, 0.9) 82%, rgba(0, 0, 0, 0.36) 94%, transparent 100%);
-            width: min(112%, 780px);
-          }
-
-          #wd-extension .research-thread__media {
-            padding: clamp(0.55rem, 1.5vw, 1.1rem);
+            width: 100%;
           }
 
           .research-continuation {
@@ -520,9 +516,9 @@ sections:
                 </article>
               </div>
               <div class="research-continuation">
-                <div class="research-thread__label">Next?</div>
+                <div class="research-thread__label">Next step</div>
                 <h3>To be continued.</h3>
-                <p>Atmospheric collapse, heat redistribution, and implications for </p>
+                <p>Atmospheric collapse, heat redistribution,... and implications for observations.</p>
               </div>
             </div>
           </section>
