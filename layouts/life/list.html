@@ -1,0 +1,153 @@
+{{ define "main" }}
+{{ partial "life/styles.html" . }}
+{{ $path := .RelPermalink }}
+<main class="life-shell">
+  {{ if eq $path "/life/music/" }}
+    {{ $musicPages := sort .RegularPages "Date" "desc" }}
+    <section class="life-wrap life-hero">
+      <div>
+        <div class="life-breadcrumb"><a href="/life/">Life</a><span>/</span><span>Music</span></div>
+        <div class="life-kicker">Music</div>
+        <h1 class="life-title">{{ .Title }}</h1>
+        {{ with .Params.summary }}<p class="life-lede">{{ . }}</p>{{ end }}
+      </div>
+      <div class="life-hero-media" aria-label="Music gallery preview">
+        <figure>{{ partial "life/image.html" (dict "src" "media/albums/music/orchestra.jpg" "alt" "Chinese orchestra performance" "sizes" "(min-width: 900px) 28vw, 50vw" "loading" "eager") }}</figure>
+        <figure>{{ partial "life/image.html" (dict "src" "media/albums/music/choir.jpg" "alt" "Choir memory" "sizes" "(min-width: 900px) 34vw, 50vw" "loading" "eager") }}</figure>
+      </div>
+    </section>
+    <section class="life-section">
+      <div class="life-wrap">
+        <article class="life-feature">
+          <figure>{{ partial "life/image.html" (dict "src" "media/albums/music/playing-erhu.jpg" "alt" "Playing erhu" "sizes" "(min-width: 900px) 38vw, 100vw") }}</figure>
+          <div class="life-feature-body life-content">{{ .Content }}</div>
+        </article>
+      </div>
+    </section>
+    <section class="life-section">
+      <div class="life-wrap">
+        <div class="life-section-head">
+          <div>
+            <h2>Music Notes</h2>
+            <p>Concert reflections, recordings, and listening notes.</p>
+          </div>
+        </div>
+        <div class="life-grid">
+          {{ range $musicPages }}
+            {{ $page := . }}
+            <article class="life-entry-card">
+              {{ with $page.Params.cover }}
+                <a href="{{ $page.RelPermalink }}"><figure>{{ partial "life/image.html" (dict "src" (printf "media/albums/%s" .) "alt" $page.Title "sizes" "(min-width: 900px) 40vw, 100vw") }}</figure></a>
+              {{ end }}
+              <div class="life-entry-body">
+                <span class="life-meta">{{ $page.Date.Format "Jan 2006" }}</span>
+                <h3><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
+                {{ with $page.Params.summary }}<p>{{ . }}</p>{{ end }}
+                <p><a class="life-entry-link" href="{{ $page.RelPermalink }}">Read note</a></p>
+              </div>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ else if eq $path "/life/photography/" }}
+    {{ $albums := sort (where .RegularPagesRecursive "Params.kind" "photography") "Date" "desc" }}
+    <section class="life-wrap life-hero">
+      <div>
+        <div class="life-breadcrumb"><a href="/life/">Life</a><span>/</span><span>Photography</span></div>
+        <div class="life-kicker">Photography Log</div>
+        <h1 class="life-title">{{ .Title }}</h1>
+        {{ with .Params.summary }}<p class="life-lede">{{ . }}</p>{{ end }}
+      </div>
+      <div class="life-hero-media" aria-label="Photography gallery preview">
+        <figure>{{ partial "life/image.html" (dict "src" "media/albums/2025summer/sunset2.jpeg" "alt" "Summer sunset" "sizes" "(min-width: 900px) 28vw, 50vw" "loading" "eager") }}</figure>
+        <figure>{{ partial "life/image.html" (dict "src" "media/albums/2025winter/lake_ice.jpeg" "alt" "Winter lake ice" "sizes" "(min-width: 900px) 34vw, 50vw" "loading" "eager") }}</figure>
+      </div>
+    </section>
+    <section class="life-section">
+      <div class="life-wrap">
+        <div class="life-section-head">
+          <div>
+            <h2>Seasonal Albums</h2>
+            <p>Browse the photography log by year and season.</p>
+          </div>
+        </div>
+        {{ range ($albums.GroupByDate "2006") }}
+          <div class="life-section-head">
+            <div><h2>{{ .Key }}</h2></div>
+            <a class="life-section-link" href="/life/photography/{{ .Key }}/">Open {{ .Key }}</a>
+          </div>
+          <div class="life-grid life-grid-3">
+            {{ range .Pages }}
+              {{ $page := . }}
+              {{ $album := .Params.album }}
+              {{ $count := 0 }}
+              {{ with $album }}{{ $count = len (resources.Match (printf "media/albums/%s/*" .)) }}{{ end }}
+              <article class="life-photo-card">
+                {{ with $page.Params.cover }}
+                  <a href="{{ $page.RelPermalink }}"><figure>{{ partial "life/image.html" (dict "src" (printf "media/albums/%s" .) "alt" $page.Title "sizes" "(min-width: 900px) 30vw, 100vw") }}</figure></a>
+                {{ end }}
+                <div class="life-photo-card-body">
+                  <span class="life-meta">{{ with $page.Params.period }}{{ . }}{{ else }}{{ $page.Date.Format "January 2006" }}{{ end }}</span>
+                  <h3><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
+                  {{ with $page.Params.summary }}<p>{{ . }}</p>{{ end }}
+                  <div class="life-album-count">{{ $count }} photos</div>
+                </div>
+              </article>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ else if hasPrefix $path "/life/photography/" }}
+    {{ $albums := sort (where .RegularPagesRecursive "Params.kind" "photography") "Weight" }}
+    <section class="life-wrap">
+      <div class="life-breadcrumb"><a href="/life/">Life</a><span>/</span><a href="/life/photography/">Photography</a><span>/</span><span>{{ .Title }}</span></div>
+      <div class="life-section-head">
+        <div>
+          <div class="life-kicker">Year Archive</div>
+          <h1 class="life-title">{{ .Title }}</h1>
+          {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+        </div>
+      </div>
+      <div class="life-grid life-grid-3">
+        {{ range $albums }}
+          {{ $page := . }}
+          {{ $album := .Params.album }}
+          {{ $count := 0 }}
+          {{ with $album }}{{ $count = len (resources.Match (printf "media/albums/%s/*" .)) }}{{ end }}
+          <article class="life-photo-card">
+            {{ with $page.Params.cover }}
+              <a href="{{ $page.RelPermalink }}"><figure>{{ partial "life/image.html" (dict "src" (printf "media/albums/%s" .) "alt" $page.Title "sizes" "(min-width: 900px) 30vw, 100vw") }}</figure></a>
+            {{ end }}
+            <div class="life-photo-card-body">
+              <span class="life-meta">{{ with $page.Params.period }}{{ . }}{{ else }}{{ $page.Date.Format "January 2006" }}{{ end }}</span>
+              <h3><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
+              {{ with $page.Params.summary }}<p>{{ . }}</p>{{ end }}
+              <div class="life-album-count">{{ $count }} photos</div>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  {{ else }}
+    <section class="life-wrap">
+      <div class="life-breadcrumb"><a href="/life/">Life</a><span>/</span><span>{{ .Title }}</span></div>
+      <div class="life-section-head">
+        <div>
+          <h1 class="life-title">{{ .Title }}</h1>
+          {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+        </div>
+      </div>
+      <ul class="life-index-list">
+        {{ range sort .RegularPages "Date" "desc" }}
+          <li>
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+</main>
+{{ end }}

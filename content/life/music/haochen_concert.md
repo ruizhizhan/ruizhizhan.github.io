@@ -3,10 +3,11 @@ title: "A Marathon of Rachmaninoff: Haochen Zhang Live and Beyond"
 date: 2025-06-08
 summary: "Attended a marathon performance of Rachmaninoff's four piano concertos by Haochen Zhang, followed by an inspiring panel discussion on music and performance."
 tags: ["music", "concert review"]
-type: docs
+type: life
+params:
+  kind: music
+  cover: music/orchestra.jpg
 ---
-
-[Back to Music](/life/music/) | [Back to Life](/life/)
 
 很庆幸这两天经历了这样一场人生体验：张昊辰、黄屹与国家大剧院管弦乐团（蛋交）演绎的拉赫玛尼诺夫钢琴协奏曲全集（和帕格尼尼主题狂想曲），以及演出结束之后的座谈会：“演奏之外”。首先，这是我人生中第一次听这样马拉松式的音乐会。从下午到晚上，除开小跑步去麦当劳吃的晚饭，在音乐厅听了四个多小时（从座谈会上得知，这可能是历史上第五次这样的演出）。
 

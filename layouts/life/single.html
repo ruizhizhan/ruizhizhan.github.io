@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ partial "life/styles.html" . }}
+<main class="life-shell">
+  <article class="life-article">
+    <header class="life-article-head">
+      <nav class="life-breadcrumb" aria-label="Breadcrumb">
+        {{ range .Ancestors.Reverse }}
+          {{ if and (ne .RelPermalink "/") (hasPrefix .RelPermalink "/life/") }}
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a><span>/</span>
+          {{ end }}
+        {{ end }}
+        <span>{{ .Title }}</span>
+      </nav>
+      <span class="life-meta">
+        {{ with .Params.period }}{{ . }}{{ else }}{{ .Date.Format "January 2006" }}{{ end }}
+      </span>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.summary }}<p class="life-article-summary">{{ . }}</p>{{ end }}
+    </header>
+    <div class="life-content">
+      {{ .Content }}
+    </div>
+  </article>
+</main>
+{{ end }}

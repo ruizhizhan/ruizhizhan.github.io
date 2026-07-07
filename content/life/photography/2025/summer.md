@@ -3,12 +3,13 @@ title: Summer
 date: 2025-06-01
 summary: Summer times.
 weight: 40
+params:
+  album: 2025summer
+  cover: 2025summer/milkyway.jpeg
+  period: Summer 2025
+  kind: photography
 ---
-
-[Back to 2025 Photography](/life/photography/2025/) | [Back to Photography Log](/life/photography/)
 
 Summer times.
 
 {{< gallery album="2025summer" >}}
-
-*(Click any photo above to open the gallery. Look for the thumbnail strip at the bottom of the screen to swipe between them!)*

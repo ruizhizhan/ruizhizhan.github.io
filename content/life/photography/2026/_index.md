@@ -1,13 +1,8 @@
 ---
 title: 2026
-type: docs
+type: life
+summary: Photography albums from 2026.
 weight: 10
 cascade:
-  type: docs
+  type: life
 ---
-
-[Back to Photography Log](/life/photography/) | [Back to Life](/life/)
-
-## 2026
-
-- [Spring](/life/photography/2026/spring/)

@@ -3,12 +3,13 @@ title: Spring
 date: 2025-03-01
 summary: Spring moments.
 weight: 50
+params:
+  album: 2025spring
+  cover: 2025spring/lake_spring.jpeg
+  period: Spring 2025
+  kind: photography
 ---
-
-[Back to 2025 Photography](/life/photography/2025/) | [Back to Photography Log](/life/photography/)
 
 Spring moments.
 
 {{< gallery album="2025spring" >}}
-
-*(Click any photo above to open the gallery. Look for the thumbnail strip at the bottom of the screen to swipe between them!)*

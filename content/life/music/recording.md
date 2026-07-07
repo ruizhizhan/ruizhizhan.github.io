@@ -3,10 +3,11 @@ title: Recording
 date: 2026-03-28
 summary: My favorite recordings.
 tags: ["recording"]
-type: docs
+type: life
+params:
+  kind: music
+  cover: music/choir.jpg
 ---
-
-[Back to Music](/life/music/) | [Back to Life](/life/)
 
 Here are some of my favorite recordings. I hope you enjoy them as much as I do!
 

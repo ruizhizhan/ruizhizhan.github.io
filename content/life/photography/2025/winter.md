@@ -3,10 +3,11 @@ title: Winter
 date: 2025-12-01
 summary: Winter.
 weight: 20
+params:
+  album: 2025winter
+  cover: 2025winter/lake_ice.jpeg
+  period: Winter 2025
+  kind: photography
 ---
 
-[Back to 2025 Photography](/life/photography/2025/) | [Back to Photography Log](/life/photography/)
-
 {{< gallery album="2025winter" >}}
-
-*(Click any photo above to open the gallery. Look for the thumbnail strip at the bottom of the screen to swipe between them!)*

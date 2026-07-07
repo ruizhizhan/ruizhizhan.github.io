@@ -32,9 +32,7 @@ Despite extensive observations, most current interpretations predominantly relie
 
 {{< figure src="/images/line_profile.png" caption="Gaussian and Lorentz profiles for absorption line broadening calculations. The coefficients of determination &alpha;<sub>G</sub> (half-width at half-maximum) and &alpha;<sub>L</sub> strongly depend on temperature (highlighted in red). More information on [HITRAN](https://hitran.org/docs/definitions-and-units/)." width="95%" >}}
 
-## Modeling Pipeline
-
-### Realistic radiation for extreme rocky atmospheres.
+## We start from absorption line dataset...
 
 To model hot rocky planets self-consistently, we build a non-grey GCM framework that can operate at temperatures far above those usually assumed in terrestrial climate models. The pipeline builds opacity tables from high-temperature molecular line lists, validates correlated-k coefficients against line-by-line calculations, and couples the results to three-dimensional general circulation models.
 

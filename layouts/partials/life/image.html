@@ -1,0 +1,11 @@
+{{- $src := .src -}}
+{{- $alt := default "" .alt -}}
+{{- $class := default "" .class -}}
+{{- $sizes := default "100vw" .sizes -}}
+{{- $loading := default "lazy" .loading -}}
+{{- with resources.Get $src -}}
+  {{- $small := .Fit "640x420 webp q82" -}}
+  {{- $medium := .Fit "960x640 webp q84" -}}
+  {{- $large := .Fit "1400x900 webp q86" -}}
+  <img class="{{ $class }}" src="{{ $medium.RelPermalink }}" srcset="{{ $small.RelPermalink }} 640w, {{ $medium.RelPermalink }} 960w, {{ $large.RelPermalink }} 1400w" sizes="{{ $sizes }}" alt="{{ $alt }}" loading="{{ $loading }}" decoding="async">
+{{- end -}}

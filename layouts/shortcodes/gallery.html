@@ -1,56 +1,111 @@
-{{ if not (.Page.Scratch.Get "fancybox_loaded") }}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+{{- if not (.Page.Scratch.Get "fancybox_loaded") -}}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       Fancybox.bind("[data-fancybox]", {
-        // basic options
+        Thumbs: { type: "classic" }
       });
     });
   </script>
-  {{ .Page.Scratch.Set "fancybox_loaded" true }}
-{{ end }}
+  {{- .Page.Scratch.Set "fancybox_loaded" true -}}
+{{- end -}}
 
-{{ $album := .Get "album" }}
-{{ $dir := printf "media/albums/%s/*" $album }}
-{{ $images := resources.Match $dir }}
+{{- $album := .Get "album" -}}
+{{- $layout := default "masonry" (.Get "layout") -}}
+{{- $limit := int (default 0 (.Get "limit")) -}}
+{{- $cover := default "" (.Get "cover") -}}
+{{- $height := default "250px" (.Get "height") -}}
+{{- $dir := printf "media/albums/%s/*" $album -}}
+{{- $matched := resources.Match $dir -}}
+{{- $images := slice -}}
+{{- range $matched -}}
+  {{- if eq .ResourceType "image" -}}
+    {{- if or (eq $cover "") (eq (path.Base .Name) $cover) -}}
+      {{- $images = $images | append . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if gt $limit 0 -}}
+  {{- $images = first $limit $images -}}
+{{- end -}}
 
 <style>
-.custom-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1.5rem 0;
-}
-.custom-gallery a {
-  display: block;
-  flex: 1 1 auto;
-  height: 250px;
-}
-.custom-gallery img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 4px;
-  background-color: #f3f4f6;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-.custom-gallery a:hover img {
-  opacity: 0.9;
-  transform: scale(1.02);
-}
+  .life-gallery {
+    --gallery-gap: 0.75rem;
+    display: grid;
+    gap: var(--gallery-gap);
+    margin: 1.5rem 0;
+  }
+
+  .life-gallery--masonry {
+    column-count: 3;
+    column-gap: var(--gallery-gap);
+    display: block;
+  }
+
+  .life-gallery--grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .life-gallery a {
+    border-radius: 8px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .life-gallery--masonry a {
+    break-inside: avoid;
+    margin: 0 0 var(--gallery-gap);
+  }
+
+  .life-gallery img {
+    background-color: #f3f4f6;
+    display: block;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    width: 100%;
+  }
+
+  .life-gallery--masonry img {
+    height: auto;
+  }
+
+  .life-gallery--grid img {
+    height: var(--gallery-height);
+    object-fit: cover;
+  }
+
+  .life-gallery a:hover img {
+    opacity: 0.92;
+    transform: scale(1.015);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .life-gallery img {
+      background-color: #20201f;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .life-gallery--masonry {
+      column-count: 2;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .life-gallery--masonry {
+      column-count: 1;
+    }
+  }
 </style>
 
-<div class="custom-gallery">
-{{ range $images }}
-  {{ if eq .ResourceType "image" }}
-    {{ $thumbnail := .Resize "x500 webp q80" }}
-    {{ $caption := replaceRE "\\.(jpeg|jpg|png|webp|gif|JPG)$" "" .Name }}
-    {{ $caption = replace $caption "_" " " }}
-    
-    <a data-fancybox="gallery" href="{{ .RelPermalink }}" data-caption="{{ $caption | humanize | title }}">
-      <img src="{{ $thumbnail.RelPermalink }}" alt="{{ $caption | humanize | title }}" loading="lazy" />
+<div class="life-gallery life-gallery--{{ $layout }}" style="--gallery-height: {{ $height }};">
+  {{- range $images -}}
+    {{- $thumbnail := .Fit "1000x1400 webp q82" -}}
+    {{- $caption := replaceRE "\\.(jpeg|jpg|png|webp|gif|JPG)$" "" (path.Base .Name) -}}
+    {{- $caption = replace $caption "_" " " -}}
+    <a data-fancybox="gallery-{{ $album | urlize }}" href="{{ .RelPermalink }}" data-caption="{{ $caption | humanize | title }}">
+      <img src="{{ $thumbnail.RelPermalink }}" alt="{{ $caption | humanize | title }}" loading="lazy" decoding="async">
     </a>
-  {{ end }}
-{{ end }}
+  {{- end -}}
 </div>

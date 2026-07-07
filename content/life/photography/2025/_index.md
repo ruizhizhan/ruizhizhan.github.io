@@ -1,16 +1,8 @@
 ---
 title: 2025
-type: docs
+type: life
+summary: Photography albums from 2025.
 weight: 20
 cascade:
-  type: docs
+  type: life
 ---
-
-[Back to Photography Log](/life/photography/) | [Back to Life](/life/)
-
-## 2025
-
-- [Winter](/life/photography/2025/winter/)
-- [Autumn](/life/photography/2025/autumn/)
-- [Summer](/life/photography/2025/summer/)
-- [Spring](/life/photography/2025/spring/)
