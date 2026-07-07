@@ -518,7 +518,7 @@ sections:
               <div class="research-continuation">
                 <div class="research-thread__label">Next step</div>
                 <h3>To be continued.</h3>
-                <p>Atmospheric collapse, heat redistribution,... and implications for observations.</p>
+                <p>Atmospheric stability, heat redistribution,... and implications for observations.</p>
               </div>
             </div>
           </section>
