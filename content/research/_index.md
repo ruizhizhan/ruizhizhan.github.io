@@ -520,9 +520,9 @@ sections:
                 </article>
               </div>
               <div class="research-continuation">
-                <div class="research-thread__label">Growing questions</div>
-                <h3>Interesting science to be continued.</h3>
-                <p>The next step is to connect individual case studies to broader questions about how hot rocky planets form, lose, retain, or regenerate atmospheres over time. Escape, chemistry, circulation, surface-atmosphere exchange, and interior evolution may all leave observable signatures.</p>
+                <div class="research-thread__label">Next?</div>
+                <h3>To be continued.</h3>
+                <p>Atmospheric collapse, heat redistribution, and implications for </p>
               </div>
             </div>
           </section>
