@@ -43,7 +43,7 @@ toc: false
 
 Due to the small size, white dwarfs offer a unique opportunity to search nearby stellar systems for signs of life. The habitable zone around white dwarfs, however, is still poorly understood.
 
-{{< figure src="/images/transit_sketch.jpg" caption="A schematic of transit timing variations of a G dwarf, M dwarf and a white dwarf planet system. Transit depth is proportional to the square of the planet-to-star radius ratio. The extremely small size of the white dwarf (radius $\approx 0.01 R_{\odot}$) makes it ideal for atmospheric characterization. Previous estimates suggest that the James Webb Space Telescope (JWST) might be able to detect a biosignature gas like CH$_4$ in a single transit ([Lin et al. 2022](https://doi.org/10.3847/2041-8213/ac4788))" width="95%" >}}
+{{< figure src="/images/transit_sketch.jpg" caption="A schematic of transit timing variations of a G dwarf, M dwarf and a white dwarf planet system. Transit depth is proportional to the square of the planet-to-star radius ratio. The extremely small size of the white dwarf (radius &asymp; 0.01 R<sub>&odot;</sub>) makes it ideal for atmospheric characterization. Previous estimates suggest that the James Webb Space Telescope (JWST) might be able to detect a biosignature gas like CH<sub>4</sub> in a single transit ([Lin et al. 2022](https://doi.org/10.3847/2041-8213/ac4788))" width="95%" >}}
 
 Here we use the [ExoCAM](https://github.com/storyofthewolf/ExoCAM) Global Climate Model to investigate the inner edge of the habitable zone around white dwarfs. 
 
@@ -60,5 +60,5 @@ The James Webb Space Telescope should be able to quickly characterize bat rotato
 We also qualitatively explain the onset of bat rotation using shallow water theory. 
 
 <div style="margin-top: 3rem;">
-  <a href="/research/" style="align-items: center; border: 1px solid currentColor; border-radius: 8px; display: inline-flex; font-weight: 700; gap: 0.45rem; padding: 0.7rem 1rem; text-decoration: none;">← Back to Research</a>
+  <a href="/research/#wd-extension" style="align-items: center; border: 1px solid currentColor; border-radius: 8px; display: inline-flex; font-weight: 700; gap: 0.45rem; padding: 0.7rem 1rem; text-decoration: none;">← Back to Research</a>
 </div>

@@ -480,7 +480,7 @@ sections:
               </div>
               <div class="research-usp__body">
                 <p class="research-copy">Ultra-short-period rocky planets, with orbital periods of hours to days, are among the most favorable small planets for atmospheric characterization. They can be habitable-zone planets around white dwarfs, warm terrestrial planets around M stars such as TRAPPIST-1 b, or lava worlds around K or G stars such as 55 Cancri e and TOI-561 b.</p>
-                <p class="research-copy">Many ultra-short-period rocky planets orbit so close to their host stars that they are likely tidally locked, with permanent daysides and nightsides. At the same time, their short orbital periods correspond to rapid synchronous rotation. Much of my PhD work focuses on modeling the atmospheres of these close-in, tidally locked rocky worlds. Read the blocks below to learn more.</p>
+                <p class="research-copy">Many ultra-short-period rocky planets orbit so close to their host stars that they are likely tidally locked, with permanent daysides and nightsides. At the same time, their short orbital periods correspond to rapid synchronous rotation. Much of my PhD work focuses on modeling the atmospheres of these close-in, tidally locked rocky worlds. Read the blocks below for more information.</p>
               </div>
               <figure class="research-usp__figure">
                 <img src="/images/exoplanet_distribution.png" alt="Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets">
@@ -507,7 +507,7 @@ sections:
                   <div class="research-thread__body">
                     <div class="research-thread__label">Case study: 55 Cancri e</div>
                     <h3>Utilizing 3D GCMs to reinterpret JWST observations of 55 Cancri e.</h3>
-                    <p><a href="https://doi.org/10.1038/s41586-024-07432-x">Recent observations of 55 Cancri e</a> suggest an atmosphere rich in CO or CO<sub>2</sub>. Here we perform cloudfree GCM simulations of 55 Cancri e using custom correlated-k coefficients developed from the <a href="https://www.exomol.com/">ExoMol</a> database. Our best-fit simulations match the JWST spectra well, favoring an atmosphere that is both thick (≥ 10 bar) and CO<sub>2</sub>-rich (> 1% CO<sub>2</sub> volume mixing ratio).</p>
+                    <p><a href="https://doi.org/10.1038/s41586-024-07432-x">Recent observations of 55 Cancri e</a> suggest an atmosphere rich in CO or CO<sub>2</sub>. Here we perform cloudfree <a href="/research/hot_gcm/">GCM simulations with custom correlated-k coefficients</a> developed from the <a href="https://www.exomol.com/">ExoMol</a> database. Our best-fit simulations match the JWST spectra well, favoring an atmosphere that is both thick (≥ 10 bar) and CO<sub>2</sub>-rich (> 1% CO<sub>2</sub> volume mixing ratio).</p>
                     <a class="research-thread__link" href="/research/55cnce/">Read more</a>
                   </div>
                   <div class="research-thread__media">
