@@ -145,7 +145,7 @@ sections:
         </style>
 
         <div class="publications-wrap">
-          <p class="publications-intro">Research on the atmospheric dynamics, climate, and observability of terrestrial exoplanets.</p>
+          <p class="publications-intro"></p>
           <div class="publication-list">
             <article class="publication-item">
               <div class="publication-number">01</div>
