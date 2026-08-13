@@ -152,12 +152,13 @@ sections:
               <div>
                 <div class="publication-meta">
                   <span class="publication-year">2026</span>
-                  <span class="publication-status">Accepted</span>
+                  <span class="publication-status">Journal article</span>
                 </div>
                 <h2>Reinterpreting the JWST Observations of 55 Cancri e with a Nongrey General Circulation Model</h2>
                 <p class="publication-authors"><strong>Zhan R.</strong> and D. D. B. Koll</p>
-                <p class="publication-venue">Accepted at <em>The Astrophysical Journal</em></p>
+                <p class="publication-venue"><em>The Astrophysical Journal</em>, 1007, 81</p>
                 <div class="publication-links">
+                  <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae8198">Journal</a>
                   <a href="https://arxiv.org/abs/2606.12116">arXiv</a>
                 </div>
               </div>
