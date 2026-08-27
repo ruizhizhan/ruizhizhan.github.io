@@ -104,6 +104,13 @@ sections:
             <div class="news-items">
               <article class="news-item">
                 <div class="news-meta">
+                  <span class="news-date">August</span>
+                  <span class="news-tag">Publication</span>
+                </div>
+                <p>My second first-author paper, <strong>Reinterpreting the JWST Observations of 55 Cancri e with a Nongrey General Circulation Model</strong>, was published in <em>The Astrophysical Journal</em>. <a href="https://iopscience.iop.org/article/10.3847/1538-4357/ae8198">Read the paper</a>.</p>
+              </article>
+              <article class="news-item">
+                <div class="news-meta">
                   <span class="news-date">May</span>
                   <span class="news-tag">Visit</span>
                 </div>
