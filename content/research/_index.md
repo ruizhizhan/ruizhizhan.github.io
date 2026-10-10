@@ -484,7 +484,7 @@ sections:
               </div>
               <figure class="research-usp__figure">
                 <img src="/images/exoplanet_distribution.png" alt="Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets">
-                <figcaption class="research-usp__caption">Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets.</figcaption>
+                <figcaption class="research-usp__caption">Orbital period, planet radius, and equilibrium temperature of confirmed exoplanets. NASA Exoplanet Archive queried on 7 October 2026.</figcaption>
               </figure>
             </div>
           </section>

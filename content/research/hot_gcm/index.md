@@ -26,7 +26,7 @@ toc: false
 
 Rocky exoplanets with ultra-short orbital periods are ideal targets for observations and offer a unique opportunity to study planets in extremely hot environments. Due to atmospheric escape, these planets are more likely to be airless like Mercury or to have a secondary atmosphere (non-hydrogen dominated) like Earth. Characterizing secondary atmospheres of such exoplanets provides crucial insights into atmospheric escape, redox and equilibrium chemistry, and exchange with the interior.
 
-{{< figure src="/images/exoplanet_distribution.png" caption="Orbital periods and radii of confirmed exoplanets as of May 2025. The planets located in the red box are rocky exoplanets with ultra-short orbital periods. The color of each point represents the equilibrium temperature of the planet, ranging from 500 to 3,000 K." width="95%" >}}
+{{< figure src="/images/exoplanet_distribution.png" caption="Orbital periods and radii of confirmed exoplanets from the NASA Exoplanet Archive, queried on 7 October 2026. The red box highlights the region of small planets with ultra-short orbital periods. Point colors indicate equilibrium temperature; 55 Cancri e is marked with an arrow." width="95%" >}}
 
 Despite extensive observations, most current interpretations predominantly relied on 1D models with non-self-consistent heat redistribution or oversimplified 3D models with unrealistic radiative transfer. However, few 3D models with realistic radiative transfer have been applied to these hot (non-habitable) rocky exoplanets, mainly due to the incompatibility of standard GCM radiative transfer codes with the extremely high temperatures.
 
