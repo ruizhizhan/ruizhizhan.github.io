@@ -1,0 +1,61 @@
+{{ define "main" }}
+{{ partial "life/styles.html" . }}
+{{ $photos := partial "photography/photos.html" . }}
+{{ $styles := resources.Get "css/photo-album.css" | minify | fingerprint }}
+{{ $script := resources.Get "js/photo-album.js" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+<main class="life-shell photo-album-shell">
+  <div class="album-wrap">
+    <header class="album-header">
+      <nav class="life-breadcrumb" aria-label="Breadcrumb"><a href="{{ relURL "life/" }}">Life</a><span aria-hidden="true">/</span><span>Photography</span></nav>
+      <h1>Welcome to my virtual photo album!</h1>
+    </header>
+
+    <section class="photo-album" aria-label="Photo album, newest photographs first" data-photo-album>
+      <div class="album-cover">
+        <div class="album-spread" id="album-spread" aria-label="Open album">
+          <div class="album-page album-page--left" data-page="left"></div>
+          <div class="album-page album-page--right" data-page="right"></div>
+          <div class="album-binding" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="album-controls" aria-label="Album navigation">
+        <button class="album-control" type="button" id="album-prev" aria-label="Previous pages"><span aria-hidden="true">←</span><span>Previous</span></button>
+        <div class="album-pagination">
+          <span id="album-page-status" role="status" aria-live="polite"></span>
+          <label class="album-jump-label">Go to spread <select id="album-jump" aria-label="Go to spread"></select></label>
+        </div>
+        <button class="album-control" type="button" id="album-next" aria-label="Next pages"><span>Next</span><span aria-hidden="true">→</span></button>
+      </div>
+      <p class="album-hint">Swipe, drag, or use ← → to turn the pages</p>
+    </section>
+
+    <noscript>
+      <p>All photographs, newest first.</p>
+      <div class="album-fallback">
+        {{ range $photos }}
+          <a href="{{ .image }}"><img src="{{ .thumbnail }}" alt="{{ .title }}" loading="lazy"><span>{{ .title }} · {{ .dateLabel }}</span></a>
+        {{ end }}
+      </div>
+    </noscript>
+  </div>
+</main>
+
+<dialog class="photo-dialog" id="photo-dialog" aria-label="Photograph" aria-describedby="photo-instructions">
+  <p class="photo-instructions" id="photo-instructions">Click the photograph to turn it over. Click outside it or press Escape to return it to the album. Use the arrow keys to browse photographs.</p>
+  <div class="photo-turntable">
+    <div class="photo-rotator" id="photo-rotator" role="button" tabindex="0" aria-label="Turn photograph over" aria-pressed="false">
+      <div class="photo-face photo-face--front"><img id="photo-image" alt=""></div>
+      <div class="photo-face photo-face--back" id="photo-back" inert>
+        <div class="photo-back-content">
+          <h2 id="photo-title"></h2>
+          <p class="photo-date" id="photo-date"></p>
+          <div class="photo-story" id="photo-story"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</dialog>
+<script type="application/json" id="photo-library">{{ $photos | jsonify | safeJS }}</script>
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+{{ end }}

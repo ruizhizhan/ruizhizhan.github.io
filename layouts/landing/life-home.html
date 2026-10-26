@@ -1,56 +1,51 @@
 {{ define "main" }}
 {{ partial "life/styles.html" . }}
-{{ $photoPages := sort (where site.RegularPages "Params.kind" "photography") "Date" "desc" }}
-{{ $recentPhotos := slice }}
-{{ range first 3 $photoPages }}
-  {{ $page := . }}
-  {{ with .Params.album }}
-    {{ range first 4 (resources.Match (printf "media/albums/%s/*" .)) }}
-      {{ if eq .ResourceType "image" }}
-        {{ $recentPhotos = $recentPhotos | append (dict "image" . "page" $page) }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-<main class="life-shell">
-  <section class="life-wrap life-hero">
-    <div>
-      <div class="life-kicker">Off-the-clock archive</div>
-      <h1 class="life-title">{{ .Title }}</h1>
-      <p class="life-lede">A personal log for music, photographs, travel fragments, and the small observations that keep my life textured beyond research.</p>
-      <div class="life-actions">
-        <a class="life-button" href="/life/photography/">Browse photography</a>
-        <a class="life-button" href="/life/music/">Browse music</a>
+{{ $recentPhotos := partial "photography/photos.html" . }}
+<main class="life-shell life-home">
+  <header class="life-wrap life-home-header">
+    <h1 class="life-home-intro">{{ .Params.summary }}</h1>
+    <nav class="life-actions" aria-label="On this page">
+      <a class="life-button" href="#music">Music</a>
+      <a class="life-button" href="#photography">Photography</a>
+    </nav>
+  </header>
+
+  <section class="life-section" id="music" aria-labelledby="life-music-title">
+    <div class="life-wrap">
+      <div class="life-section-head">
+        <h2 id="life-music-title">{{ .Params.music.title }}</h2>
       </div>
-    </div>
-    <div class="life-hero-media" aria-label="Life gallery preview">
-      <figure>
-        {{ partial "life/image.html" (dict "src" "media/albums/2025summer/milkyway.jpeg" "alt" "Milky Way in the 2025 summer photography album" "class" "" "sizes" "(min-width: 900px) 28vw, 50vw" "loading" "eager") }}
-      </figure>
-      <figure>
-        {{ partial "life/image.html" (dict "src" "media/albums/music/playing-erhu.png" "alt" "Playing erhu with orchestra" "class" "" "sizes" "(min-width: 900px) 34vw, 50vw" "loading" "eager") }}
-      </figure>
+      <div class="life-music-layout">
+        <div class="life-content life-story-content">
+          {{ .RenderString (dict "display" "block") .Params.music.body }}
+        </div>
+        <div class="life-music-photos">
+          <figure>
+            {{ partial "life/image.html" (dict "src" "media/albums/music/playing-erhu.png" "alt" "Holding my erhu and bow" "sizes" "(min-width: 901px) 310px, (min-width: 561px) 45vw, 100vw" "loading" "eager") }}
+            <figcaption>With my erhu</figcaption>
+          </figure>
+          <figure>
+            {{ partial "life/image.html" (dict "src" "media/albums/music/choir.jpg" "alt" "Singing with the choir" "sizes" "(min-width: 901px) 310px, (min-width: 561px) 45vw, 100vw") }}
+            <figcaption>Singing together</figcaption>
+          </figure>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="life-section">
+  <section class="life-section" id="photography" aria-labelledby="life-photography-title">
     <div class="life-wrap">
       <div class="life-section-head">
-        <div>
-          <h2>Recent Photos</h2>
-          <p>The newest frames from the photography log.</p>
-        </div>
-        <a class="life-section-link" href="/life/photography/">Open photography log</a>
+        <h2 id="life-photography-title">{{ .Params.photography.title }}</h2>
+        <a class="life-section-link" href="{{ relURL "life/photography/" }}">Browse all albums &rarr;</a>
+      </div>
+      <div class="life-content life-story-content life-photography-intro">
+        {{ .RenderString (dict "display" "block") .Params.photography.body }}
       </div>
       <div class="life-photo-wall">
         {{ range first 10 $recentPhotos }}
-          {{ $image := .image }}
-          {{ $page := .page }}
-          {{ $thumb := $image.Fill "900x700 webp q84" }}
-          {{ $caption := replaceRE "\\.(jpeg|jpg|png|webp|gif|JPG|PNG)$" "" (path.Base $image.Name) }}
-          {{ $caption = replace $caption "_" " " }}
-          <a href="{{ $page.RelPermalink }}" aria-label="Open {{ $page.Title }}">
-            <img src="{{ $thumb.RelPermalink }}" alt="{{ $caption | humanize | title }}" loading="lazy" decoding="async">
+          <a href="{{ relURL "life/photography/" }}?photo={{ .id }}" aria-label="View {{ .title }}">
+            <img src="{{ .thumbnail }}" alt="{{ .title }}" loading="lazy" decoding="async">
           </a>
         {{ end }}
       </div>

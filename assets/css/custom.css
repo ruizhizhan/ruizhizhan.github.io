@@ -1,0 +1,99 @@
+/* Homepage biography only; the rest of the site keeps its selected theme. */
+#home-intro {
+  isolation: isolate;
+  background-color: #070f1e;
+  color: #e2e8f0;
+  padding-block: clamp(2.5rem, 5vw, 5rem);
+}
+
+#home-intro > .home-section-bg {
+  /* Override the theme's parallax default, including on mobile browsers. */
+  background-attachment: scroll;
+  background-position: 48% 32%;
+  pointer-events: none;
+}
+
+#home-intro > .home-section-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    rgba(3, 9, 20, 0.56),
+    rgba(3, 9, 20, 0.68) 52%,
+    rgba(3, 9, 20, 0.78)
+  );
+}
+
+#home-intro .resume-biography {
+  padding-block: clamp(1rem, 2vw, 2rem);
+}
+
+/* Let the biography sit directly on the shaded galaxy background. */
+#home-intro .resume-biography .md\:col-span-8 {
+  min-width: 0;
+}
+
+#home-intro h1,
+#home-intro h2,
+#home-intro h3 {
+  color: #f8fafc;
+}
+
+#home-intro .md\:col-span-4 p {
+  color: #dbe5f3;
+}
+
+#home-intro .md\:col-span-4 p.font-semibold {
+  color: #bae6fd;
+}
+
+#home-intro .md\:col-span-4 a[aria-label] {
+  color: #dbeafe;
+  background: rgba(7, 17, 34, 0.72);
+  border-color: rgba(203, 213, 225, 0.3);
+}
+
+#home-intro .prose {
+  --tw-prose-body: #e2e8f0;
+  --tw-prose-headings: #f8fafc;
+  --tw-prose-links: #bae6fd;
+  --tw-prose-bold: #f8fafc;
+  --tw-prose-invert-body: #e2e8f0;
+  --tw-prose-invert-headings: #f8fafc;
+  --tw-prose-invert-links: #bae6fd;
+  --tw-prose-invert-bold: #f8fafc;
+  color: #e2e8f0;
+}
+
+#home-intro .bio-text a {
+  color: #bae6fd;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+#home-intro .bio-text a:hover {
+  color: #ffffff;
+}
+
+#home-intro a:focus-visible {
+  outline: 2px solid #bae6fd;
+  outline-offset: 4px;
+}
+
+@media (max-width: 767px) {
+  #home-intro > .home-section-bg {
+    background-position: 46% top;
+    /* Keep the stars sharp instead of stretching over the full text height. */
+    background-size: auto 72rem;
+  }
+
+  #home-intro > .home-section-bg::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(3, 9, 20, 0.5),
+      rgba(3, 9, 20, 0.68) 36rem,
+      #070f1e 72rem
+    );
+  }
+}

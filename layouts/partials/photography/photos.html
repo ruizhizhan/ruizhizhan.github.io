@@ -1,0 +1,28 @@
+{{- $photos := slice -}}
+{{- range site.Data.photography.photos -}}
+  {{- $entry := . -}}
+  {{- with resources.Get (printf "media/albums/%s" .src) -}}
+    {{- $thumbnail := . -}}
+    {{- if or (gt .Width 1000) (gt .Height 900) -}}
+      {{- $thumbnail = .Fit "1000x900 webp q86" -}}
+    {{- end -}}
+    {{- $dateLabel := "Undated" -}}
+    {{- with $entry.date -}}{{- $dateLabel = time.Format "2 January 2006" . -}}{{- end -}}
+    {{- $id := strings.TrimSuffix (path.Ext $entry.src) $entry.src | urlize -}}
+    {{- $photos = $photos | append (dict
+      "id" $id
+      "title" $entry.title
+      "date" $entry.date
+      "dateLabel" $dateLabel
+      "sortDate" (printf "%s|%s" (default "0000" $entry.date) $entry.src)
+      "story" ($entry.story | default "" | markdownify | string)
+      "thumbnail" $thumbnail.RelPermalink
+      "image" .RelPermalink
+      "width" .Width
+      "height" .Height
+    ) -}}
+  {{- else -}}
+    {{- errorf "Photo album image not found: %s" $entry.src -}}
+  {{- end -}}
+{{- end -}}
+{{- return (sort $photos "sortDate" "desc") -}}

@@ -10,6 +10,7 @@ design:
 
 sections:
   - block: resume-biography-3
+    id: home-intro
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
@@ -27,10 +28,12 @@ sections:
         education: '' # read from me.yaml
         interests: ''
     design:
-      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
+      # Keep the galaxy treatment local to this section in either site theme.
       background:
-        gradient_mesh:
-          enable: true
+        text_color_light: true
+        image:
+          filename: background.jpg
+          parallax: false
 
       # Name heading sizing to accommodate long or short names
       name:
@@ -40,7 +43,4 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
-      #banner:
-      #  filename: "background.jpg"
-
 ---

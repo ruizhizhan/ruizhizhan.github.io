@@ -135,6 +135,81 @@
     border-top: 1px solid var(--life-line);
   }
 
+  .life-home-header {
+    padding-top: clamp(4rem, 7vw, 6rem);
+    padding-bottom: clamp(2rem, 4vw, 3rem);
+  }
+
+  .life-home-intro {
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 760px;
+  }
+
+  .life-home .life-section {
+    scroll-margin-top: 6rem;
+  }
+
+  .life-home a:focus-visible {
+    outline: 2px solid var(--life-accent);
+    outline-offset: 5px;
+  }
+
+  .life-music-layout {
+    align-items: start;
+    display: grid;
+    gap: clamp(2rem, 5vw, 4rem);
+    grid-template-columns: minmax(0, 1fr) 310px;
+  }
+
+  .life-story-content {
+    color: var(--life-muted);
+  }
+
+  .life-story-content p {
+    margin: 0 0 1.25rem;
+  }
+
+  .life-story-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .life-story-content strong {
+    color: var(--life-ink);
+    font-weight: 700;
+  }
+
+  .life-music-photos {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .life-music-photos figure {
+    margin: 0;
+  }
+
+  .life-music-photos img {
+    background: var(--life-soft);
+    border-radius: 8px;
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+
+  .life-music-photos figcaption {
+    color: var(--life-subtle);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-top: 0.6rem;
+  }
+
+  .life-photography-intro {
+    margin-bottom: 2rem;
+    max-width: 760px;
+  }
+
   .life-section-head {
     align-items: end;
     display: flex;
@@ -405,6 +480,15 @@
   }
 
   @media (max-width: 900px) {
+    .life-music-layout {
+      grid-template-columns: 1fr;
+    }
+
+    .life-music-photos {
+      align-items: start;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .life-hero,
     .life-card,
     .life-feature {
@@ -443,6 +527,10 @@
   }
 
   @media (max-width: 560px) {
+    .life-music-photos {
+      grid-template-columns: 1fr;
+    }
+
     .life-shell {
       margin-top: -2rem;
     }
