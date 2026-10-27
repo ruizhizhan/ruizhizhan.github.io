@@ -103,7 +103,8 @@
 .album-page--right .album-photo { --mount-angle: 0.6deg; }
 .album-page--right .album-photo:nth-child(2) { --mount-angle: -0.8deg; }
 .album-photo:hover { box-shadow: 0 4px 12px #44392740; transform: translateY(-2px) rotate(0); }
-.album-photo:focus-visible { outline: 2px solid #456b5c; outline-offset: 4px; }
+.album-photo:focus, .album-photo:focus-visible { outline: none; }
+.photo-album.is-keyboard-navigation .album-photo:focus-visible { outline: 1px dashed #675f53; outline-offset: -4px; }
 .album-photo.is-taken { pointer-events: none; visibility: hidden; }
 .album-photo-image { aspect-ratio: var(--print-ratio, 1.5); display: grid; max-height: var(--album-photo-height); place-items: center; width: 100%; }
 .album-photo img { display: block; height: 100%; max-height: var(--album-photo-height); object-fit: contain; width: 100%; }
@@ -172,7 +173,8 @@
 .photo-lift img { display: block; height: 100%; object-fit: contain; width: 100%; }
 .photo-turntable { --photo-height: min(70svh, 900px); align-items: center; display: flex; height: var(--photo-height); justify-content: center; max-width: 1200px; perspective: 1800px; width: 100%; }
 .photo-rotator { aspect-ratio: var(--photo-ratio, 1.5); cursor: pointer; position: relative; transform-style: preserve-3d; transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1); width: min(100%, calc(var(--photo-height) * var(--photo-ratio, 1.5))); }
-.photo-rotator:focus-visible { outline: 2px solid #9ab7b1; outline-offset: 6px; }
+.photo-rotator:focus, .photo-rotator:focus-visible { outline: none; }
+.photo-dialog.is-keyboard-navigation .photo-rotator:focus-visible .photo-face { outline: 1px dashed #675f53; outline-offset: -4px; }
 .photo-rotator.is-flipped { transform: rotateY(180deg); }
 .photo-face { -webkit-backface-visibility: hidden; backface-visibility: hidden; background: #faf7f0; border: 6px solid #faf7f0; box-shadow: 0 22px 45px #0006, 0 5px 12px #0004; height: 100%; inset: 0; position: absolute; transform: translateZ(0.1px); width: 100%; }
 .photo-face--front img { display: block; height: 100%; object-fit: contain; width: 100%; }

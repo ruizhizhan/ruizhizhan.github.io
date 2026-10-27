@@ -436,6 +436,17 @@
       setFlipped(!flipped);
     }
   });
+  // Programmatic focus after the lift must not introduce a mouse-only frame.
+  document.addEventListener('pointerdown', () => {
+    root.classList.remove('is-keyboard-navigation');
+    dialog.classList.remove('is-keyboard-navigation');
+  }, true);
+  document.addEventListener('keydown', event => {
+    if (['Tab', 'Enter', ' ', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+      root.classList.add('is-keyboard-navigation');
+      dialog.classList.add('is-keyboard-navigation');
+    }
+  }, true);
   document.addEventListener('keydown', event => {
     if (event.altKey || event.ctrlKey || event.metaKey || event.target.closest('input, select, textarea, [contenteditable]')) return;
     if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
