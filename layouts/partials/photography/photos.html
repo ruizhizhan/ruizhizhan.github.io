@@ -6,6 +6,7 @@
     {{- if or (gt .Width 1000) (gt .Height 900) -}}
       {{- $thumbnail = .Fit "1000x900 webp q86" -}}
     {{- end -}}
+    {{- $preview := .Fit "48x48 webp q55" -}}
     {{- $dateLabel := "Undated" -}}
     {{- with $entry.date -}}{{- $dateLabel = time.Format "2 January 2006" . -}}{{- end -}}
     {{- $id := strings.TrimSuffix (path.Ext $entry.src) $entry.src | urlize -}}
@@ -16,6 +17,7 @@
       "dateLabel" $dateLabel
       "sortDate" (printf "%s|%s" (default "0000" $entry.date) $entry.src)
       "story" ($entry.story | default "" | markdownify | string)
+      "preview" (printf "data:%s;base64,%s" $preview.MediaType.Type ($preview.Content | base64Encode))
       "thumbnail" $thumbnail.RelPermalink
       "image" .RelPermalink
       "width" .Width
