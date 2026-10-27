@@ -27,6 +27,7 @@
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let currentSpread = 0;
   let currentPhoto = 0;
+  let takenPhotoIndex = null;
   let turning = false;
   let flipped = false;
   let lastOpener = null;
@@ -41,6 +42,19 @@
   let returning = false;
   const thumbnailLoads = new Map();
 
+  function applyTakenState(button) {
+    const taken = Number(button.dataset.photoIndex) === takenPhotoIndex;
+    button.classList.toggle('is-taken', taken);
+    button.inert = taken;
+    if (taken) button.setAttribute('aria-hidden', 'true');
+    else button.removeAttribute('aria-hidden');
+  }
+
+  function setTakenPhoto(index) {
+    takenPhotoIndex = index;
+    spread.querySelectorAll('[data-photo-index]').forEach(applyTakenState);
+  }
+
   function makePhoto(index) {
     const photo = photos[index];
     const button = document.createElement('button');
@@ -48,6 +62,7 @@
     button.className = 'album-photo';
     button.style.setProperty('--print-ratio', photo.width / photo.height);
     button.dataset.photoIndex = index;
+    applyTakenState(button);
     button.setAttribute('aria-label', `View ${photo.title}, ${photo.dateLabel}`);
     const mount = document.createElement('span');
     mount.className = 'album-photo-image';
@@ -234,7 +249,7 @@
     const end = `translate3d(${dx}px, ${dy}px, 0) scale(${sx}, ${sy})`;
     const duration = puttingBack ? 540 : 1000;
     // Lift an edge at the original print's size before moving it into the hand.
-    // The album's own photograph is never moved, hidden, or replaced.
+    // Keep the empty mount's dimensions while its photograph is in hand.
     const path = puttingBack ? [
       { transform: 'translate3d(0, 0, 0) scale(1)' },
       { transform: `translate3d(${dx}px, ${dy - 18}px, 0) scale(${sx}, ${sy})`, offset: 0.78 },
@@ -287,6 +302,7 @@
     const sourceRect = opening ? printBounds(opener) : null;
     stopExtraction();
     currentPhoto = index;
+    setTakenPhoto(index);
     const photo = photos[index];
     setFlipped(false);
     // A fresh photograph should not animate in from the previous one's back.
@@ -398,6 +414,7 @@
   });
   dialog.addEventListener('close', () => {
     stopExtraction();
+    setTakenPhoto(null);
     document.body.style.overflow = previousOverflow;
     setFlipped(false);
     const url = new URL(location.href);

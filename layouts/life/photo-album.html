@@ -1,10 +1,12 @@
 {{ define "main" }}
 {{ partial "life/styles.html" . }}
 {{ $photos := partial "photography/photos.html" . }}
+{{ $paperPortrait := (resources.Get "media/textures/lake-bench-watercolor.png").Resize "1024x webp q82" }}
+{{ $paperWide := (resources.Get "media/textures/lake-bench-watercolor-wide.png").Resize "1536x webp q82" }}
 {{ $styles := resources.Get "css/photo-album.css" | minify | fingerprint }}
 {{ $script := resources.Get "js/photo-album.js" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
-<main class="life-shell photo-album-shell">
+<main class="life-shell photo-album-shell" style="--album-paper-portrait: url('{{ $paperPortrait.RelPermalink }}'); --album-paper-wide: url('{{ $paperWide.RelPermalink }}');">
   <div class="album-wrap">
     <header class="album-header">
       <nav class="life-breadcrumb" aria-label="Breadcrumb"><a href="{{ relURL "life/" }}">Life</a><span aria-hidden="true">/</span><span>Photography</span></nav>

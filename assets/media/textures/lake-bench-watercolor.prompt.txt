@@ -1,0 +1,23 @@
+Mode: built-in image_gen, style-transfer edit
+Source photograph: assets/media/albums/2025spring/lake_spring2.jpeg
+Style reference: the pale floral watercolor paper image supplied in this chat.
+Final assets: lake-bench-watercolor.png (portrait), lake-bench-watercolor-wide.png (landscape)
+The source photograph is unchanged. The final assets include the requested paler palette.
+
+Base watercolor prompt:
+Use case: style-transfer.
+Asset type: a softly patterned paper background for the inside pages of a personal photograph album, not a photograph or website mockup.
+Input image 1 is the user's selected edit target: the vertical lakeside photograph with a wooden bench across the lower foreground, pale stones, rippling water, pink blossom branches entering from the upper left and fine budding branches on the right. Input image 2 is ONLY a style reference for airy pale watercolor, blurred pigment edges, and watercolor paper grain.
+Transform image 1 into a very light, dreamlike watercolor painting on warm ivory paper. Preserve the scene and composition: the recognizable wooden bench, lakeshore stones, water, pink blossoms and right-side twigs. Keep the original portrait 2:3 composition. Dissolve photographic detail and hard shadows into soft wet-on-wet washes, irregular feathered edges, translucent pigment blooms and subtle matte paper fibers. Use pale dusty rose for the blossoms, misty sage and powder blue for the water, warm light ochre for the bench and cream for the stones. Broad quiet washes and generous luminous paper showing through; low contrast and delicate enough to sit behind mounted photographs, while the bench and blossoms remain identifiable. Slightly hazy, painterly and organic, not just an out-of-focus photograph. Let the scene gently fade into ivory toward the outer margins.
+Do not copy the style reference's floral arrangements or composition. No extra people, props, flowers or buildings. No border, frame, text, signature, logo, watermark, typography, or UI. Opaque paper background. Produce one finished portrait background asset.
+
+Palette refinement prompt:
+Use case: style-transfer, targeted palette and brightness edit.
+Asset type: very pale watercolor paper background for a photograph album.
+Edit only the colors and pigment intensity of this existing watercolor. Preserve the exact portrait 2:3 composition, all flower branches, water, stones and wooden bench geometry, and the organic watercolor-paper texture. Do not add, remove or rearrange any objects.
+Make it noticeably paler and more softly washed out: approximately halve the pigment strength, lift the darkest marks into light warm gray or light beige, soften saturation and contrast, and let substantially more warm ivory paper show through. The lake should be an extremely faint misty powder-blue/sage wash; blossoms very faint dusty pink; bench a delicate pale sand/cream wash. Keep the scene recognizable as a gentle, slightly blurry watercolor memory, but with the quiet, near-white lightness of decorative writing paper. Retain subtle feathered edges and paper fibers. Not gray, not muddy, not photographic. No text, border, watermark or signature. Opaque ivory paper background.
+
+Wide desktop adaptation prompt:
+Use case: style-transfer and responsive background adaptation.
+Asset type: the wide desktop companion to this very pale watercolor photo-album paper.
+Use the supplied pale watercolor as the sole artwork reference. Create a LANDSCAPE 3:2 version of the same lakeside scene for an open two-page album. Repaint and extend the scene naturally rather than stretching it or placing a vertical picture in a horizontal frame. Retain the pale pink blossom branches entering from the upper left, misty powder-blue/sage lake across the upper area, light ivory lakeshore stones, the recognizable pale sand-colored wooden bench across the lower foreground, and the fine budding twigs near the right edge. Keep the exact quiet near-white palette, dilute pigment, feathered wet-on-wet watercolor edges and paper-fiber texture of the supplied pale version. Keep the bench's perspective and proportions natural. Make the background airy and lightly blurred with very low contrast and lots of ivory paper showing through, suitable behind real mounted photographs. Fade softly into ivory at the outer edges. No added objects, people or architecture. No frame, border, text, signature, logo, watermark, or UI. Opaque paper background. Output one finished horizontal landscape 3:2 background asset.

@@ -4,6 +4,7 @@
   --album-cover: #53665c;
   --album-photo-height: clamp(210px, 24vw, 330px);
   --album-print-padding: clamp(0.35rem, 0.8vw, 0.6rem);
+  --album-paper-pattern: var(--album-paper-portrait);
 }
 
 .album-wrap {
@@ -37,7 +38,15 @@
 
 .album-page {
   align-items: center;
-  background: radial-gradient(ellipse at 35% 15%, #fff9, transparent 70%), var(--album-paper);
+  background-color: var(--album-paper);
+  background-image:
+    radial-gradient(ellipse at 35% 15%, #ffffff59, transparent 70%),
+    linear-gradient(#faf7ee80, #faf7ee80),
+    var(--album-paper-pattern);
+  background-position: center, center, var(--album-pattern-position, center);
+  background-repeat: no-repeat;
+  /* Each leaf displays half the same scene, without stretching the artwork. */
+  background-size: 100% 100%, 100% 100%, 200% auto;
   color: var(--album-ink);
   display: grid;
   gap: clamp(0.65rem, 1.6vw, 1.15rem);
@@ -48,11 +57,13 @@
 }
 
 .album-page--left {
+  --album-pattern-position: left center;
   border-radius: 3px 0 0 3px;
   box-shadow: inset -14px 0 20px -14px #51433066, -1px 2px #e1dbcd, -2px 4px #bcb7ac, -3px 6px #eee8dd;
 }
 
 .album-page--right {
+  --album-pattern-position: right center;
   border-radius: 0 3px 3px 0;
   box-shadow: inset 14px 0 20px -14px #51433066, 1px 2px #e1dbcd, 2px 4px #bcb7ac, 3px 6px #eee8dd;
 }
@@ -93,6 +104,7 @@
 .album-page--right .album-photo:nth-child(2) { --mount-angle: -0.8deg; }
 .album-photo:hover { box-shadow: 0 4px 12px #44392740; transform: translateY(-2px) rotate(0); }
 .album-photo:focus-visible { outline: 2px solid #456b5c; outline-offset: 4px; }
+.album-photo.is-taken { pointer-events: none; visibility: hidden; }
 .album-photo-image { aspect-ratio: var(--print-ratio, 1.5); display: grid; max-height: var(--album-photo-height); place-items: center; width: 100%; }
 .album-photo img { display: block; height: 100%; max-height: var(--album-photo-height); object-fit: contain; width: 100%; }
 .album-photo-caption { align-items: baseline; display: flex; flex-wrap: wrap; gap: 0.05rem 0.6rem; justify-content: space-between; line-height: 1.4; }
@@ -171,6 +183,10 @@
 .photo-story { font-family: Georgia, serif; font-size: clamp(0.85rem, 1.5vw, 1.1rem); line-height: 2; overflow-wrap: anywhere; }
 .photo-story p { margin: 0 0 1rem; }
 .photo-story a { color: #456b5c; text-decoration: underline; }
+
+@media (min-width: 800px) {
+  .photo-album-shell { --album-paper-pattern: var(--album-paper-wide); }
+}
 
 @media (max-width: 600px) {
   .photo-album-shell { --album-photo-height: clamp(160px, 43vw, 260px); }
