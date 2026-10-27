@@ -369,7 +369,7 @@
     if (pointerStart.dragging && event.cancelable) event.preventDefault();
   });
   spread.addEventListener('pointerup', event => {
-    if (!pointerStart) return;
+    if (!pointerStart || pointerStart.id !== event.pointerId) return;
     const dx = event.clientX - pointerStart.x;
     const dy = event.clientY - pointerStart.y;
     const dragged = pointerStart.dragging;
@@ -382,8 +382,14 @@
       turnTo(currentSpread + (dx < 0 ? 1 : -1));
     }
   });
-  spread.addEventListener('pointercancel', endDrag);
-  spread.addEventListener('lostpointercapture', endDrag);
+  spread.addEventListener('pointercancel', event => {
+    if (pointerStart?.id === event.pointerId) endDrag();
+  });
+  spread.addEventListener('lostpointercapture', event => {
+    // Touch starts with implicit capture on the photograph. Its capture-loss
+    // event bubbles here when we take over the drag; the swipe is still active.
+    if (event.target === spread && pointerStart?.id === event.pointerId) endDrag();
+  });
   spread.addEventListener('dragstart', event => event.preventDefault());
   spread.addEventListener('wheel', event => {
     if (event.ctrlKey) return;
