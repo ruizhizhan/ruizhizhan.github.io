@@ -2,6 +2,22 @@
 # Add each photograph's story below. Markdown is supported; leave blank for an empty back.
 # The album sorts by date, newest first, with undated photographs at the end.
 photos:
+  - src: "2026/sunset_venice.jpeg"
+    title: "sunset_venice"
+    date: "2026-09-30T00:16:41"
+    story: ""
+  - src: "2026/door.jpeg"
+    title: "door"
+    date: "2026-09-29T18:49:15"
+    story: ""
+  - src: "2026/portishead.jpeg"
+    title: "portishead"
+    date: "2026-09-17T02:55:13"
+    story: ""
+  - src: "2026/christ_college.jpeg"
+    title: "christ_college"
+    date: "2026-09-15T23:16:55"
+    story: ""
   - src: "2026summer/white_cliffs_and_lighthouse.jpeg"
     title: "White cliffs and lighthouse"
     date: "2026-08-08T14:39:44"

@@ -40,6 +40,7 @@
   let extractionSheet = null;
   let returning = false;
   let imageRequest = 0;
+  const imageFades = new Set();
   const thumbnailLoads = new Map();
 
   function applyTakenState(button) {
@@ -216,12 +217,37 @@
     return image;
   }
 
+  function stopImageFades() {
+    imageFades.forEach(animation => animation.cancel());
+    imageFades.clear();
+    const image = front.querySelector('#photo-image');
+    if (image) front.replaceChildren(image);
+  }
+
   function showPhotoImage(photo, mountedImage) {
     const request = ++imageRequest;
+    stopImageFades();
     let quality = 0;
-    const display = image => {
+    const display = (image, fade = false) => {
+      const previousImage = front.querySelector('#photo-image');
       image.id = 'photo-image';
-      front.replaceChildren(image);
+      if (!fade || reducedMotion.matches || !previousImage || !image.animate) {
+        front.replaceChildren(image);
+        return;
+      }
+      // Keep the preview underneath until the decoded image is fully opaque.
+      previousImage.removeAttribute('id');
+      previousImage.setAttribute('aria-hidden', 'true');
+      front.append(image);
+      const animation = image.animate([{ opacity: 0 }, { opacity: 1 }], {
+        duration: 500, easing: 'ease-out', fill: 'forwards'
+      });
+      imageFades.add(animation);
+      animation.finished.then(() => {
+        imageFades.delete(animation);
+        if (request === imageRequest && front.querySelector('#photo-image') === image) front.replaceChildren(image);
+        animation.cancel();
+      }).catch(() => { /* A different photograph cancels the fade. */ });
     };
     // The inline preview needs no network request, even on a cold deep link.
     // Use a fresh element so the browser cannot retain the previous photograph.
@@ -240,7 +266,7 @@
         // A late thumbnail or an earlier selection must never replace this image.
         if (request !== imageRequest || level < quality || !dialog.open || returning) return;
         quality = level;
-        display(image);
+        display(image, true);
       } catch (_) { /* Keep the current preview if a higher resolution fails. */ }
     };
     if (photo.thumbnail !== photo.image) reveal(photo.thumbnail, 1);
@@ -276,7 +302,7 @@
     const print = document.createElement('div');
     print.className = 'photo-lift';
     const image = document.createElement('img');
-    const visibleImage = front.querySelector('img');
+    const visibleImage = front.querySelector('#photo-image');
     image.src = visibleImage?.currentSrc || visibleImage?.src || photo.preview || photo.thumbnail;
     image.alt = '';
     image.draggable = false;
@@ -463,6 +489,7 @@
   });
   dialog.addEventListener('close', () => {
     imageRequest++;
+    stopImageFades();
     stopExtraction();
     setTakenPhoto(null);
     document.body.style.overflow = previousOverflow;
